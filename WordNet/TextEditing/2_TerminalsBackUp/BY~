@@ -1,0 +1,10 @@
+<BY>
+<ELEMENT literal = "by" type = "_"></ELEMENT>
+<ELEMENT literal = "By" type = "_"></ELEMENT>
+<ELEMENT literal = "with" type = "_"></ELEMENT>
+<ELEMENT literal = "With" type = "_"></ELEMENT>
+<ELEMENT literal = "to" type = "_"></ELEMENT>
+<ELEMENT literal = "To" type = "_"></ELEMENT>
+<ELEMENT literal = "into" type = "_"></ELEMENT>
+<ELEMENT literal = "Into" type = "_"></ELEMENT>
+</BY>

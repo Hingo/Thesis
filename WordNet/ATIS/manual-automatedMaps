@@ -1,0 +1,4 @@
+EQ_DEPARTS$depart			-1
+PROJECT$need			-1
+COL_FARE$airfare			-1
+EQ_ARRIVES$arrives			-1

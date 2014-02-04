@@ -1,0 +1,735 @@
+The set of strings w such that the symbol at every odd position in w is "a"
+FORALLINT(ISODDP(), STREQUALS(SYMBOLATP(), STRING(a)))
+1
+The set of strings w such that the number of occurrences of the substring "ab" in w equals the number of occurrences of the substring "ba" in w. 
+INTEQUALS(COUNT(STRING(ab)), COUNT(STRING(ba)))
+2
+Consider the language L consisting of strings w such that w has odd number of "a" symbols and even number of "b" symbols. 
+AND(ISODD(COUNT(STRING(a))), ISEVEN(COUNT(STRING(b))))
+3
+Consider the set L of strings w such that the last symbol of w has not appeared before. 
+NOT(APPEAREDBEFOREP(LASTSYMBOL()))
+5
+Consider the language L consisting of words that contain "010"
+CONTAINSP(STRING(010))
+6
+consider the language L containing words that begin with "a" and end with "b".
+AND(STARTSWITHP(STRING(a)), ENDSWITHP(STRING(b)))
+7
+Let L1 be the set of words w that contain an even number of "a", let L2 be the set of words w that end with "b", let L3 = L1 intersect L2.
+AND(ISEVEN(COUNT(STRING(a))), ENDSWITHP(STRING(b)))
+8
+A string w belongs to the language L precisely when w contains at least #1 "a" symbol and does not contain any "b" symbols.
+AND(GEQ(COUNT(STRING(a)), INTEGER(1)), NOT(CONTAINSP(STRING(b))))
+10
+The set of all strings ending in "00"
+ENDSWITHP(STRING(00))
+12
+The set of all strings with #3 consecutive "0" (not necessarily at the end) 
+CONTAINSP(REPEAT(STRING(0), INTEGER(3), REQ()))
+13
+The set of strings with "011" as a substring 
+CONTAINSP(STRING(011))
+14 
+Set of all strings whose #10th symbol from the right end is a "1".
+STREQUALS(SYMBOLAT(MINUS(INTEGER(10))), STRING(1))
+16
+Set of strings that either begin with "01" or end with "01".
+OR(STARTSWITHP(STRING(01)), ENDSWITHP(STRING(01)))
+17
+The set of strings over alphabet 0 to 9 such that the final digit has not appeared before. 
+NOT(APPEAREDBEFOREP(LASTSYMBOL()))
+19
+The set of strings of "0" and "1" such that at least one of the last #10 positions is a "1"
+EXISTSINT(LASTFEW(INTEGER(10)), STREQUALS(SYMBOLATP(), STRING(1)))
+23
+The set of strings over alphabet a, b, c containing at least #1 "a" and containing at least #1 "b".
+AND(GEQ(COUNT(STRING(a)), INTEGER(1)), GEQ(COUNT(STRING(b)), INTEGER(1)))
+24 
+The set of strings of 0s and 1s whose #10th symbol form the right end is "1".
+STREQUALS(SYMBOLAT(MINUS(INTEGER(10))), STRING(1))
+25
+The set of strings of 0s and 1s with at most #1 pair of consecutive "1". 
+LEQ(COUNT(REPEAT(STRING(1), TWICE(), REQ())), INTEGER(1))
+26
+The set of all strings of 0s and 1s such that every pair of adjacent "0" appears before any pair of adjacent "1". 
+APPEAREDBEFORESTR(REPEAT(STRING(0), TWICE(), REQ()), REPEAT(STRING(1), TWICE(), REQ()), ANYWHERE())
+27
+The set of strings of 0s and 1s whose number of "0" is divisible by #5.
+ISDIVISIBLEBY(COUNT(STRING(0)), INTEGER(5))
+28
+The set of all strings of 0s and 1s not containing "101" as a substring.
+NOT(CONTAINSP(STRING(101)))
+29
+The set of strings containing "ab" as a substring. 
+CONTAINSP(STRING(ab))
+33 
+The set of strings whose length is divisible by #6. 
+ISDIVISIBLEBY(LENP(), INTEGER(6))
+35 
+The set of strings whose #5th last symbol is "b". 
+STREQUALS(SYMBOLAT(MINUS(INTEGER(5))), STRING(b))
+36a
+w is a binary string containing both substrings "010" and "101"
+CONTAINSP(ANDSTRINGS(STRING(010), STRING(101)))
+37
+Consider the language consisting of all words that have neither consecutive "a" nor consecutive "b" 
+NOT(CONTAINSP(ANDSTRINGS(REPEAT(STRING(a), TWICE(), REQ()), REPEAT(STRING(b), TWICE(), REQ()))))
+40
+Draw a DFSA that rejects all words for which the last #2 letters match.
+NOT(LASTFEWMATCH(INTEGER(2)))
+41
+Draw a DFSA that rejects all words for which the first #2 letters match.
+NOT(LASTFEWMATCH(INTEGER(2)))
+42
+x contains an even number of "a".
+ISEVEN(COUNT(STRING(a)))
+43
+x contains an odd number of "b".
+ISODD(COUNT(STRING(b)))
+44
+x contains an even number of "a" and an odd number of "b"
+AND(ISEVEN(COUNT(STRING(a))), ISODD(COUNT(STRING(b))))
+45
+x contains an even number of "a" or an odd number of "b"
+OR(ISEVEN(COUNT(STRING(a))), ISODD(COUNT(STRING(b))))
+46
+w contains substring "010" and "101" 
+CONTAINSP(ANDSTRINGS(STRING(010), STRING(101)))
+47
+w does not contain substring "0110"
+NOT(CONTAINSP(STRING(0110)))
+48
+w has an even number of "0" and an even number of "1" 
+AND(ISEVEN(COUNT(STRING(0))), ISEVEN(COUNT(STRING(1))))
+49
+w has the same number of occurrences of "10" and "01" 
+INTEQUALS(COUNT(STRING(10)), COUNT(STRING(01)))
+50
+Consider the set of all binary strings where the difference between the number of "0" and the number of "1" is even. 
+ISEVEN(DIFF(COUNT(STRING(0)), COUNT(STRING(1))))
+51
+The set of all binary strings having a substring "00" and  ending with "01". 
+AND(CONTAINSP(STRING(00)), ENDSWITHP(STRING(01)))
+57
+The set of all binary strings having a substring "00" but  not ending with "01". 
+AND(CONTAINSP(STRING(00)), NOT(ENDSWITHP(STRING(01))))
+58
+The set of all binary strings with #3 consecutive "0". 
+CONTAINSP(REPEAT(STRING(0), INTEGER(3), REQ()))
+59 
+The set of all strings over alphabet a, b of length up to  #3. 
+LEQ(LENP(), INTEGER(3))
+61 
+The set of all strings of 0s and 1s such that #10th symbol  from the right end is a "1". 
+STREQUALS(SYMBOLAT(MINUS(INTEGER(10))), STRING(1))
+63
+w begins with a "1" and ends with a "0"
+AND(STARTSWITHP(STRING(1)), ENDSWITHP(STRING(0)))
+64
+w contains at least #3 "1"
+GEQ(COUNT(STRING(1)), INTEGER(3))
+65
+w contains at least #2 "0" and contains at most  #1 "1"
+AND(GEQ(COUNT(STRING(0)), INTEGER(2)), LEQ(COUNT(STRING(1)), INTEGER(1)))
+67
+every odd position of w is a "1"
+FORALLINT(ISODDP(), STREQUALS(SYMBOLATP(), STRING(1)))
+68
+The set of all strings ending in "00".
+ENDSWITHP(STRING(00))
+69
+The set of all strings such that the #4th symbol from the  right is "1". 
+STREQUALS(SYMBOLAT(MINUS(INTEGER(4))), STRING(1))
+70
+W contains at least #3 "0" 
+GEQ(COUNT(STRING(0)), INTEGER(3))
+71
+Every odd position of w is a "1". 
+FORALLINT(ISODDP(), STREQUALS(SYMBOLATP(), STRING(1)))
+72
+W contains at least #2 "a" and contains at most #1 "b". 
+AND(GEQ(COUNT(STRING(a)), INTEGER(2)), LEQ(COUNT(STRING(b)), INTEGER(1)))
+73
+w starts with the string "10" or ends with the string "01"
+OR(STARTSWITHP(STRING(10)), ENDSWITHP(STRING(01)))
+76
+Binary strings in which every substring "010" is followed  immediately by substring "111". 
+APPEAREDBEFORESTR(STRING(010), STRING(111), IMM())
+77 
+w has neither "aa" nor "bb" as a substring. 
+NOT(CONTAINSP(ANDSTRINGS(STRING(aa), STRING(bb))))
+78
+w has an even number of "a" and an odd number of "b". 
+AND(ISEVEN(COUNT(STRING(a))), ISODD(COUNT(STRING(b))))
+79 
+Draw a 4-state DFA that accepts the set of all bitstrings  ending with "11".
+ENDSWITHP(STRING(11))
+80
+Draw a DFA for bitstrings with at least #1 "0" and with at  least #1 "1". 
+AND(GEQ(COUNT(STRING(0)), INTEGER(1)), GEQ(COUNT(STRING(1)), INTEGER(1)))
+81
+Draw an NFA that matches all strings that contain  either a multiple of #3 "1" or contain a multiple of #5 "1".
+OR(ISMULTIPLEOF(COUNT(STRING(1)), INTEGER(3)), ISMULTIPLEOF(COUNT(STRING(1)), INTEGER(5)))
+82
+Draw an NFA that recognize the language of all strings  that end in "aaab".
+ENDSWITHP(STRING(aaab))
+83
+Draw an NFA that recognize the language of all strings  whose #4th to the last character is "a". 
+STREQUALS(SYMBOLAT(MINUS(INTEGER(4))), STRING(a))
+84
+Draw an NFA that recognize the language of all strings  whose #5th to the last character is "a". 
+STREQUALS(SYMBOLAT(MINUS(INTEGER(5))), STRING(a))
+85
+w does not end in "ba"
+NOT(ENDSWITHP(STRING(ba)))
+86
+w does not have "001" as a substring. 
+NOT(CONTAINSP(STRING(001)))
+87
+w contains exactly #2 occurrences of the substring "aa". 
+INTEQUALS(COUNT(STRING(aa)), INTEGER(2))
+89
+w contains no more than #2 occurrences of the substring "aa". 
+NOT(GREATER(COUNT(STRING(aa)), INTEGER(2)))
+90
+Give a regular expression for all binary numbers including the substring "101"
+CONTAINSP(STRING(101))
+91
+Give a regular expression for all binary numbers with  an even number of "1"
+ISEVEN(COUNT(STRING(1)))
+92
+Give a regular expression for all binary numbers that  do not include "000"
+NOT(CONTAINSP(STRING(000)))
+93
+Give a regular expression for all binary numbers that  begin and end with the same digit. 
+STREQUALS(FIRSTSYMBOL(), LASTSYMBOL())
+94
+Give a NFA that only accepts binary numbers that  include either "00" or "11"
+CONTAINSP(ORSTRINGS(STRING(00), STRING(11)))
+95
+Give a NFA that only accepts binary numbers that  include both "00" and "11" 
+CONTAINSP(ANDSTRINGS(STRING(00), STRING(11)))
+96
+Give a NFA that only accepts strings such that x either  has the substring "01" or has the substring "021". 
+OR(CONTAINSP(STRING(01)), CONTAINSP(STRING(021)))
+98
+Give the set of all strings that end with "ing"
+ENDSWITHP(STRING(ing))
+100 
+Consider the DFA that accepts all strings which have  "01" as a substring. 
+CONTAINSP(STRING(01))
+101
+Consider the DFA accepting all and only strings with  an even number of "0" and an even number of "1" 
+AND(ISEVEN(COUNT(STRING(0))), ISEVEN(COUNT(STRING(1))))
+102 
+Give a DFA such that it contains all strings that have  "aba" as a substring 
+CONTAINSP(STRING(aba))
+104
+A language with words with equal number of "0" and "1" 
+EQ(COUNTBOTH(ANDSTR(STRING(0), STRING(1))))
+105
+A language with words with more number of "0" than "1"s 
+MORE(COUNTBOTH(ANDSTR(STRING(0), STRING(1))))
+106
+A language with words of form RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+108
+A language with words of form RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+109
+A language with words of form RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+110
+A language with words of the form RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+112
+A language with words with equal number of "0" and "1"
+EQ(COUNTBOTH(ANDSTR(STRING(0), STRING(1))))
+113
+A language with words of the form RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+114
+A language with words of the form RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+115
+A language with words with equal number of "0" and "1"
+EQ(COUNTBOTH(ANDSTR(STRING(0), STRING(1))))
+119
+The set of strings whose #5th symbol from the end is "b".
+STREQUALS(SYMBOLAT(MINUS(INTEGER(5))), STRING(b))
+120
+Design a DFA that accepts the language over the alphabet  0, 1, 2 where the decimal equivalent of the language is divisible by #3.
+ISDIVISIBLEBY(DECIMALOFSTRING(), INTEGER(3))
+121
+the language is accepted only if the number is divisible by #3.
+ISDIVISIBLEBY(DECIMALOFSTRING(), INTEGER(3))
+122
+The string contains equal number of "1" and "2" must be accepted.
+EQ(COUNTBOTH(ANDSTR(STRING(1), STRING(2))))
+123
+Design a DFA for all strings over the alphabet $ a, b % that contain "aba" but contain not "abaa" as a substring.
+AND(CONTAINSP(STRING(aba)), NOT(CONTAINSP(STRING(abaa))))
+125
+w contains at least #1 "0" and contains at most #1 "1"
+AND(GEQ(COUNT(STRING(0)), INTEGER(1)), LEQ(COUNT(STRING(1)), INTEGER(1)))
+126
+w does not contain "100" as a substring
+NOT(CONTAINSP(STRING(100)))
+127
+Design a DFA for all strings over the alphabet $ 0, 1 % where the #3rd symbol from the end is a "0".
+STREQUALS(SYMBOLAT(MINUS(INTEGER(3))), STRING(0))
+129
+Design a DFA all strings over the alphabet $ 0, 1 % where the leftmost and the rightmost symbols are different.
+STRDIFFER(FIRSTSYMBOL(), LASTSYMBOL())
+130
+Design a DFA all strings over $ a, b % in which every pair of adjacent "0" appears before any pair of adjacent "1".
+APPEAREDBEFORESTR(REPEAT(STRING(0), TWICE(), REQ()), REPEAT(STRING(1), TWICE(), REQ()), ANYWHERE())
+133
+Accepts just the string MURMUR by itself.
+MATCHFORMAT(EXPRESSION(MURMUR))
+134
+Accepts "FROG" with any prefix. 
+ENDSWITHP(STRING(FROG))
+136
+Accepts any string containing "FROG". 
+CONTAINSP(STRING(FROG))
+137
+Accepts any string containing "MURMURS". 
+CONTAINSP(STRING(MURMURS))
+138
+Accepts strings consisting of only #0 or more repetitions of "15211".
+MATCHFORMAT(REPEAT(STRING(15211), INTEGER(0), RGEQ()))
+139
+Accepts strings starting with #0 or more repetitions of "15211".
+STARTSWITHP(REPEAT(STRING(15211), INTEGER(0), RGEQ()))
+140
+Accepts strings containing "CAT" or "DOG" anywhere.
+CONTAINSP(ORSTRINGS(STRING(CAT), STRING(DOG)))
+142
+Accepts strings containing "ART" or "ARC" anywhere.
+CONTAINSP(ORSTRINGS(STRING(ART), STRING(ARC)))
+143
+Accepts strings of even length.
+ISEVEN(LENP())
+145
+Accepts strings with exactly #3 "A". 
+INTEQUALS(COUNT(STRING(A)), INTEGER(3))
+146
+Accepts strings with at least #3 "A". 
+GEQ(COUNT(STRING(A)), INTEGER(3))
+147
+Accepts strings where number of "a" is greater than number of "b".
+GEQ(COUNT(STRING(a)), COUNT(STRING(b)))
+148
+Accepts strings where number of "a" is equal to number of "b".
+INTEQUALS(COUNT(STRING(a)), COUNT(STRING(b)))
+149
+A FSM in which the language recognized is composed of strings that start and finish with "0" and may contain any string formed from the set $ 0, 1 % between.
+BOTH(START(), END(), STRING(0))
+151
+A machine in which the language recognized is composed of binary strings of length #4.
+INTEQUALS(LENP(), INTEGER(4))
+152
+The final example accepts binary strings of any length or composition provided that each contains at least #1 substring of "11"
+GEQ(COUNT(STRING(11)), INTEGER(1))
+154
+x in RegX and x has an even number of "b"
+AND(MATCHFORMAT(EXPRESSION(RegX)), ISEVEN(COUNT(STRING(b))))
+155
+x begins and ends with the sequence "aab".
+BOTH(START(), END(), STRING(aab))
+156
+x has an even number of "a" and an odd number of "b".
+AND(ISEVEN(COUNT(STRING(a))), ISODD(COUNT(STRING(b))))
+157
+all words over the alphabet $ 0, 1 % that begin with "0" 
+STARTSWITHP(STRING(0))
+159
+all words over the alphabet $ 0, 1 % that begin with "0" and end with "0"
+AND(STARTSWITHP(STRING(0)), ENDSWITHP(STRING(0)))
+160
+all words that contain an even number of  "0"
+ISEVEN(COUNT(STRING(0)))
+161
+w contains exactly #1 "0" 
+INTEQUALS(COUNT(STRING(0)), INTEGER(1))
+162
+w  contains as many subwords "01" as subwords "10" 
+EQ(COUNTBOTH(ANDSTR(STRING(01), STRING(10))))
+163
+w contains as many "0" as "1"
+EQ(COUNTBOTH(ANDSTR(STRING(0), STRING(1))))
+164
+w begins with "0" 
+STARTSWITHP(STRING(0))
+165
+w ends with "0" 
+ENDSWITHP(STRING(0))
+166
+w contains a positive even number of "0" 
+ISEVEN(COUNT(STRING(0)))
+167
+w is multiple of #3 when interpreted as a binary integer 
+ISMULTIPLEOFP(INTEGER(3))
+168
+w is not a multiple of #3 when interpreted as a binary integer 
+NOT(ISMULTIPLEOFP(INTEGER(3)))
+169
+the set of strings in RegX containing the substring "481" 
+BoolCondition(MATCHFORMAT(EXPRESSION(RegX)), CONTAINSP(STRING(481)))
+170
+the set of strings in RegX whose length is divisible by either #2 or whose length is divisible by #7 
+BoolCondition(MATCHFORMAT(EXPRESSION(RegX)), OR(ISDIVISIBLEBY(LENP(), INTEGER(2)), ISDIVISIBLEBY(LENP(), INTEGER(7))))
+171
+the automaton accepts only the empty string 
+EMPTYSET()
+173
+An automaton that accepts strings with an even number of "1". 
+ISEVEN(COUNT(STRING(1)))
+174
+An automaton that accepts all strings ending with a "0" 
+ENDSWITHP(STRING(0))
+176
+An automaton that accepts multiples of #5. 
+ISMULTIPLEOFP(INTEGER(5))
+177
+The set of all strings that contain the substring "010". 
+CONTAINSP(STRING(010))
+178
+The set of all strings that do not contain the substring "000". 
+NOT(CONTAINSP(STRING(000)))
+179
+The set of all strings that either contain an even number of "0" or contain at most #3 "0" 
+OR(ISEVEN(COUNT(STRING(0))), LEQ(COUNT(STRING(0)), INTEGER(3)))
+181
+The set of all strings such that the #5th symbol from the end of the string is a "1". 
+STREQUALS(SYMBOLAT(MINUS(INTEGER(5))), STRING(1))
+186
+The set of all strings with at most #1 #3 of adjacent "0". 
+LEQ(COUNT(REPEAT(STRING(0), INTEGER(3), REQ())), INTEGER(1))
+188
+The set of all strings not containing the substring "110". 
+NOT(CONTAINSP(STRING(110)))
+189
+The set of all strings in which every pair of adjacent "0" appears before any pair of adjacent "1" 
+APPEAREDBEFORESTR(REPEAT(STRING(0), TWICE(), REQ()), REPEAT(STRING(1), TWICE(), REQ()), ANYWHERE())
+191
+The set of all strings over RegX that have the same number of occurrences of the substring "01" as of the substring "10".
+BoolCondition(MATCHFORMAT(EXPRESSION(RegX)), EQ(COUNTBOTH(ANDSTR(STRING(01), STRING(10)))))
+194
+Construct an automaton that accepts all words over singleton alphabet $ a % of even length. 
+ISEVEN(LENP())
+197
+Construct an automaton for strings containing even number of letters "a" and containing odd number of letters "b" 
+AND(ISEVEN(COUNT(STRING(a))), ISODD(COUNT(STRING(b))))
+198
+w has an even number of "a" 
+ISEVEN(COUNT(STRING(a)))
+199
+Strings over $ a, b % with length divisible by #5.  
+ISDIVISIBLEBY(LENP(), INTEGER(5))
+200
+Strings that contain the same number of "01" as "10". 
+EQ(COUNTBOTH(ANDSTR(STRING(01), STRING(10))))
+201
+Odd number of "1"  
+ISODD(COUNT(STRING(1)))
+202
+Strings over $ a, b % that contain "aba" as a substring. 
+CONTAINSP(STRING(aba))
+203
+Construct an automaton over the alphabet $ a, b % accepting strings which end with "b".  
+ENDSWITHP(STRING(b))
+204
+Construct an automaton whose language is the set of all strings of odd length over the alphabet $ a, b %. 
+ISODD(LENP())
+205
+Construct an automaton whose language is the set of all strings that contain at least #2 "a".  
+GEQ(COUNT(STRING(a)), INTEGER(2))
+206
+Construct an automaton whose language is the set of all strings that contain at most #3 "b". 
+LEQ(COUNT(STRING(b)), INTEGER(3))
+207
+Construct a nondeterministic automaton whose language is the set of all strings that contain "010" as a substring. 
+CONTAINSP(STRING(010))
+208
+Construct a deterministic automaton whose language is the set of all strings that contain "010" as a substring. 
+CONTAINSP(STRING(010))
+209
+Construct an automaton whose language is the set of all strings that contain at least #2 "a" and at most #3 "b". 
+AND(GEQ(COUNT(STRING(a)), INTEGER(2)), LEQ(COUNT(STRING(b)), INTEGER(3)))
+210
+Words over S = $ a, b % with equal number of "a" and "b" 
+EQ(COUNTBOTH(ANDSTR(STRING(a), STRING(b))))
+211
+Recognises words which do not end in "b" 
+NOT(ENDSWITHP(STRING(b)))
+212
+recognises words with even number of "b". 
+ISEVEN(COUNT(STRING(b)))
+213
+Words over a, b having either #1 "b" or #2 consecutive "b" 
+CONTAINSP(ORSTRINGS(STRING(b), REPEAT(STRING(b), INTEGER(2), REQ())))
+215
+Every "a" is followed by "b" 
+APPEAREDBEFORESTR(STRING(a), STRING(b), ANYWHERE())
+216
+Infinite words where every even position has letter "a". 
+FORALLINT(ISEVENP(), STREQUALS(SYMBOLATP(), STRING(a)))
+218
+the set of strings with an even number of "1" and an even number of "0"
+AND(ISEVEN(COUNT(STRING(1))), ISEVEN(COUNT(STRING(0))))
+219
+binary odd numbers 
+ISODD(BINARYOFSTRING())
+221
+the set of all strings over the alphabet $ a, b % that have an even number of "b"
+ISEVEN(COUNT(STRING(b)))
+223
+any sequence on the alphabet I = $ a, b % containing at most #2 consecutive "b". 
+CONTAINSP(REPEAT(STRING(b), INTEGER(2), RLEQ()))
+224
+the set of strings on the alphabet I = $ 0, 1 % containing at least #2 consecutive "0" or #2 consecutive "1". 
+CONTAINSP(ORSTRINGS(REPEAT(STRING(0), INTEGER(2), RGEQ()), REPEAT(STRING(1), INTEGER(2), REQ())))
+225
+automaton accepting the language of strings that have #2 consecutive "0" or #2 consecutive "1" 
+CONTAINSP(ORSTRINGS(REPEAT(STRING(0), INTEGER(2), REQ()), REPEAT(STRING(1), INTEGER(2), REQ())))
+227
+finite automata which accept sets of strings composed of zeros and ones which are a multiple of #3 in length. 
+ISMULTIPLEOF(LENP(), INTEGER(3))
+228
+finite automata which accept sets of strings composed of zeros and ones which end with the string "00". 
+ENDSWITHP(STRING(00))
+229
+finite automata which accept sets of strings composed of zeros and ones which possess runs of even numbers of "0" and odd numbers of "1" 
+AND(ISEVEN(COUNT(STRING(0))), ISODD(COUNT(STRING(1))))
+230
+Never contain #3 adjacent "1". 
+NOT(CONTAINSP(REPEAT(STRING(1), INTEGER(3), REQ())))
+231
+Contain an even number of "0" or an odd number of "1"
+OR(ISEVEN(COUNT(STRING(0))), ISODD(COUNT(STRING(1))))
+233
+Design a linear bounded automaton which accepts strings of the form RegX. 
+MATCHFORMAT(EXPRESSION(RegX))
+238
+strings over the alphabet $ a, b % that contain exactly #2 "a" 
+INTEQUALS(COUNT(STRING(a)), INTEGER(2))
+241
+all strings over the alphabet $ a, b % that do not end with "ab". 
+NOT(ENDSWITHP(STRING(ab)))
+242
+all strings over the alphabet $ a, b % that contain no more than #1 occurence of the string "aa". 
+NOT(GREATER(COUNT(STRING(aa)), INTEGER(1)))
+243
+strings of even lengths over the alphabet of $ a, b % 
+ISEVEN(LENP())
+244
+it is the set of strings over the alphabet $ a, b % that contain an odd number of "b"  
+ISODD(COUNT(STRING(b)))
+245
+the set of all palindromes. 
+CONDITIONALPALIN(ALWAYS())
+249
+the set of all odd length palindromes. 
+CONDITIONALPALIN(ISODD(LENP()))
+250
+the set of strings that begin and end with the same symbol 
+STREQUALS(FIRSTSYMBOL(), LASTSYMBOL())
+251
+the set of all even length palindromes. 
+CONDITIONALPALIN(ISEVEN(LENP()))
+252
+The set of all strings containing the substring "00". 
+CONTAINSP(STRING(00))
+253
+The set of all strings containing at most #2 "0". 
+LEQ(COUNT(STRING(0)), INTEGER(2))
+254
+The set of all strings containing at least #2 "0". 
+GEQ(COUNT(STRING(0)), INTEGER(2))
+255
+L is the set of all bit strings with even number of "1" 
+ISEVEN(COUNT(STRING(1)))
+257
+strings beginning with the sequence "ab" 
+STARTSWITHP(STRING(ab))
+259
+accepts any string that includes the sequence "abcba" within it. 
+CONTAINSP(STRING(abcba))
+260
+the set of all strings not containing #2 consecutive "0" 
+NOT(CONTAINSP(REPEAT(STRING(0), INTEGER(2), REQ())))
+261
+the set of all strings containing #2 consecutive "0" 
+CONTAINSP(REPEAT(STRING(0), INTEGER(2), REQ()))
+262
+the set of all strings with an even number of "0" 
+ISEVEN(COUNT(STRING(0)))
+263
+the set of all strings not containing #3 consecutive "0" 
+NOT(CONTAINSP(REPEAT(STRING(0), INTEGER(3), REQ())))
+264
+the set of all strings containing #3 consecutive "0" 
+CONTAINSP(REPEAT(STRING(0), INTEGER(3), REQ()))
+265
+the set of all strings with an odd number of "0" 
+ISODD(COUNT(STRING(0)))
+266
+the length of w is divisible by #3
+ISDIVISIBLEBY(LENP(), INTEGER(3))
+269
+a "110" is not a substring of w 
+NOT(CONTAINSP(STRING(110)))
+270
+w contains at least #5 "1" 
+GEQ(COUNT(STRING(1)), INTEGER(5))
+271
+w contains the substring "1011"
+CONTAINSP(STRING(1011))
+272
+w contains at least #2 "1" and contains at most #2 "0"
+AND(GEQ(COUNT(STRING(1)), INTEGER(2)), LEQ(COUNT(STRING(0)), INTEGER(2)))
+273
+w contains an odd number of "1" or contains exactly #2 "0"
+OR(ISODD(COUNT(STRING(1))), INTEQUALS(COUNT(STRING(0)), INTEGER(2)))
+274
+w begins with "1" and ends with "0" 
+AND(STARTSWITHP(STRING(1)), ENDSWITHP(STRING(0)))
+275
+every odd position in w is "1"
+FORALLINT(ISODDP(), STREQUALS(SYMBOLATP(), STRING(1)))
+276
+w has length at least #3 and its #3rd symbol is "0"
+AND(GEQ(LENP(), INTEGER(3)), STREQUALS(SYMBOLAT(INTEGER(3)), STRING(0)))
+277
+W ends with "10"
+ENDSWITHP(STRING(10))
+278
+w has length at least #2 and does not end with "10"
+AND(GEQ(LENP(), INTEGER(2)), NOT(ENDSWITHP(STRING(10))))
+279
+w begins with "1" or ends with "0"
+OR(STARTSWITHP(STRING(1)), ENDSWITHP(STRING(0)))
+280
+w contains at least #3 "1"
+GEQ(COUNT(STRING(1)), INTEGER(3))
+281
+w contains at least #2 "1" and contains at most #1 "0"
+AND(GEQ(COUNT(STRING(1)), INTEGER(2)), LEQ(COUNT(STRING(0)), INTEGER(1)))
+282
+w contains an even number of "0" and exactly #2 "1"
+AND(ISEVEN(COUNT(STRING(0))), INTEQUALS(COUNT(STRING(1)), INTEGER(2)))
+283
+w contains exactly #2 "0" and contains at least #2 "1"
+AND(INTEQUALS(COUNT(STRING(0)), INTEGER(2)), GEQ(COUNT(STRING(1)), INTEGER(2)))
+284
+every odd position in w is "1"
+FORALLINT(ISODDP(), STREQUALS(SYMBOLATP(), STRING(1)))
+286
+w contains at least #3 "1"
+GEQ(COUNT(STRING(1)), INTEGER(3))
+287
+w contains at least #2 "1" and contains at most #1 "0"
+AND(GEQ(COUNT(STRING(1)), INTEGER(2)), LEQ(COUNT(STRING(0)), INTEGER(1)))
+288
+w contains an even number of "0" and exactly #2 "1"
+AND(ISEVEN(COUNT(STRING(0))), INTEQUALS(COUNT(STRING(1)), INTEGER(2)))
+289
+w contains exactly #2 "0" and contains at least #2 "1"
+AND(INTEQUALS(COUNT(STRING(0)), INTEGER(2)), GEQ(COUNT(STRING(1)), INTEGER(2)))
+290
+every odd position in w is "1"
+FORALLINT(ISODDP(), STREQUALS(SYMBOLATP(), STRING(1)))
+292
+the number of "a" in w is equal to the number of "b" in w 
+INTEQUALS(COUNT(STRING(a)), COUNT(STRING(b)))
+293
+w does not contain the substring "abba" 
+NOT(CONTAINSP(STRING(abba)))
+294
+w does not contain the substring "bbaa". 
+NOT(CONTAINSP(STRING(bbaa)))
+295
+the set of all strings not containing #2 consecutive "0"
+NOT(CONTAINSP(REPEAT(STRING(0), INTEGER(2), REQ())))
+296
+the set of all strings containing #2 consecutive "0" 
+CONTAINSP(REPEAT(STRING(0), INTEGER(2), REQ()))
+297
+the set of all strings with an even number of "0"
+ISEVEN(COUNT(STRING(0)))
+298
+the set of all strings not containing #3 consecutive "0"
+NOT(CONTAINSP(REPEAT(STRING(0), INTEGER(3), REQ())))
+299
+the set of all strings containing #3 consecutive "0" 
+CONTAINSP(REPEAT(STRING(0), INTEGER(3), REQ()))
+300
+the set of all strings with an odd number of "0" 
+ISODD(COUNT(STRING(0)))
+301
+the set of all strings with an even number of "0" and an even number of "1"
+AND(ISEVEN(COUNT(STRING(0))), ISEVEN(COUNT(STRING(1))))
+302
+Construct a DFA for the regular expression RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+305
+Construct a DFA over RegX which produces not more than #3 "a"
+BoolCondition(MATCHFORMAT(EXPRESSION(RegX)), NOT(GREATER(COUNT(STRING(a)), INTEGER(3))))
+306
+construct a DFA that will accept strings on $ a, b % where the number of "b" divisible by #3
+ISDIVISIBLEBY(COUNT(STRING(b)), INTEGER(3))
+307
+Construct a finite automaton that accepts the set of all strings in RegX such that the last symbol in input string appears earlier in the string 
+BoolCondition(MATCHFORMAT(EXPRESSION(RegX)), APPEAREDBEFOREP(LASTSYMBOL()))
+308
+w contains exactly #2 "a"
+INTEQUALS(COUNT(STRING(a)), INTEGER(2))
+309
+w contains the substring "0110"
+CONTAINSP(STRING(0110))
+310
+the length of w is odd 
+ISODD(LENP())
+315
+w contains an even number of "a". 
+ISEVEN(COUNT(STRING(a)))
+316
+Construct an epsilon-automaton recognising the language described by the given regular expression RegX
+MATCHFORMAT(EXPRESSION(RegX))
+318
+Construct a minimal deterministic finite automaton corresponding to the given regular expression RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+319
+Construct an epsilon-automaton recognising the language described by the given regular expression RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+321
+w contains the substring "abb"
+CONTAINSP(STRING(abb))
+322
+w contains at least #3 "1"
+GEQ(COUNT(STRING(1)), INTEGER(3))
+323
+w does not contain the substring "111"
+NOT(CONTAINSP(STRING(111)))
+326
+Construct an epsilon-automaton recognising the language described by the given regular expression RegX 
+MATCHFORMAT(EXPRESSION(RegX))
+327
+set of x such that any "a" in x is followed by a "b" 
+APPEAREDBEFORESTR(STRING(a), STRING(b), ANYWHERE())
+330
+set of x such that any "b" in x is followed by a "a" 
+APPEAREDBEFORESTR(STRING(b), STRING(a), ANYWHERE())
+331
+w contains an odd number of "a" and an even number of "b"
+AND(ISODD(COUNT(STRING(a))), ISEVEN(COUNT(STRING(b))))
+332
+each "b" in w is followed by an "a" later on after the "b"
+APPEAREDBEFORESTR(STRING(a), STRING(b), ANYWHERE())
+333
+u contains even number of "a"
+ISEVEN(COUNT(STRING(a)))
+335

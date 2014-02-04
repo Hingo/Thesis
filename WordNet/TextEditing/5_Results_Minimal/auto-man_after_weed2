@@ -1,0 +1,14 @@
+LINESCOPE$last			-1
+CONTAINS$lines			-1
+LINESCOPE$numbers			-1
+CONTAINS$line			-1
+START$line			-1
+LINESCOPE$append			-1
+LINESCOPE$word			-1
+CONTAINS$start			-1
+LINESCOPE$add			-1
+LINESCOPE$delete			-1
+LINESCOPE$remove			-1
+CONTAINS$beginning			-1
+LINESCOPE$eliminate			-1
+LINESCOPE$insert			-1

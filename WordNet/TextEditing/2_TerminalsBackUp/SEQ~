@@ -1,0 +1,4 @@
+<SEQ>
+<ELEMENT literal = "and" type = "_"></ELEMENT>
+<ELEMENT literal = "And" type = "_"></ELEMENT>
+</SEQ>

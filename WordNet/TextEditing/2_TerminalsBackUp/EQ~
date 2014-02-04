@@ -1,0 +1,6 @@
+<EQ>
+<ELEMENT literal = "exactly" type = "_"></ELEMENT>
+<ELEMENT literal = "Exactly" type = "_"></ELEMENT>
+<ELEMENT literal = "equal" type = "_"></ELEMENT>
+<ELEMENT literal = "Equal" type = "_"></ELEMENT>
+</EQ>

@@ -1,0 +1,17 @@
+<STARTSWITH>
+<ELEMENT literal = "start" type = "_"></ELEMENT>
+<ELEMENT literal = "Start" type = "_"></ELEMENT>
+<ELEMENT literal = "starts" type = "_"></ELEMENT>
+<ELEMENT literal = "Starts" type = "_"></ELEMENT>
+<ELEMENT literal = "starting" type = "_"></ELEMENT>
+<ELEMENT literal = "Starting" type = "_"></ELEMENT>
+<ELEMENT literal = "begin" type = "_"></ELEMENT>
+<ELEMENT literal = "begins" type = "_"></ELEMENT>
+<ELEMENT literal = "Begin" type = "_"></ELEMENT>
+<ELEMENT literal = "Begins" type = "_"></ELEMENT>
+<ELEMENT literal = "begins" type = "_"></ELEMENT><ELEMENT literal = "Begins" type = "_"></ELEMENT>
+<ELEMENT literal = "beginning" type = "_"></ELEMENT>
+<ELEMENT literal = "Beginning" type = "_"></ELEMENT>
+<ELEMENT literal = "startswith" type = "_"></ELEMENT>
+<ELEMENT literal = "Startswith" type = "_"></ELEMENT>
+</STARTSWITH>

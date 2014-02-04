@@ -1,0 +1,10 @@
+<BETWEEN>
+<ELEMENT literal = "between" type = "_"></ELEMENT>
+<ELEMENT literal = "Between" type = "_"></ELEMENT>
+<ELEMENT literal = "within" type = "_"></ELEMENT>
+<ELEMENT literal = "Within" type = "_"></ELEMENT>
+<ELEMENT literal = "inside" type = "_"></ELEMENT>
+<ELEMENT literal = "Inside" type = "_"></ELEMENT>
+<ELEMENT literal = "enclosed" type = "_"></ELEMENT>
+<ELEMENT literal = "Enclosed" type = "_"></ELEMENT>
+</BETWEEN>

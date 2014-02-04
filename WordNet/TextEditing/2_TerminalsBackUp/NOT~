@@ -1,0 +1,14 @@
+<NOT>
+<ELEMENT literal = "other" type = "_"></ELEMENT>
+<ELEMENT literal = "Other" type = "_"></ELEMENT>
+<ELEMENT literal = "not" type = "_"></ELEMENT>
+<ELEMENT literal = "Not" type = "_"></ELEMENT>
+<ELEMENT literal = "otherwise" type = "_"></ELEMENT>
+<ELEMENT literal = "Otherwise" type = "_"></ELEMENT>
+<ELEMENT literal = "no" type = "_"></ELEMENT>
+<ELEMENT literal = "No" type = "_"></ELEMENT>
+<ELEMENT literal = "unless" type = "_"></ELEMENT>
+<ELEMENT literal = "Unless" type = "_"></ELEMENT>
+<ELEMENT literal = "except" type = "_"></ELEMENT>
+<ELEMENT literal = "Except" type = "_"></ELEMENT>
+</NOT>

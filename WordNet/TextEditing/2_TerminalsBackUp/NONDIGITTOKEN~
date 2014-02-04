@@ -1,0 +1,10 @@
+<NONDIGITTOKEN>
+<ELEMENT literal = "nondigit" type = "_"></ELEMENT>
+<ELEMENT literal = "Nondigit" type = "_"></ELEMENT>
+<ELEMENT literal = "nondigits" type = "_"></ELEMENT>
+<ELEMENT literal = "Nondigits" type = "_"></ELEMENT>
+<ELEMENT literal = "nonnumerals" type = "_"></ELEMENT>
+<ELEMENT literal = "Nonnumerals" type = "_"></ELEMENT>
+<ELEMENT literal = "nonnumbercharacters" type = "_"></ELEMENT>
+<ELEMENT literal = "Nonnumbercharacters" type = "_"></ELEMENT>
+</NONDIGITTOKEN>

@@ -1,0 +1,6 @@
+<CONCATENATE>
+<ELEMENT literal = "and" type = "_"></ELEMENT>
+<ELEMENT literal = "And" type = "_"></ELEMENT>
+<ELEMENT literal = "followed" type = "_"></ELEMENT>
+<ELEMENT literal = "Followed" type = "_"></ELEMENT>
+</CONCATENATE>

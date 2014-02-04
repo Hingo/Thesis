@@ -1,0 +1,123 @@
+SEQ -> and(nt)
+1
+
+WORDTOKEN -> word, field(nt), columns(nt)
+1 + 2
+
+WORDSCOPE -> word
+1
+
+WORD -> word
+1
+
+WHITESPACETOKEN -> spaces, whitespace
+2
+
+TO -> and(nt)
+1
+
+TEXTTOKEN -> text, contents, what(nt), everything(nt)
+2 + 2
+
+STARTSWITH -> start
+1
+
+STARTFROM -> starting, from
+2
+
+START -> above(nt), before(nt), front, prefix(nt), start
+2 + 3
+
+REMOVE -> remove, reject(nt)
+1 + 1
+
+PRINT -> extract(nt), list, print, search(nt)
+2 + 2
+
+OR -> or
+1
+
+NUMBERTOKEN -> number, numeric
+2
+
+NOT -> no, not, unless(nt), except(nt)
+2 + 2
+
+NONBLANKLINETOKEN -> nonblank, nonblankline
+2
+
+MATCHES -> match
+1
+
+LINETOKEN -> line, input(nt), sentence
+2 + 1
+
+LINESCOPE -> line, input(nt), sentence
+2 + 1
+
+LINE -> line
+1
+
+LASTONE -> last
+1
+
+LASTFEW -> last, bottom(nt)
+1 + 1
+
+INTSET -> and(nt)
+1
+
+INSERT -> insert, prepend(nt)
+1 + 1
+
+FIRSTONE -> first
+1
+
+FIRSTFEW -> first
+1
+
+EVERY -> every
+1
+
+ENDSWITH -> end
+1
+
+END -> end, after(nt), suffix(nt), append(nt)
+1 + 3
+
+DIGITTOKEN -> digit, numbercharacters
+2
+
+BY -> by, with, to(nt), into(nt)
+2 + 2
+
+CHARTOKEN -> character, anything(nt)
+1 + 1
+
+CONTAINS -> contain, mentions(nt), occurs(nt), present(nt), substring(nt)
+1 + 4
+
+CONCATENATE -> followed(nt), and
+1 + 1
+
+BLANKLINETOKEN -> blank, empty(nt), blankline
+1 + 2
+
+BETWEEN -> between, enclosed(nt), within
+1 + 2
+
+AND -> and
+1
+
+BEFORE -> above(nt), before, start(nt), till(nt)
+1 + 3
+
+ALLBUT -> but, except(nt)
+1 + 1
+
+ALL -> all, each, every
+3
+
+AFTER -> after, follow(nt), from(nt), next, preceded(nt), suffix(nt)
+2 + 4
+

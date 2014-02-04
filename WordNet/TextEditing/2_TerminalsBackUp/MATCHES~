@@ -1,0 +1,12 @@
+<MATCHES>
+<ELEMENT literal = "match" type = "_"></ELEMENT>
+<ELEMENT literal = "Match" type = "_"></ELEMENT>
+<ELEMENT literal = "is" type = "_"></ELEMENT>
+<ELEMENT literal = "Is" type = "_"></ELEMENT>
+<ELEMENT literal = "matches" type = "_"></ELEMENT>
+<ELEMENT literal = "Matches" type = "_"></ELEMENT>
+<ELEMENT literal = "exactly" type = "_"></ELEMENT>
+<ELEMENT literal = "Exactly" type = "_"></ELEMENT>
+<ELEMENT literal = "are" type = "_"></ELEMENT>
+<ELEMENT literal = "Are" type = "_"></ELEMENT>
+</MATCHES>

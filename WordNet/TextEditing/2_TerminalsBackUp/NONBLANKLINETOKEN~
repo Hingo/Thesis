@@ -1,0 +1,10 @@
+<NONBLANKLINETOKEN>
+<ELEMENT literal = "non-blank" type = "_"></ELEMENT>
+<ELEMENT literal = "Non-blank" type = "_"></ELEMENT>
+<ELEMENT literal = "nonblank" type = "_"></ELEMENT>
+<ELEMENT literal = "Nonblank" type = "_"></ELEMENT>
+<ELEMENT literal = "nonblankline" type = "_"></ELEMENT>
+<ELEMENT literal = "Nonblankline" type = "_"></ELEMENT>
+<ELEMENT literal = "nonblanklines" type = "_"></ELEMENT>
+<ELEMENT literal = "Nonblanklines" type = "_"></ELEMENT>
+</NONBLANKLINETOKEN>

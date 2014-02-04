@@ -1,0 +1,14 @@
+<LINE>
+<ELEMENT literal = "line" type = "_"></ELEMENT>
+<ELEMENT literal = "Line" type = "_"></ELEMENT>
+<ELEMENT literal = "statement" type = "_"></ELEMENT>
+<ELEMENT literal = "Statement" type = "_"></ELEMENT>
+<ELEMENT literal = "comment" type = "_"></ELEMENT>
+<ELEMENT literal = "Comment" type = "_"></ELEMENT>
+<ELEMENT literal = "sentence" type = "_"></ELEMENT>
+<ELEMENT literal = "Sentence" type = "_"></ELEMENT>
+<ELEMENT literal = "row" type = "_"></ELEMENT>
+<ELEMENT literal = "Row" type = "_"></ELEMENT>
+<ELEMENT literal = "record" type = "_"></ELEMENT>
+<ELEMENT literal = "Record" type = "_"></ELEMENT>
+</LINE>

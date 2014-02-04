@@ -1,0 +1,6 @@
+<LEQ>
+<ELEMENT literal = "atmost" type = "_"></ELEMENT>
+<ELEMENT literal = "Atmost" type = "_"></ELEMENT>
+<ELEMENT literal = "less" type = "_"></ELEMENT>
+<ELEMENT literal = "Less" type = "_"></ELEMENT>
+</LEQ>

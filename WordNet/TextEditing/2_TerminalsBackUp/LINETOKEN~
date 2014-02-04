@@ -1,0 +1,25 @@
+<LINETOKEN>
+<ELEMENT literal = "line" type = "_"></ELEMENT>
+<ELEMENT literal = "Line" type = "_"></ELEMENT>
+<ELEMENT literal = "statement" type = "_"></ELEMENT>
+<ELEMENT literal = "Statement" type = "_"></ELEMENT>
+<ELEMENT literal = "sentence" type = "_"></ELEMENT>
+<ELEMENT literal = "Sentence" type = "_"></ELEMENT>
+<ELEMENT literal = "commment" type = "_"></ELEMENT>
+<ELEMENT literal = "Commment" type = "_"></ELEMENT>
+<ELEMENT literal = "row" type = "_"></ELEMENT>
+<ELEMENT literal = "Row" type = "_"></ELEMENT>
+<ELEMENT literal = "lines" type = "_"></ELEMENT>
+<ELEMENT literal = "Lines" type = "_"></ELEMENT>
+<ELEMENT literal = "sentences" type = "_"></ELEMENT>
+<ELEMENT literal = "Sentences" type = "_"></ELEMENT>
+<ELEMENT literal = "statements" type = "_"></ELEMENT>
+<ELEMENT literal = "Statements" type = "_"></ELEMENT>
+<ELEMENT literal = "comments" type = "_"></ELEMENT>
+<ELEMENT literal = "Comments" type = "_"></ELEMENT>
+<ELEMENT literal = "rows" type = "_"></ELEMENT>
+<ELEMENT literal = "Rows" type = "_"></ELEMENT>
+<ELEMENT literal = "input" type = "_"></ELEMENT>
+<ELEMENT literal = "Input" type = "_"></ELEMENT>
+<ELEMENT literal = "String" type = "_"></ELEMENT>
+</LINETOKEN>

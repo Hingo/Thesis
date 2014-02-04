@@ -1,0 +1,20 @@
+<PRINT>
+<ELEMENT literal = "print" type = "_"></ELEMENT>
+<ELEMENT literal = "Print" type = "_"></ELEMENT>
+<ELEMENT literal = "display" type = "_"></ELEMENT>
+<ELEMENT literal = "Display" type = "_"></ELEMENT>
+<ELEMENT literal = "search" type = "_"></ELEMENT>
+<ELEMENT literal = "Search" type = "_"></ELEMENT>
+<ELEMENT literal = "list" type = "_"></ELEMENT>
+<ELEMENT literal = "List" type = "_"></ELEMENT>
+<ELEMENT literal = "extract" type = "_"></ELEMENT>
+<ELEMENT literal = "Extract" type = "_"></ELEMENT>
+<ELEMENT literal = "retain" type = "_"></ELEMENT>
+<ELEMENT literal = "Retain" type = "_"></ELEMENT>
+<ELEMENT literal = "filter" type = "_"></ELEMENT>
+<ELEMENT literal = "Filter" type = "_"></ELEMENT>
+<ELEMENT literal = "output" type = "_"></ELEMENT>
+<ELEMENT literal = "Output" type = "_"></ELEMENT>
+<ELEMENT literal = "find" type = "_"></ELEMENT>
+<ELEMENT literal = "Find" type = "_"></ELEMENT>
+</PRINT>

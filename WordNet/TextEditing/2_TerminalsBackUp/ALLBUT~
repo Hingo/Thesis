@@ -1,0 +1,8 @@
+<ALLBUT>
+<ELEMENT literal = "except" type = "_"></ELEMENT>
+<ELEMENT literal = "Except" type = "_"></ELEMENT>
+<ELEMENT literal = "other" type = "_"></ELEMENT>
+<ELEMENT literal = "Other" type = "_"></ELEMENT>
+<ELEMENT literal = "but" type = "_"></ELEMENT>
+<ELEMENT literal = "But" type = "_"></ELEMENT>
+</ALLBUT>

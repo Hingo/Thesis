@@ -1,0 +1,92 @@
+Insert ":" after #1st word
+INSERT(STRING(:), Position(AFTER(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+Insert a ":" immediately after a sequence of numbers
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), DOCUMENT())
+
+Insert ":" before every #1st word
+INSERT(STRING(:), Position(BEFORE(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+Put ":" before the #1st " " in every line
+INSERT(STRING(:), Position(BEFORE(STRING( )), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+Enter ":" before " "
+INSERT(STRING(:), Position(BEFORE(STRING( )), ALL()), DOCUMENT())
+
+Put ":" before the #1st " " in every line
+INSERT(STRING(:), Position(BEFORE(STRING( )), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+Enter ":" before " "
+INSERT(STRING(:), Position(BEFORE(STRING( )), ALL()), DOCUMENT())
+
+put ":" before a " "
+INSERT(STRING(:), Position(BEFORE(STRING( )), ALL()), DOCUMENT())
+
+put ":" after the #1st word
+INSERT(STRING(:), Position(AFTER(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+Insert ":" after the integer in each line
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+Replace " " by ":" and " "
+REPLACE(SelectString(STRING( ), ALWAYS(), ALL()), BY(CONCATENATE(STRING(:), STRING( ))), DOCUMENT())
+
+put ":" after every numeral in every line
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+after #1st word put ":"
+INSERT(STRING(:), Position(AFTER(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+Insert a ":" after the #1st word in every line
+INSERT(STRING(:), Position(AFTER(WORDTOKEN()), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+insert ":" before #1st " "
+INSERT(STRING(:), Position(BEFORE(STRING( )), INTEGER(1)), DOCUMENT())
+
+Insert a ":" after numbers in each line
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+insert a ":" after #1st numeric letter
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), INTEGER(1)), DOCUMENT())
+
+Add a ":" after the number
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), DOCUMENT())
+
+Append a ":" after an integer
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), DOCUMENT())
+
+Insert ":" after #1st word of the sentence
+INSERT(STRING(:), Position(AFTER(WORDTOKEN()), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+Insert ":" after the word that starts with "Day"
+INSERT(STRING(:), END(), IterationScope(WORDSCOPE(), STARTSWITH(STRING(Day)), ALL()))
+
+Insert ":" in every line after the numbers
+INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+Insert "| " after the #1st occurrence of " "
+INSERT(STRING(| ), Position(AFTER(STRING( )), INTEGER(1)), DOCUMENT())
+
+Insert a "|" and a " " before the #1st word in every line
+INSERT(CONCATENATE(STRING(|), STRING( )), Position(BEFORE(WORDTOKEN()), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+for each line, put a "|" before the #1st word of the line
+INSERT(STRING(|), Position(BEFORE(WORDTOKEN()), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
+
+add "|" before #1st word
+INSERT(STRING(|), Position(BEFORE(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+add a "|" character before the #1st word
+INSERT(STRING(|), Position(BEFORE(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+put "| " before #1st " "
+INSERT(STRING(| ), Position(BEFORE(STRING( )), INTEGER(1)), DOCUMENT())
+
+put "|" before the #1st word
+INSERT(STRING(|), Position(BEFORE(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+Add "| " to the beginning of the #1st word
+INSERT(STRING(| ), Position(BEFORE(WORDTOKEN()), INTEGER(1)), DOCUMENT())
+
+insert "|" followed by a " " before the #1st word in each line
+INSERT(CONCATENATE(STRING(|), STRING( )), Position(BEFORE(WORDTOKEN()), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))

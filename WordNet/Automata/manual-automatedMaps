@@ -1,0 +1,11 @@
+COUNT$numbers			-1
+CONTAINSP$substrings			-1
+INTEQUALS$same			-1
+SYMBOLATP$positions			-1
+EQ$same			-1
+MATCHFORMAT$form			-1
+CONTAINSP$has			-1
+CONTAINSP$including			-1
+CONTAINSP$having			-1
+CONTAINSP$includes			-1
+CONTAINSP$have			-1

@@ -1,0 +1,16 @@
+<ENDSWITH>
+<ELEMENT literal = "ending" type = "_"></ELEMENT>
+<ELEMENT literal = "Ending" type = "_"></ELEMENT>
+<ELEMENT literal = "end" type = "_"></ELEMENT>
+<ELEMENT literal = "End" type = "_"></ELEMENT>
+<ELEMENT literal = "terminating" type = "_"></ELEMENT>
+<ELEMENT literal = "Terminating" type = "_"></ELEMENT>
+<ELEMENT literal = "ends" type = "_"></ELEMENT>
+<ELEMENT literal = "Ends" type = "_"></ELEMENT>
+<ELEMENT literal = "terminates" type = "_"></ELEMENT>
+<ELEMENT literal = "Terminates" type = "_"></ELEMENT>
+<ELEMENT literal = "terminate" type = "_"></ELEMENT>
+<ELEMENT literal = "Terminate" type = "_"></ELEMENT>
+<ELEMENT literal = "endswith" type = "_"></ELEMENT>
+<ELEMENT literal = "Endswith" type = "_"></ELEMENT>
+</ENDSWITH>

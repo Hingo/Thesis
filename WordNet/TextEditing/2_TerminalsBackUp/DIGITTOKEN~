@@ -1,0 +1,6 @@
+<DIGITTOKEN>
+<ELEMENT literal = "digit" type = "_"></ELEMENT>
+<ELEMENT literal = "Digit" type = "_"></ELEMENT>
+<ELEMENT literal = "numbercharacters" type = "_"></ELEMENT>
+<ELEMENT literal = "Numbercharacters" type = "_"></ELEMENT>
+</DIGITTOKEN>

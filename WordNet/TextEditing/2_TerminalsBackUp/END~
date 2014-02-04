@@ -1,0 +1,14 @@
+<END>
+<ELEMENT literal = "end" type = "_"></ELEMENT>
+<ELEMENT literal = "End" type = "_"></ELEMENT>
+<ELEMENT literal = "after" type = "_"></ELEMENT>
+<ELEMENT literal = "After" type = "_"></ELEMENT>
+<ELEMENT literal = "append" type = "_"></ELEMENT>
+<ELEMENT literal = "Append" type = "_"></ELEMENT>
+<ELEMENT literal = "suffix" type = "_"></ELEMENT>
+<ELEMENT literal = "Suffix" type = "_"></ELEMENT>
+<ELEMENT literal = "ending" type = "_"></ELEMENT>
+<ELEMENT literal = "Ending" type = "_"></ELEMENT>
+<ELEMENT literal = "last" type = "_"></ELEMENT>
+<ELEMENT literal = "Last" type = "_"></ELEMENT>
+</END>

@@ -1,0 +1,52 @@
+EQ_DEPARTS$depart
+
+i want to depart washington April twentieth to atlanta least expensive fare
+ColSet(AtomicColSet(COL_FARE()), EXTRACT_ROW_MIN(AtomicColSet(COL_FARE()), AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(washington), ANY(), ANY(), DAYNUM(twentieth), MONTH(April)), EQ_ARRIVES(CITY(atlanta), ANY(), ANY(), ANY(), ANY())))))
+additions -**##**- [['april', 'MONTH', 1.0], ['least', 'EXTRACT_ROW_MIN', 1.0], ['want', 'EQ_DEPARTS', 1.0], ['to', 'EQ_ARRIVES', 1.0], ['twentieth', 'DAYNUM', 1.0], ['expensive', 'COL_FARE', 1.0], ['washington', 'CITY', 1.0]]
+
+--
+COL_FARE$airfare
+
+what is the airfare from pittsburgh to atlanta
+PROJECT(AtomicColSet(COL_FARE()), AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(pittsburgh), ANY(), ANY(), ANY(), ANY()), EQ_ARRIVES(CITY(atlanta), ANY(), ANY(), ANY(), ANY()))))
+additions -**##**- [['what', 'PROJECT', 1.0], ['from', 'EQ_DEPARTS', 1.0], ['is', 'EQ_ARRIVES', 1.0], ['pittsburgh', 'CITY', 1.0]]
+
+what is the airfare for flights from denver to pittsburgh on delta airline
+PROJECT(AtomicColSet(COL_FARE()), AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(denver), ANY(), ANY(), ANY(), ANY()), EQ_ARRIVES(CITY(pittsburgh), ANY(), ANY(), ANY(), ANY())), EQ_AIRLINES(AIRLINES(delta))))
+additions -**##**- [['what', 'PROJECT', 1.0], ['from', 'EQ_DEPARTS', 1.0], ['airline', 'EQ_AIRLINES', 1.0], ['denver', 'CITY', 1.0], ['is', 'AIRLINES', 1.0]]
+
+what is the airfare between denver and pittsburgh
+PROJECT(AtomicColSet(COL_FARE()), AtomicRowPredSet(BETWEEN_CITIES(Eq_Departs_IMP(CITY(denver), ANY(), ANY(), ANY(), ANY()), Eq_Arrives_IMP(CITY(pittsburgh), ANY(), ANY(), ANY(), ANY()))))
+additions -**##**- [['what', 'PROJECT', 1.0], ['is', 'COL_FARE', 1.0], ['denver', 'CITY', 1.0], ['between', 'BETWEEN_CITIES', 1.0]]
+
+--
+PROJECT$need
+
+i need information on ground transportation between airport and downtown in the city of boston
+PROJECT(AtomicColSet(COL_TRANSPORT()), AtomicRowPredSet(EQ_AIRPORT(CITY(boston))))
+additions -**##**- [['information', 'PROJECT', 0.333333333333], ['airport', 'EQ_AIRPORT', 1.0], ['ground', 'COL_TRANSPORT', 1.0], ['boston', 'CITY', 1.0]]
+
+i need fare information from denver to pittsburgh
+PROJECT(AtomicColSet(COL_FARE()), AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(denver), ANY(), ANY(), ANY(), ANY()), EQ_ARRIVES(CITY(pittsburgh), ANY(), ANY(), ANY(), ANY()))))
+additions -**##**- [['information', 'PROJECT', 0.333333333333], ['need', 'EQ_DEPARTS', 1.0], ['to', 'EQ_ARRIVES', 1.0], ['denver', 'CITY', 1.0]]
+
+i need to fly from boston to baltimore please give me the times of your flights in the morning before 8 o clock
+PROJECT(AtomicColSet(COL_DEPARTURE_TIME()), AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(boston), Unit_Time_Set(MATCH_TIME_LT(TIME(8)), TIME(morning)), ANY(), ANY(), ANY()), EQ_ARRIVES(CITY(baltimore), ANY(), ANY(), ANY(), ANY()))))
+additions -**##**- [['morning', 'TIME', 1.0], ['fly', 'PROJECT', 0.5], ['before', 'MATCH_TIME_LT', 1.0], ['from', 'EQ_DEPARTS', 1.0], ['to', 'EQ_ARRIVES', 1.0], ['times', 'COL_DEPARTURE_TIME', 1.0], ['boston', 'CITY', 1.0]]
+
+i need information on ground transportation from the airport in atlanta
+PROJECT(AtomicColSet(COL_TRANSPORT()), AtomicRowPredSet(EQ_AIRPORT(CITY(atlanta))))
+additions -**##**- [['information', 'PROJECT', 0.3333333333333333], ['airport', 'EQ_AIRPORT', 1.0], ['ground', 'COL_TRANSPORT', 1.0], ['atlanta', 'CITY', 1.0]]
+
+--
+EQ_ARRIVES$arrives
+
+is there a direct flight from atlanta to philadelphia that arrives in philadelphia around 12 noon
+AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(atlanta), ANY(), ANY(), ANY(), ANY()), EQ_ARRIVES(CITY(philadelphia), Unit_Time_Set(MATCH_TIME_AROUND(TIME(12))), ANY(), ANY(), ANY())), EQ_NON_STOP())
+additions -**##**- [['12', 'TIME', 1.0], ['around', 'MATCH_TIME_AROUND', 1.0], ['direct', 'EQ_NON_STOP', 1.0], ['from', 'EQ_DEPARTS', 1.0], ['is', 'EQ_ARRIVES', 1.0], ['atlanta', 'CITY', 1.0]]
+
+could you tell me about flights from philadelphia to dallas that arrives in the early afternoon
+AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(philadelphia), ANY(), ANY(), ANY(), ANY()), EQ_ARRIVES(CITY(dallas), Unit_Time_Set(TIME(afternoon)), ANY(), ANY(), ANY())))
+additions -**##**- [['afternoon', 'TIME', 1.0], ['from', 'EQ_DEPARTS', 1.0], ['to', 'EQ_ARRIVES', 1.0], ['philadelphia', 'CITY', 1.0]]
+
+

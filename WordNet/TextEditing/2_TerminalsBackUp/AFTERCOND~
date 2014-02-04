@@ -1,0 +1,24 @@
+<AFTERCOND>
+<ELEMENT literal = "after" type = "_"></ELEMENT>
+<ELEMENT literal = "After" type = "_"></ELEMENT>
+<ELEMENT literal = "end" type = "_"></ELEMENT>
+<ELEMENT literal = "End" type = "_"></ELEMENT>
+<ELEMENT literal = "previous" type = "_"></ELEMENT>
+<ELEMENT literal = "Previous" type = "_"></ELEMENT>
+<ELEMENT literal = "suffix" type = "_"></ELEMENT>
+<ELEMENT literal = "Suffix" type = "_"></ELEMENT>
+<ELEMENT literal = "from" type = "_"></ELEMENT>
+<ELEMENT literal = "From" type = "_"></ELEMENT>
+<ELEMENT literal = "next" type = "_"></ELEMENT>
+<ELEMENT literal = "Next" type = "_"></ELEMENT>
+<ELEMENT literal = "preceded" type = "_"></ELEMENT>
+<ELEMENT literal = "Preceded" type = "_"></ELEMENT>
+<ELEMENT literal = "beyond" type = "_"></ELEMENT>
+<ELEMENT literal = "Beyond" type = "_"></ELEMENT>
+<ELEMENT literal = "follow" type = "_"></ELEMENT>
+<ELEMENT literal = "Follow" type = "_"></ELEMENT>
+<ELEMENT literal = "follows" type = "_"></ELEMENT>
+<ELEMENT literal = "Follows" type = "_"></ELEMENT>
+<ELEMENT literal = "following" type = "_"></ELEMENT>
+<ELEMENT literal = "Following" type = "_"></ELEMENT>
+</AFTERCOND>

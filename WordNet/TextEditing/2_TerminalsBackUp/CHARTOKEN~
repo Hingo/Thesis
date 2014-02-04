@@ -1,0 +1,16 @@
+<CHARTOKEN>
+<ELEMENT literal = "character" type = "_"></ELEMENT>
+<ELEMENT literal = "Character" type = "_"></ELEMENT>
+<ELEMENT literal = "letter" type = "_"></ELEMENT>
+<ELEMENT literal = "Letter" type = "_"></ELEMENT>
+<ELEMENT literal = "element" type = "_"></ELEMENT>
+<ELEMENT literal = "Element" type = "_"></ELEMENT>
+<ELEMENT literal = "characters" type = "_"></ELEMENT>
+<ELEMENT literal = "Characters" type = "_"></ELEMENT>
+<ELEMENT literal = "anything" type = "_"></ELEMENT>
+<ELEMENT literal = "Anything" type = "_"></ELEMENT>
+<ELEMENT literal = "symbols" type = "_"></ELEMENT>
+<ELEMENT literal = "Symbols" type = "_"></ELEMENT>
+<ELEMENT literal = "symbol" type = "_"></ELEMENT>
+<ELEMENT literal = "Symbol" type = "_"></ELEMENT>
+</CHARTOKEN>
