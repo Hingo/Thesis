@@ -114,7 +114,6 @@ NUMBERTOKEN$numerals
 NUMBERTOKEN$numeric
 OR$or
 PRINT$extract
-PRINT$find
 PRINT$list
 PRINT$output
 PRINT$print

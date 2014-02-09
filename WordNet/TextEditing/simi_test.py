@@ -33,6 +33,6 @@ def compare(w1, w2):		## returns the
   return max(lis, key = itemgetter(2))
 
 #for w1, w2 in product(['insert', 'after'], ['inserting', 'suffix']):
-for w1, w2 in product(['ending'], ['end']):
+for w1, w2 in product(['contains', 'mentions', 'occurs', 'present', 'substring'], ['have']):
   print "Path similarity: " + str(compare(w1, w2)) + '\n'
 

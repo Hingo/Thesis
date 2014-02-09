@@ -1,8 +1,8 @@
 insert 1.0
 prefix 1.0
-put 0.5
-enter 1.0
-add 0.5
-append 0.5
-place 0.5
-attach 0.5
+put 0.45
+enter 0.9
+append 0.45
+add 0.45
+embedded 0.45
+attach 0.45
