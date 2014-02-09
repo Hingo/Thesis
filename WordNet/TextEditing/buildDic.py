@@ -90,7 +90,7 @@ for m in seeding_maps:
 
 stemming = LancasterStemmer()
 stem_delta = 0.95
-simi_threshold = 0.29
+simi_threshold = 0.19
 learnt_epsilon = 0.9
 benchMsFO = open("benchmarkSample.txt", "r")
 num = 0
@@ -179,16 +179,16 @@ while(1):
     
     t1File.close()
     
-    print "maxSimiArrPerWord: " + str(maxSimiArrPerWord)
+    #print "maxSimiArrPerWord: " + str(maxSimiArrPerWord)
     if not (maxSimiArrPerWord == []):
-      for wToAddToTerm in maxSimiArrPerWord:
-	if wToAddToTerm[2] > simi_threshold:
-	  maxSimiArrPerTerm.append([wToAddToTerm[0], t1, wToAddToTerm[2]])
-      #wToAddToTerm = max(maxSimiArrPerWord, key = itemgetter(2))
-      ##if str(t1) == 'CONTAINS':
-	##print str(wToAddToTerm) + ' - to be added if above simi_threshold from CONTAINS terminal &&&&&&&&&&'
-      #if wToAddToTerm[2] > simi_threshold:
-	#maxSimiArrPerTerm.append([wToAddToTerm[0], t1, wToAddToTerm[2]])
+      #for wToAddToTerm in maxSimiArrPerWord:
+	#if wToAddToTerm[2] > simi_threshold:
+	  #maxSimiArrPerTerm.append([wToAddToTerm[0], t1, wToAddToTerm[2]])
+      wToAddToTerm = max(maxSimiArrPerWord, key = itemgetter(2))
+      #if str(t1) == 'CONTAINS':
+	#print str(wToAddToTerm) + ' - to be added if above simi_threshold from CONTAINS terminal &&&&&&&&&&'
+      if wToAddToTerm[2] > simi_threshold:
+	maxSimiArrPerTerm.append([wToAddToTerm[0], t1, wToAddToTerm[2]])
       #####print str(maxSimiArrPerWord) + ' ** ' + str(maxSimiArrPerTerm)
   
   print 'options for additions -##**##- ' + str(maxSimiArrPerTerm)

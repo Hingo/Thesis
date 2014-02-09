@@ -1,14 +1,12 @@
 LINESCOPE$string			1
 LINESCOPE$form			1
 CONTAINS$string			1
+LINESCOPE$is			1
 START$starts			1
-STARTSWITH$is			1
 BEFORE$are			1
-CONTAINS$is			1
+CONTAINS$is			2
 LINESCOPE$part			2
 INSERT$embedded			1
 BEFORE$is			1
 BEFORE$starts			1
-STARTSWITH$first			1
-END$right			1
-CONTAINS$does			1
+END$is			1
