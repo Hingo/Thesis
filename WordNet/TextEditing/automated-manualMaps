@@ -6,7 +6,7 @@ START$starts			1
 BEFORE$are			1
 CONTAINS$is			2
 LINESCOPE$part			2
-INSERT$embedded			1
 BEFORE$is			1
 BEFORE$starts			1
 END$is			1
+DIGITTOKEN$a			1

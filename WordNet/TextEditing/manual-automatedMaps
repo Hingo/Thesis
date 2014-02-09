@@ -1,13 +1,11 @@
 TEXTTOKEN$part			-1
-END$append			-1
 AFTER$end			-1
+CONTAINS$consisting			-1
 INSERT$prepend			-1
-CONTAINS$having			-1
 END$ending			-1
 CONTAINS$consists			-1
-CHARTOKEN$symbol			-1
 LINESCOPE$records			-1
 LINESCOPE$record			-1
-CONTAINS$has			-1
+END$append			-1
 CONTAINS$have			-1
 INSERT$suffix			-1

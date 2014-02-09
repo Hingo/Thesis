@@ -9,10 +9,9 @@ INSERT$add		58
 INSERT$enter		2
 AFTER$follow		2
 EVERY$every		25
-CONTAINS$consisting		1
 STARTSWITH$starts		11
 STARTSWITH$begin		6
-NUMBERTOKEN$digits		1
+NUMBERTOKEN$digits		3
 CONTAINS$occurs		2
 ALLBUT$but		4
 REPLACE$change		6
@@ -55,12 +54,12 @@ ENDSWITH$ending		9
 REMOVE$remove		115
 INSERT$place		4
 NOT$except		3
-AFTER$following		4
 WORDSCOPE$word		8
 LINESCOPE$line		126
 REPLACE$replace		52
+DIGITTOKEN$a		1
 END$last		2
-INSERT$put		18
+INSERT$put		19
 AFTER$after		50
 PRINT$list		5
 START$front		4
@@ -79,7 +78,7 @@ BEFORE$before		32
 ALL$each		67
 BETWEEN$between		41
 BEFORE$followed		1
-TEXTTOKEN$data		1
+TEXTTOKEN$data		2
 LINETOKEN$sentences		2
 WORDTOKEN$columns		2
 AFTER$follows		2
@@ -98,7 +97,7 @@ ALLBUT$except		8
 CONTAINS$string		1
 PRINT$search		3
 CHARTOKEN$letter		1
-LINETOKEN$sentence		1
+LINETOKEN$sentence		2
 LINETOKEN$lines		32
 END$suffix		2
 NOT$unless		6
@@ -108,6 +107,7 @@ NUMBERTOKEN$number		13
 CHARTOKEN$character		9
 INSERT$attach		1
 WHITESPACETOKEN$spaces		2
+CHARTOKEN$symbol		1
 AFTER$preceded		3
 START$start		14
 WORDTOKEN$word		34
@@ -120,13 +120,14 @@ LASTONE$last		9
 CHARTOKEN$symbols		1
 LINESCOPE$statement		4
 CONTAINS$contain		13
-INSERT$embedded		1
+AFTER$following		4
 NONBLANKLINETOKEN$nonblankline		2
 ALL$all		85
 LASTFEW$bottom		2
 CONTAINS$is		2
 STARTSWITH$start		3
 FIRSTFEW$first		8
+CONTAINS$has		2
 MATCHES$are		1
 DIGITTOKEN$numbercharacters		2
 END$after		3
@@ -135,6 +136,7 @@ START$starting		8
 BY$with		52
 BY$by		6
 LINESCOPE$sentences		3
+CONTAINS$having		1
 LINESCOPE$part		2
 CONCATENATE$followed		3
 MATCHES$match		4

@@ -7,8 +7,8 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['insert', 'INSERT', 0.9
 2
 Insert a ":" immediately after a sequence of numbers
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), DOCUMENT())
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numbers', 'NUMBERTOKEN', 0.95]]
-actual additions -**##**- [['numbers', 'NUMBERTOKEN', 0.95], ['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025]]
+actual additions -**##**- [['numbers', 'NUMBERTOKEN', 0.9025], ['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95]]
 
 3
 Insert ":" before every #1st word
@@ -19,14 +19,14 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['insert', 'INSERT', 0.9
 4
 Put ":" before the #1st " " in every line
 INSERT(STRING(:), Position(BEFORE(STRING( )), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['put', 'INSERT', 0.45], ['before', 'BEFORE', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['put', 'INSERT', 0.45], ['before', 'BEFORE', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['put', 'INSERT', 0.4275], ['before', 'BEFORE', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['put', 'INSERT', 0.4275], ['before', 'BEFORE', 0.95], ['every', 'ALL', 0.95]]
 
 5
 Enter ":" before " "
 INSERT(STRING(:), Position(BEFORE(STRING( )), ALL()), DOCUMENT())
-options for additions -##**##- [['enter', 'INSERT', 0.9], ['before', 'BEFORE', 0.95]]
-actual additions -**##**- [['enter', 'INSERT', 0.9], ['before', 'BEFORE', 0.95]]
+options for additions -##**##- [['enter', 'INSERT', 0.855], ['before', 'BEFORE', 0.95]]
+actual additions -**##**- [['enter', 'INSERT', 0.855], ['before', 'BEFORE', 0.95]]
 
 6
 Put ":" before the #1st " " in every line
@@ -55,8 +55,8 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['put', 'INSERT', 0.4275
 10
 Insert ":" after the integer in each line
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['integer', 'NUMBERTOKEN', 0.45], ['each', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['integer', 'NUMBERTOKEN', 0.45], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['each', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['integer', 'NUMBERTOKEN', 0.4275], ['each', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['integer', 'NUMBERTOKEN', 0.4275], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['each', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
 
 11
 Replace " " by ":" and " "
@@ -67,8 +67,8 @@ actual additions -**##**- [['replace', 'REPLACE', 0.95], ['and', 'CONCATENATE', 
 12
 put ":" after every numeral in every line
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['put', 'INSERT', 0.4275], ['after', 'AFTER', 0.95], ['numeral', 'NUMBERTOKEN', 0.95], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['numeral', 'NUMBERTOKEN', 0.95], ['line', 'LINESCOPE', 0.95], ['put', 'INSERT', 0.4275], ['every', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['put', 'INSERT', 0.4275], ['after', 'AFTER', 0.95], ['numeral', 'NUMBERTOKEN', 0.8573749999999999], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['numeral', 'NUMBERTOKEN', 0.8573749999999999], ['line', 'LINESCOPE', 0.95], ['put', 'INSERT', 0.4275], ['every', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
 
 13
 after #1st word put ":"
@@ -91,26 +91,26 @@ actual additions -**##**- [['insert', 'INSERT', 0.95], ['before', 'BEFORE', 0.95
 16
 Insert a ":" after numbers in each line
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numbers', 'NUMBERTOKEN', 0.95], ['each', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['numbers', 'NUMBERTOKEN', 0.95], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['each', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['each', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['numbers', 'NUMBERTOKEN', 0.9025], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['each', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
 
 17
 insert a ":" after #1st numeric letter
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), INTEGER(1)), DOCUMENT())
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numeric', 'NUMBERTOKEN', 0.9025]]
-actual additions -**##**- [['numeric', 'NUMBERTOKEN', 0.9025], ['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numeric', 'NUMBERTOKEN', 0.8573749999999999]]
+actual additions -**##**- [['numeric', 'NUMBERTOKEN', 0.8573749999999999], ['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95]]
 
 18
 Add a ":" after the number
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), DOCUMENT())
-options for additions -##**##- [['add', 'INSERT', 0.45], ['after', 'AFTER', 0.95], ['number', 'NUMBERTOKEN', 0.95]]
-actual additions -**##**- [['number', 'NUMBERTOKEN', 0.95], ['add', 'INSERT', 0.45], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['after', 'AFTER', 0.95], ['number', 'NUMBERTOKEN', 0.9025]]
+actual additions -**##**- [['number', 'NUMBERTOKEN', 0.9025], ['add', 'INSERT', 0.4275], ['after', 'AFTER', 0.95]]
 
 19
 Append a ":" after an integer
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), DOCUMENT())
-options for additions -##**##- [['append', 'INSERT', 0.45], ['after', 'AFTER', 0.95], ['integer', 'NUMBERTOKEN', 0.4275]]
-actual additions -**##**- [['integer', 'NUMBERTOKEN', 0.4275], ['append', 'INSERT', 0.45], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['append', 'INSERT', 0.4275], ['after', 'AFTER', 0.95], ['integer', 'NUMBERTOKEN', 0.4275]]
+actual additions -**##**- [['integer', 'NUMBERTOKEN', 0.4275], ['append', 'INSERT', 0.4275], ['after', 'AFTER', 0.95]]
 
 20
 Insert ":" after #1st word of the sentence
@@ -121,14 +121,14 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['sentence', 'LINESCOPE'
 21
 Insert ":" after the word that starts with "Day"
 INSERT(STRING(:), END(), IterationScope(WORDSCOPE(), STARTSWITH(STRING(Day)), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'END', 0.95], ['word', 'WORDSCOPE', 0.95], ['starts', 'STARTSWITH', 0.9]]
-actual additions -**##**- [['word', 'WORDSCOPE', 0.95], ['starts', 'STARTSWITH', 0.9], ['insert', 'INSERT', 0.95], ['after', 'END', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'END', 0.95], ['word', 'WORDSCOPE', 0.95], ['starts', 'STARTSWITH', 0.855]]
+actual additions -**##**- [['word', 'WORDSCOPE', 0.95], ['starts', 'STARTSWITH', 0.855], ['insert', 'INSERT', 0.95], ['after', 'END', 0.95]]
 
 22
 Insert ":" in every line after the numbers
 INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numbers', 'NUMBERTOKEN', 0.95], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['numbers', 'NUMBERTOKEN', 0.95], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['every', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['after', 'AFTER', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['numbers', 'NUMBERTOKEN', 0.9025], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['every', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
 
 23
 Insert "| " after the #1st occurrence of " "
@@ -175,8 +175,8 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['put', 'INSERT', 0.4275
 30
 Add "| " to the beginning of the #1st word
 INSERT(STRING(| ), Position(BEFORE(WORDTOKEN()), INTEGER(1)), DOCUMENT())
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['beginning', 'BEFORE', 0.9], ['word', 'WORDTOKEN', 0.95]]
-actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['add', 'INSERT', 0.4275], ['beginning', 'BEFORE', 0.9]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['beginning', 'BEFORE', 0.855], ['word', 'WORDTOKEN', 0.95]]
+actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['add', 'INSERT', 0.4275], ['beginning', 'BEFORE', 0.855]]
 
 31
 insert "|" followed by a " " before the #1st word in each line
@@ -199,8 +199,8 @@ actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
 34
 Add "NM-" to the beginning of each line
 INSERT(STRING(NM-), START(), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['beginning', 'START', 0.9], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['beginning', 'START', 0.9], ['line', 'LINESCOPE', 0.95], ['add', 'INSERT', 0.4275], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['beginning', 'START', 0.855], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['beginning', 'START', 0.855], ['line', 'LINESCOPE', 0.95], ['add', 'INSERT', 0.4275], ['each', 'ALL', 0.95]]
 
 35
 Add "NM-" to the beginning of every sentence
@@ -235,8 +235,8 @@ actual additions -**##**- [['prefix', 'START', 0.95], ['line', 'LINESCOPE', 0.95
 40
 place "NM-" before every line
 INSERT(STRING(NM-), START(), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['place', 'INSERT', 0.45], ['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['place', 'INSERT', 0.45], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['place', 'INSERT', 0.4275], ['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['place', 'INSERT', 0.4275], ['every', 'ALL', 0.95]]
 
 41
 insert "NM-" before each line
@@ -247,8 +247,8 @@ actual additions -**##**- [['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95
 42
 At the starting of every line, add "NM-"
 INSERT(STRING(NM-), START(), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['starting', 'START', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['starting', 'START', 0.95], ['add', 'INSERT', 0.4275], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['starting', 'START', 0.9025], ['starting', 'LINESCOPE', 0.405], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['starting', 'START', 0.9025], ['add', 'INSERT', 0.4275], ['every', 'ALL', 0.95]]
 
 43
 Insert "NM-" in the beginning of each line
@@ -295,14 +295,14 @@ actual additions -**##**- [['start', 'START', 0.9025], ['lines', 'LINESCOPE', 0.
 50
 Insert "NM-" before #1st letter in every line
 INSERT(STRING(NM-), Position(BEFORE(CHARTOKEN()), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['before', 'BEFORE', 0.95], ['letter', 'CHARTOKEN', 0.45], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['letter', 'CHARTOKEN', 0.45], ['before', 'BEFORE', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['before', 'BEFORE', 0.95], ['letter', 'CHARTOKEN', 0.4275], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['letter', 'CHARTOKEN', 0.4275], ['before', 'BEFORE', 0.95], ['every', 'ALL', 0.95]]
 
 51
 Add "NM-" at the starting of each statement
 INSERT(STRING(NM-), START(), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['starting', 'START', 0.9025], ['statement', 'LINESCOPE', 0.45], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['starting', 'START', 0.9025], ['statement', 'LINESCOPE', 0.45], ['add', 'INSERT', 0.4275], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['starting', 'START', 0.9025], ['statement', 'LINESCOPE', 0.4275], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['starting', 'START', 0.9025], ['statement', 'LINESCOPE', 0.4275], ['add', 'INSERT', 0.4275], ['each', 'ALL', 0.95]]
 
 52
 Add "NM-" to the start of every string
@@ -367,7 +367,7 @@ actual additions -**##**- [['beginning', 'START', 0.855], ['append', 'INSERT', 0
 62
 Append "NM-"
 INSERT(STRING(NM-), END(), DOCUMENT())
-options for additions -##**##- [['append', 'INSERT', 0.4275]]
+options for additions -##**##- [['append', 'INSERT', 0.4275], ['append', 'END', 0.225]]
 actual additions -**##**- [['append', 'INSERT', 0.4275]]
 
 63
@@ -385,8 +385,8 @@ actual additions -**##**- [['beginning', 'START', 0.855], ['lines', 'LINESCOPE',
 65
 Add "$" at the beginning of those lines that do not already start with "$"
 INSERT(STRING($), START(), IterationScope(LINESCOPE(), NOT(STARTSWITH(STRING($))), ALL()))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['start', 'START', 0.9025], ['lines', 'LINESCOPE', 0.95], ['not', 'NOT', 0.95], ['beginning', 'STARTSWITH', 0.95]]
-actual additions -**##**- [['beginning', 'STARTSWITH', 0.95], ['start', 'START', 0.9025], ['not', 'NOT', 0.95], ['lines', 'LINESCOPE', 0.95], ['add', 'INSERT', 0.4275]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['start', 'START', 0.9025], ['lines', 'LINESCOPE', 0.95], ['not', 'NOT', 0.95], ['beginning', 'STARTSWITH', 0.9025]]
+actual additions -**##**- [['beginning', 'STARTSWITH', 0.9025], ['start', 'START', 0.9025], ['not', 'NOT', 0.95], ['lines', 'LINESCOPE', 0.95], ['add', 'INSERT', 0.4275]]
 
 66
 If a sentence does not start with "$" then insert "$" at its beginning.
@@ -451,8 +451,8 @@ actual additions -**##**- [['starts', 'STARTSWITH', 0.855], ['before', 'START', 
 76
 Add "$" at the beginning of each statement if "$" is not present.
 INSERT(STRING($), START(), IterationScope(LINESCOPE(), NOT(CONTAINS(STRING($))), ALL()))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['beginning', 'START', 0.855], ['statement', 'LINESCOPE', 0.4275], ['not', 'NOT', 0.95], ['is', 'CONTAINS', 0.45], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['beginning', 'START', 0.855], ['not', 'NOT', 0.95], ['statement', 'LINESCOPE', 0.4275], ['add', 'INSERT', 0.4275], ['is', 'CONTAINS', 0.45], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['beginning', 'START', 0.855], ['statement', 'LINESCOPE', 0.4275], ['not', 'NOT', 0.95], ['is', 'CONTAINS', 0.4275], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['beginning', 'START', 0.855], ['not', 'NOT', 0.95], ['statement', 'LINESCOPE', 0.4275], ['add', 'INSERT', 0.4275], ['is', 'CONTAINS', 0.4275], ['each', 'ALL', 0.95]]
 
 77
 add "$" in the beginning of all the lines wherever "$" is not present.
@@ -475,8 +475,8 @@ actual additions -**##**- [['starting', 'STARTSWITH', 0.855], ['not', 'NOT', 0.9
 80
 Insert "$" in every line whose starting is not a "$" already
 INSERT(STRING($), END(), IterationScope(LINESCOPE(), NOT(STARTSWITH(STRING($))), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['is', 'END', 0.45], ['line', 'LINESCOPE', 0.95], ['not', 'NOT', 0.95], ['starting', 'STARTSWITH', 0.855], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['starting', 'STARTSWITH', 0.855], ['not', 'NOT', 0.95], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['is', 'END', 0.45], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['is', 'END', 0.4275], ['line', 'LINESCOPE', 0.95], ['not', 'NOT', 0.95], ['starting', 'STARTSWITH', 0.855], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['starting', 'STARTSWITH', 0.855], ['not', 'NOT', 0.95], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['is', 'END', 0.4275], ['every', 'ALL', 0.95]]
 
 81
 Put "$" in the start of each line if it has no "$" at the start
@@ -523,8 +523,8 @@ actual additions -**##**- [['beginning', 'START', 0.855], ['line', 'LINESCOPE', 
 88
 put a "*" before each line that has "P.O. BOX" embedded within it
 INSERT(STRING(*), START(), IterationScope(LINESCOPE(), CONTAINS(STRING(P.O. BOX)), ALL()))
-options for additions -##**##- [['embedded', 'INSERT', 0.45], ['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['embedded', 'INSERT', 0.45], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['put', 'INSERT', 0.4275], ['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['has', 'CONTAINS', 0.225], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['put', 'INSERT', 0.4275], ['has', 'CONTAINS', 0.225], ['each', 'ALL', 0.95]]
 
 89
 Put "*" in front of lines with "P.O. Box" as a substring
@@ -559,7 +559,7 @@ actual additions -**##**- [['word', 'WORD', 0.95], ['start', 'START', 0.9025], [
 94
 Insert "*" before every line that has the occurrence of "P.O.BOX"
 INSERT(STRING(*), START(), IterationScope(LINESCOPE(), CONTAINS(STRING(P.O.BOX)), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['insert', 'CONTAINS', 0.225], ['every', 'ALL', 0.95]]
 actual additions -**##**- [['before', 'START', 0.95], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['every', 'ALL', 0.95]]
 
 95
@@ -583,8 +583,8 @@ actual additions -**##**- [['beginning', 'START', 0.855], ['sentence', 'LINESCOP
 98
 insert "*" at the start of the sentence where the sentence consists of "P.O."
 INSERT(STRING(*), Position(BEFORE(LINETOKEN()), ALL()), IterationScope(LINESCOPE(), CONTAINS(STRING(P.O.)), ALL()))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['start', 'BEFORE', 0.95], ['sentence', 'LINETOKEN', 0.95], ['sentence', 'LINESCOPE', 0.95], ['start', 'CONTAINS', 0.3]]
-actual additions -**##**- [['sentence', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['start', 'BEFORE', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['start', 'BEFORE', 0.9025], ['sentence', 'LINETOKEN', 0.95], ['sentence', 'LINESCOPE', 0.95], ['start', 'CONTAINS', 0.3]]
+actual additions -**##**- [['sentence', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['start', 'BEFORE', 0.9025]]
 
 99
 Insert "*" in front of every line containing "P.O. BOX" in it
@@ -619,8 +619,8 @@ actual additions -**##**- [['starts', 'STARTSWITH', 0.855], ['line', 'LINESCOPE'
 104
 Add " -- from Bill" to the end of every sentence ending with a digit.
 INSERT(STRING( -- from Bill), END(), IterationScope(LINESCOPE(), ENDSWITH(DIGITTOKEN()), ALL()))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['end', 'END', 0.95], ['sentence', 'LINESCOPE', 0.95], ['end', 'ENDSWITH', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['sentence', 'LINESCOPE', 0.95], ['add', 'INSERT', 0.4275], ['end', 'ENDSWITH', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['end', 'END', 0.95], ['sentence', 'LINESCOPE', 0.95], ['end', 'ENDSWITH', 0.95], ['a', 'DIGITTOKEN', 0.225], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['sentence', 'LINESCOPE', 0.95], ['add', 'INSERT', 0.4275], ['end', 'ENDSWITH', 0.95], ['a', 'DIGITTOKEN', 0.225], ['every', 'ALL', 0.95]]
 
 105
 In every line beginning with "Exercise", append "-- from Bill" towards the end.
@@ -637,14 +637,14 @@ actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['add', 'INSERT', 0.4275
 107
 if line begins with "Exercise H", put "--from Bill" at the end of line
 INSERT(STRING(--from Bill), Position(AFTER(LINETOKEN()), ALL()), IterationScope(LINESCOPE(), STARTSWITH(STRING(Exercise H)), ALL()))
-options for additions -##**##- [['put', 'INSERT', 0.4275], ['line', 'AFTER', 0.3], ['line', 'LINETOKEN', 0.95], ['line', 'LINESCOPE', 0.95], ['begins', 'STARTSWITH', 0.9025]]
+options for additions -##**##- [['put', 'INSERT', 0.4275], ['line', 'AFTER', 0.3], ['line', 'LINETOKEN', 0.9025], ['line', 'LINESCOPE', 0.95], ['begins', 'STARTSWITH', 0.9025]]
 actual additions -**##**- [['begins', 'STARTSWITH', 0.9025], ['line', 'LINESCOPE', 0.95], ['put', 'INSERT', 0.4275]]
 
 108
 Append "-- from Bill" in every line containing numerals
 INSERT(STRING(-- from Bill), END(), IterationScope(LINESCOPE(), CONTAINS(NUMBERTOKEN()), ALL()))
-options for additions -##**##- [['append', 'INSERT', 0.4275], ['containing', 'END', 0.3], ['line', 'LINESCOPE', 0.95], ['containing', 'CONTAINS', 0.95], ['numerals', 'NUMBERTOKEN', 0.9025], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['numerals', 'NUMBERTOKEN', 0.9025], ['line', 'LINESCOPE', 0.95], ['append', 'INSERT', 0.4275], ['containing', 'CONTAINS', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['append', 'INSERT', 0.4275], ['containing', 'END', 0.3], ['line', 'LINESCOPE', 0.95], ['containing', 'CONTAINS', 0.95], ['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['line', 'LINESCOPE', 0.95], ['append', 'INSERT', 0.4275], ['containing', 'CONTAINS', 0.95], ['every', 'ALL', 0.95]]
 
 109
 Insert "--from Bill" at the end of each line which does not end with "."
@@ -691,7 +691,7 @@ actual additions -**##**- [['starts', 'STARTSWITH', 0.855], ['sentence', 'LINESC
 116
 Append "-- from Bill" in every #2 lines.
 INSERT(STRING(-- from Bill), END(), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(2), INTEGER(1))))
-options for additions -##**##- [['append', 'INSERT', 0.4275], ['every', 'EVERY', 0.95]]
+options for additions -##**##- [['append', 'INSERT', 0.4275], ['append', 'END', 0.225], ['append', 'LINESCOPE', 0.225], ['every', 'EVERY', 0.95]]
 actual additions -**##**- [['append', 'INSERT', 0.4275], ['every', 'EVERY', 0.95]]
 
 117
@@ -709,26 +709,26 @@ actual additions -**##**- [['lines', 'LINESCOPE', 0.95], ['and', 'INTSET', 0.95]
 119
 Add the string "..???" at the end of every #2nd line.
 INSERT(STRING(..???), END(), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(2), INTEGER(1))))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['end', 'END', 0.95], ['string', 'LINESCOPE', 0.3], ['every', 'EVERY', 0.95]]
-actual additions -**##**- [['string', 'LINESCOPE', 0.3], ['add', 'INSERT', 0.4275], ['every', 'EVERY', 0.95], ['end', 'END', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['end', 'END', 0.95], ['string', 'LINESCOPE', 0.285], ['every', 'EVERY', 0.95]]
+actual additions -**##**- [['string', 'LINESCOPE', 0.285], ['add', 'INSERT', 0.4275], ['every', 'EVERY', 0.95], ['end', 'END', 0.95]]
 
 120
 In the every #2 lines, add "..???"
 INSERT(STRING(..???), END(), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(2), INTEGER(1))))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['add', 'END', 0.3], ['every', 'EVERY', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['add', 'END', 0.3], ['add', 'LINESCOPE', 0.225], ['every', 'EVERY', 0.95]]
 actual additions -**##**- [['add', 'INSERT', 0.4275], ['every', 'EVERY', 0.95]]
 
 121
 At the end of every #2nd line, add "..???"
 INSERT(STRING(..???), END(), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(2), INTEGER(1))))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['end', 'END', 0.95], ['every', 'EVERY', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['end', 'END', 0.95], ['end', 'LINESCOPE', 0.225], ['every', 'EVERY', 0.95]]
 actual additions -**##**- [['add', 'INSERT', 0.4275], ['every', 'EVERY', 0.95], ['end', 'END', 0.95]]
 
 122
 Insert "..???" in every #2 lines at last
 INSERT(STRING(..???), END(), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(2), INTEGER(1))))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['last', 'END', 0.9], ['lines', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95]]
-actual additions -**##**- [['lines', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['every', 'EVERY', 0.95], ['last', 'END', 0.9]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['last', 'END', 0.855], ['lines', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95]]
+actual additions -**##**- [['lines', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['every', 'EVERY', 0.95], ['last', 'END', 0.855]]
 
 123
 Add "..???" at the last of every #2nd statement
@@ -763,13 +763,13 @@ actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.9
 128
 Insert "...???" at the end of every #2nd line starting from the #2nd line.
 INSERT(STRING(...???), Position(AFTER(LINETOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(2), STARTFROM(INTEGER(2)))))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['from', 'AFTER', 0.95], ['line', 'LINETOKEN', 0.95], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95], ['starting', 'STARTFROM', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['from', 'AFTER', 0.95], ['line', 'LINETOKEN', 0.9025], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95], ['starting', 'STARTFROM', 0.95]]
 actual additions -**##**- [['starting', 'STARTFROM', 0.95], ['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['every', 'EVERY', 0.95], ['from', 'AFTER', 0.95]]
 
 129
 Insert "..???" at the end of line in every #2nd line
 INSERT(STRING(..???), Position(AFTER(LINETOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(2), INTEGER(1))))
-options for additions -##**##- [['insert', 'INSERT', 0.95], ['line', 'AFTER', 0.3], ['line', 'LINETOKEN', 0.95], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95]]
+options for additions -##**##- [['insert', 'INSERT', 0.95], ['line', 'AFTER', 0.3], ['line', 'LINETOKEN', 0.9025], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95]]
 actual additions -**##**- [['line', 'LINESCOPE', 0.95], ['insert', 'INSERT', 0.95], ['every', 'EVERY', 0.95]]
 
 130
@@ -805,7 +805,7 @@ actual additions -**##**- [['replace', 'REPLACE', 0.95], ['with', 'BY', 0.95], [
 135
 For each line, if it ends with "St.", replace "St." by "Street"
 REPLACE(SelectString(STRING(St.), ALWAYS(), ALL()), BY(STRING(Street)), IterationScope(LINESCOPE(), ENDSWITH(STRING(St.)), ALL()))
-options for additions -##**##- [['replace', 'REPLACE', 0.95], ['each', 'ALL', 0.95], ['with', 'BY', 0.95], ['ends', 'ENDSWITH', 0.95], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['replace', 'REPLACE', 0.95], ['each', 'ALL', 0.95], ['with', 'BY', 0.95], ['ends', 'LINESCOPE', 0.225], ['ends', 'ENDSWITH', 0.95], ['each', 'ALL', 0.95]]
 actual additions -**##**- [['replace', 'REPLACE', 0.95], ['ends', 'ENDSWITH', 0.95], ['with', 'BY', 0.95], ['each', 'ALL', 0.95]]
 
 136
@@ -817,8 +817,8 @@ actual additions -**##**- [['replace', 'REPLACE', 0.95], ['line', 'LINESCOPE', 0
 137
 convert the string "St." to "Street" in every line
 REPLACE(SelectString(STRING(St.), ALWAYS(), ALL()), BY(STRING(Street)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['convert', 'REPLACE', 0.45], ['every', 'ALL', 0.95], ['to', 'BY', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['convert', 'REPLACE', 0.45], ['line', 'LINESCOPE', 0.95], ['to', 'BY', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['convert', 'REPLACE', 0.4275], ['every', 'ALL', 0.95], ['to', 'BY', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['convert', 'REPLACE', 0.4275], ['line', 'LINESCOPE', 0.95], ['to', 'BY', 0.95], ['every', 'ALL', 0.95]]
 
 138
 Convert all "St." to "Street"
@@ -889,8 +889,8 @@ actual additions -**##**- [['and', 'TO', 0.95], ['remove', 'REMOVE', 0.95], ['nu
 149
 Eliminate all the characters between "-" and "-"
 REMOVE(SelectString(CHARTOKEN(), BETWEEN(STRING(-), TO(STRING(-))), ALL()), DOCUMENT())
-options for additions -##**##- [['eliminate', 'REMOVE', 0.9], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95], ['all', 'ALL', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['eliminate', 'REMOVE', 0.9], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['eliminate', 'REMOVE', 0.855], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95], ['all', 'ALL', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['eliminate', 'REMOVE', 0.855], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95], ['all', 'ALL', 0.95]]
 
 150
 Remove #4th, #5th and #6th digit from all lines
@@ -907,8 +907,8 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['number', 'NUMBERTOKEN',
 152
 delete the #2nd number from each line.
 REMOVE(SelectString(NUMBERTOKEN(), ALWAYS(), INTEGER(2)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['delete', 'REMOVE', 0.45], ['number', 'NUMBERTOKEN', 0.9025], ['number', 'LINESCOPE', 0.3], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['delete', 'REMOVE', 0.45], ['number', 'NUMBERTOKEN', 0.9025], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['delete', 'REMOVE', 0.4275], ['number', 'NUMBERTOKEN', 0.9025], ['number', 'LINESCOPE', 0.3], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['number', 'NUMBERTOKEN', 0.9025], ['each', 'ALL', 0.95]]
 
 153
 Remove the words that are between "-" and "-"
@@ -943,7 +943,7 @@ actual additions -**##**- [['and', 'SEQ', 0.95], ['remove', 'REMOVE', 0.95], ['l
 158
 Eliminate the characters #1st, #5th, #6th and #10th from all the lines.
 REMOVE(SelectString(CHARTOKEN(), ALWAYS(), INTSET(IntegerSet(INTEGER(1), INTEGER(10), INTEGER(5), INTEGER(6)))), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['eliminate', 'REMOVE', 0.855], ['characters', 'CHARTOKEN', 0.95], ['and', 'INTSET', 0.95], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['eliminate', 'REMOVE', 0.855], ['characters', 'CHARTOKEN', 0.95], ['and', 'INTSET', 0.95], ['characters', 'LINESCOPE', 0.405], ['all', 'ALL', 0.95]]
 actual additions -**##**- [['eliminate', 'REMOVE', 0.855], ['and', 'INTSET', 0.95], ['characters', 'CHARTOKEN', 0.95], ['all', 'ALL', 0.95]]
 
 159
@@ -973,8 +973,8 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN'
 163
 remove digits in each line
 REMOVE(SelectString(NUMBERTOKEN(), ALWAYS(), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.3], ['each', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.3], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['line', 'NUMBERTOKEN', 0.3], ['each', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
 
 164
 remove numbers from each line except line #2
@@ -991,7 +991,7 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN'
 166
 Remove all the numerals from every line.
 REMOVE(SelectString(NUMBERTOKEN(), ALWAYS(), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['all', 'ALL', 0.95], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['all', 'ALL', 0.95], ['numerals', 'LINESCOPE', 0.225], ['all', 'ALL', 0.95]]
 actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['all', 'ALL', 0.95]]
 
 167
@@ -1003,7 +1003,7 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN'
 168
 Remove all the numerals from every line.
 REMOVE(SelectString(NUMBERTOKEN(), ALWAYS(), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['all', 'ALL', 0.95], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['all', 'ALL', 0.95], ['numerals', 'LINESCOPE', 0.225], ['all', 'ALL', 0.95]]
 actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numerals', 'NUMBERTOKEN', 0.8573749999999999], ['all', 'ALL', 0.95]]
 
 169
@@ -1015,8 +1015,8 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN'
 170
 Drop all numbers.
 REMOVE(SelectString(NUMBERTOKEN(), ALWAYS(), ALL()), DOCUMENT())
-options for additions -##**##- [['drop', 'REMOVE', 0.45], ['all', 'ALL', 0.95]]
-actual additions -**##**- [['drop', 'REMOVE', 0.45], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['drop', 'REMOVE', 0.4275], ['drop', 'NUMBERTOKEN', 0.225], ['all', 'ALL', 0.95]]
+actual additions -**##**- [['drop', 'REMOVE', 0.4275], ['all', 'ALL', 0.95]]
 
 171
 Remove numeric values from all the lines
@@ -1033,8 +1033,8 @@ actual additions -**##**- [['word', 'WORDSCOPE', 0.95], ['beginning', 'STARTSWIT
 173
 remove digits from sentence
 REMOVE(SelectString(NUMBERTOKEN(), ALWAYS(), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['sentence', 'LINESCOPE', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['sentence', 'LINESCOPE', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.285], ['sentence', 'LINESCOPE', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.285], ['sentence', 'LINESCOPE', 0.95]]
 
 174
 Remove all the numbers from each line
@@ -1057,8 +1057,8 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN'
 177
 Remove all the digits
 REMOVE(SelectString(NUMBERTOKEN(), ALWAYS(), ALL()), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['all', 'ALL', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.285], ['all', 'ALL', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.285], ['all', 'ALL', 0.95]]
 
 178
 Delete all the numeric part of the text
@@ -1075,7 +1075,7 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN'
 180
 Remove the line containing "St" or containing "Lane" except the #1st line
 REMOVE(SelectString(LINETOKEN(), ALWAYS(), ALL()), IterationScope(LINESCOPE(), OR(CONTAINS(STRING(St)), CONTAINS(STRING(Lane))), ALLBUT(INTEGER(1))))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.95], ['line', 'LINESCOPE', 0.95], ['or', 'OR', 0.95], ['containing', 'CONTAINS', 0.95], ['containing', 'CONTAINS', 0.95], ['except', 'ALLBUT', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.9025], ['line', 'LINESCOPE', 0.95], ['or', 'OR', 0.95], ['containing', 'CONTAINS', 0.95], ['containing', 'CONTAINS', 0.95], ['except', 'ALLBUT', 0.95]]
 actual additions -**##**- [['remove', 'REMOVE', 0.95], ['or', 'OR', 0.95], ['line', 'LINESCOPE', 0.95], ['containing', 'CONTAINS', 0.95], ['except', 'ALLBUT', 0.95]]
 
 181
@@ -1087,14 +1087,14 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['not', 'NOT', 0.95], ['s
 182
 Remove line #3rd and #4th
 REMOVE(SelectString(LINETOKEN(), ALWAYS(), INTSET(IntegerSet(INTEGER(3), INTEGER(4)))), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.95], ['and', 'INTSET', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.95], ['and', 'INTSET', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.9025], ['and', 'INTSET', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.9025], ['and', 'INTSET', 0.95]]
 
 183
 Remove the #3rd and #4th line
 REMOVE(SelectString(LINETOKEN(), ALWAYS(), INTSET(IntegerSet(INTEGER(3), INTEGER(4)))), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.95], ['and', 'INTSET', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.95], ['and', 'INTSET', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.9025], ['and', 'INTSET', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['line', 'LINETOKEN', 0.9025], ['and', 'INTSET', 0.95]]
 
 184
 Remove the sentences which does not contain "Cent" as its part
@@ -1105,20 +1105,20 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['not', 'NOT', 0.95], ['s
 185
 Eliminate the #3rd and #4th line
 REMOVE(SelectString(LINETOKEN(), ALWAYS(), INTSET(IntegerSet(INTEGER(3), INTEGER(4)))), DOCUMENT())
-options for additions -##**##- [['eliminate', 'REMOVE', 0.855], ['line', 'LINETOKEN', 0.95], ['and', 'INTSET', 0.95]]
-actual additions -**##**- [['eliminate', 'REMOVE', 0.855], ['line', 'LINETOKEN', 0.95], ['and', 'INTSET', 0.95]]
+options for additions -##**##- [['eliminate', 'REMOVE', 0.855], ['line', 'LINETOKEN', 0.9025], ['and', 'INTSET', 0.95]]
+actual additions -**##**- [['eliminate', 'REMOVE', 0.855], ['line', 'LINETOKEN', 0.9025], ['and', 'INTSET', 0.95]]
 
 186
 Eliminate the line which does not contain "Cent" in any word of the sentence
 REMOVE(SelectString(LINETOKEN(), NOT(CONTAINS(STRING(Cent))), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['eliminate', 'REMOVE', 0.855], ['line', 'LINETOKEN', 0.95], ['not', 'NOT', 0.95], ['contain', 'CONTAINS', 0.95], ['line', 'LINESCOPE', 0.95]]
-actual additions -**##**- [['eliminate', 'REMOVE', 0.855], ['not', 'NOT', 0.95], ['line', 'LINESCOPE', 0.95], ['contain', 'CONTAINS', 0.95]]
+options for additions -##**##- [['eliminate', 'REMOVE', 0.855], ['sentence', 'LINETOKEN', 0.95], ['not', 'NOT', 0.95], ['contain', 'CONTAINS', 0.95], ['line', 'LINESCOPE', 0.95]]
+actual additions -**##**- [['eliminate', 'REMOVE', 0.855], ['not', 'NOT', 0.95], ['sentence', 'LINETOKEN', 0.95], ['line', 'LINESCOPE', 0.95], ['contain', 'CONTAINS', 0.95]]
 
 187
 Remove all lines which do not contain "Cent"
 REMOVE(SelectString(LINETOKEN(), NOT(CONTAINS(STRING(Cent))), ALL()), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.95], ['not', 'NOT', 0.95], ['contain', 'CONTAINS', 0.95], ['all', 'ALL', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['not', 'NOT', 0.95], ['lines', 'LINETOKEN', 0.95], ['contain', 'CONTAINS', 0.95], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['not', 'NOT', 0.95], ['contain', 'CONTAINS', 0.95], ['all', 'ALL', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['not', 'NOT', 0.95], ['lines', 'LINETOKEN', 0.9025], ['contain', 'CONTAINS', 0.95], ['all', 'ALL', 0.95]]
 
 188
 Remove the line if it does not contain "cent" as a substring
@@ -1207,8 +1207,8 @@ actual additions -**##**- [['everything', 'TEXTTOKEN', 0.95], ['drop', 'REMOVE',
 202
 In each line, remove the part after "//"
 REMOVE(SelectString(TEXTTOKEN(), AFTER(STRING(//)), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['part', 'TEXTTOKEN', 0.3], ['after', 'AFTER', 0.95], ['each', 'ALL', 0.95], ['part', 'LINESCOPE', 0.45], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['part', 'LINESCOPE', 0.45], ['each', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['part', 'TEXTTOKEN', 0.3], ['after', 'AFTER', 0.95], ['each', 'ALL', 0.95], ['part', 'LINESCOPE', 0.4275], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['part', 'LINESCOPE', 0.4275], ['each', 'ALL', 0.95], ['after', 'AFTER', 0.95]]
 
 203
 In each line, remove the part after ";"
@@ -1249,8 +1249,8 @@ actual additions -**##**- [['text', 'TEXTTOKEN', 0.95], ['remove', 'REMOVE', 0.9
 209
 remove everything after ";" till the end of the row
 REMOVE(SelectString(TEXTTOKEN(), AFTER(STRING(;)), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['everything', 'TEXTTOKEN', 0.95], ['after', 'AFTER', 0.95], ['row', 'LINESCOPE', 0.45]]
-actual additions -**##**- [['everything', 'TEXTTOKEN', 0.95], ['remove', 'REMOVE', 0.95], ['row', 'LINESCOPE', 0.45], ['after', 'AFTER', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['everything', 'TEXTTOKEN', 0.95], ['after', 'AFTER', 0.95], ['row', 'LINESCOPE', 0.4275]]
+actual additions -**##**- [['everything', 'TEXTTOKEN', 0.95], ['remove', 'REMOVE', 0.95], ['row', 'LINESCOPE', 0.4275], ['after', 'AFTER', 0.95]]
 
 210
 Print everything before ";"
@@ -1321,8 +1321,8 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['line', 'LINESCOPE', 0.9
 221
 Remove #1st character form every row in every line.
 REMOVE(SelectString(CHARTOKEN(), ALWAYS(), INTEGER(1)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['character', 'CHARTOKEN', 0.95], ['form', 'LINESCOPE', 0.45], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['form', 'LINESCOPE', 0.45], ['character', 'CHARTOKEN', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['character', 'CHARTOKEN', 0.95], ['form', 'LINESCOPE', 0.4275], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['form', 'LINESCOPE', 0.4275], ['character', 'CHARTOKEN', 0.95], ['every', 'ALL', 0.95]]
 
 222
 Remove #1st "&" character from each line
@@ -1393,7 +1393,7 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['extract', 'PRINT', 0.9
 233
 extract all words that have "www" or have "com"
 PRINT(SelectString(WORDTOKEN(), OR(CONTAINS(STRING(www)), CONTAINS(STRING(com))), ALL()), DOCUMENT())
-options for additions -##**##- [['extract', 'PRINT', 0.95], ['words', 'WORDTOKEN', 0.95], ['or', 'OR', 0.95], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['extract', 'PRINT', 0.95], ['words', 'WORDTOKEN', 0.95], ['or', 'OR', 0.95], ['extract', 'CONTAINS', 0.225], ['extract', 'CONTAINS', 0.225], ['all', 'ALL', 0.95]]
 actual additions -**##**- [['words', 'WORDTOKEN', 0.95], ['extract', 'PRINT', 0.95], ['or', 'OR', 0.95], ['all', 'ALL', 0.95]]
 
 234
@@ -1435,7 +1435,7 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['empty', 'BLANKLINETOKEN
 240
 Remove the lines containing no characters.
 REMOVE(SelectString(LINETOKEN(), NOT(CONTAINS(CHARTOKEN())), ALL()), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['no', 'NOT', 0.95], ['containing', 'CONTAINS', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['no', 'NOT', 0.95], ['containing', 'CONTAINS', 0.95], ['lines', 'CHARTOKEN', 0.225]]
 actual additions -**##**- [['remove', 'REMOVE', 0.95], ['no', 'NOT', 0.95], ['lines', 'LINETOKEN', 0.9025], ['containing', 'CONTAINS', 0.95]]
 
 241
@@ -1465,7 +1465,7 @@ actual additions -**##**- [['remove', 'REMOVE', 0.95], ['empty', 'BLANKLINETOKEN
 245
 Remove lines containing no characters.
 REMOVE(SelectString(LINETOKEN(), NOT(CONTAINS(CHARTOKEN())), ALL()), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['no', 'NOT', 0.95], ['containing', 'CONTAINS', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['no', 'NOT', 0.95], ['containing', 'CONTAINS', 0.95], ['lines', 'CHARTOKEN', 0.225]]
 actual additions -**##**- [['remove', 'REMOVE', 0.95], ['no', 'NOT', 0.95], ['lines', 'LINETOKEN', 0.9025], ['containing', 'CONTAINS', 0.95]]
 
 246
@@ -1501,8 +1501,8 @@ actual additions -**##**- [['empty', 'BLANKLINETOKEN', 0.95]]
 251
 Remove the "-" and remove the digits between "-" and "-"
 SEQ(REMOVE(SelectString(STRING(-), ALWAYS(), ALL()), DOCUMENT()), REMOVE(SelectString(NUMBERTOKEN(), BETWEEN(STRING(-), TO(STRING(-))), ALL()), DOCUMENT()))
-options for additions -##**##- [['and', 'SEQ', 0.95], ['remove', 'REMOVE', 0.95], ['remove', 'REMOVE', 0.95], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['remove', 'REMOVE', 0.95], ['between', 'BETWEEN', 0.95]]
+options for additions -##**##- [['and', 'SEQ', 0.95], ['remove', 'REMOVE', 0.95], ['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.285], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['remove', 'REMOVE', 0.95], ['digits', 'NUMBERTOKEN', 0.285], ['between', 'BETWEEN', 0.95]]
 
 252
 Remove all the "-" and remove the number between "-" and "-"
@@ -1543,7 +1543,7 @@ actual additions -**##**- [['beginning', 'START', 0.855], ['insert', 'INSERT', 0
 258
 Add a "<" and " " to each line.
 INSERT(CONCATENATE(STRING(<), STRING( )), END(), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['add', 'INSERT', 0.4275], ['and', 'CONCATENATE', 0.95], ['add', 'END', 0.3], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['add', 'INSERT', 0.4275], ['and', 'CONCATENATE', 0.95], ['add', 'END', 0.3], ['add', 'LINESCOPE', 0.225], ['each', 'ALL', 0.95]]
 actual additions -**##**- [['add', 'INSERT', 0.4275], ['and', 'CONCATENATE', 0.95], ['each', 'ALL', 0.95]]
 
 259
@@ -1675,8 +1675,8 @@ actual additions -**##**- [['lines', 'LINETOKEN', 0.9025], ['insert', 'INSERT', 
 280
 Attach "rfc" before all words including an "@"
 INSERT(STRING(rfc), START(), IterationScope(WORDSCOPE(), CONTAINS(STRING(@)), ALL()))
-options for additions -##**##- [['attach', 'INSERT', 0.45], ['before', 'START', 0.95], ['words', 'WORDSCOPE', 0.95], ['including', 'CONTAINS', 0.45], ['all', 'ALL', 0.95]]
-actual additions -**##**- [['words', 'WORDSCOPE', 0.95], ['before', 'START', 0.95], ['attach', 'INSERT', 0.45], ['including', 'CONTAINS', 0.45], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['attach', 'INSERT', 0.4275], ['before', 'START', 0.95], ['words', 'WORDSCOPE', 0.95], ['including', 'CONTAINS', 0.40612499999999996], ['all', 'ALL', 0.95]]
+actual additions -**##**- [['words', 'WORDSCOPE', 0.95], ['before', 'START', 0.95], ['attach', 'INSERT', 0.4275], ['including', 'CONTAINS', 0.40612499999999996], ['all', 'ALL', 0.95]]
 
 281
 Place "," between word and word in each line
@@ -1807,8 +1807,8 @@ actual additions -**##**- [['and', 'TO', 0.95], ['remove', 'REMOVE', 0.95], ['ex
 302
 Delete every line that has a "," or has "and" in it
 REMOVE(SelectString(LINETOKEN(), OR(CONTAINS(STRING(,)), CONTAINS(STRING(and))), ALL()), DOCUMENT())
-options for additions -##**##- [['delete', 'REMOVE', 0.4275], ['line', 'LINETOKEN', 0.9025], ['or', 'OR', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['or', 'OR', 0.95], ['line', 'LINETOKEN', 0.9025], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['delete', 'REMOVE', 0.4275], ['line', 'LINETOKEN', 0.9025], ['or', 'OR', 0.95], ['has', 'CONTAINS', 0.21375], ['has', 'CONTAINS', 0.21375], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['or', 'OR', 0.95], ['line', 'LINETOKEN', 0.9025], ['has', 'CONTAINS', 0.21375], ['every', 'ALL', 0.95]]
 
 303
 Delete the last line of the input
@@ -1819,8 +1819,8 @@ actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['input', 'LINETOKEN', 
 304
 Remove all the #2nd fields ending in "500"
 REMOVE(SelectString(WORDTOKEN(), ENDSWITH(STRING(500)), INTEGER(2)), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['fields', 'WORDTOKEN', 0.95], ['ending', 'ENDSWITH', 0.95]]
-actual additions -**##**- [['fields', 'WORDTOKEN', 0.95], ['remove', 'REMOVE', 0.95], ['ending', 'ENDSWITH', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['fields', 'WORDTOKEN', 0.9025], ['ending', 'ENDSWITH', 0.95]]
+actual additions -**##**- [['fields', 'WORDTOKEN', 0.9025], ['remove', 'REMOVE', 0.95], ['ending', 'ENDSWITH', 0.95]]
 
 305
 Delete lines containing "Lane"
@@ -1981,8 +1981,8 @@ actual additions -**##**- [['word', 'WORD', 0.95], ['delete', 'REMOVE', 0.4275],
 331
 Delete "Kookaburra" anywhere if it is followed by a ","
 REMOVE(SelectString(STRING(Kookaburra), BEFORE(STRING(,)), ALL()), DOCUMENT())
-options for additions -##**##- [['delete', 'REMOVE', 0.4275], ['is', 'BEFORE', 0.45]]
-actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['is', 'BEFORE', 0.45]]
+options for additions -##**##- [['delete', 'REMOVE', 0.4275], ['is', 'BEFORE', 0.4275]]
+actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['is', 'BEFORE', 0.4275]]
 
 332
 Delete all empty lines
@@ -2017,14 +2017,14 @@ actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['unless', 'NOT', 0.95]
 337
 Reject words which have numbercharacters in them
 REMOVE(SelectString(WORDTOKEN(), CONTAINS(DIGITTOKEN()), ALL()), DOCUMENT())
-options for additions -##**##- [['reject', 'REMOVE', 0.95], ['words', 'WORDTOKEN', 0.95], ['numbercharacters', 'DIGITTOKEN', 0.95]]
+options for additions -##**##- [['reject', 'REMOVE', 0.95], ['words', 'WORDTOKEN', 0.95], ['reject', 'CONTAINS', 0.225], ['numbercharacters', 'DIGITTOKEN', 0.95]]
 actual additions -**##**- [['words', 'WORDTOKEN', 0.95], ['reject', 'REMOVE', 0.95], ['numbercharacters', 'DIGITTOKEN', 0.95]]
 
 338
 Remove all symbols which are not numbers
 REMOVE(SelectString(CHARTOKEN(), NOT(MATCHES(NUMBERTOKEN())), ALL()), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['symbols', 'CHARTOKEN', 0.3], ['not', 'NOT', 0.95], ['are', 'MATCHES', 0.45], ['numbers', 'NUMBERTOKEN', 0.9025], ['all', 'ALL', 0.95]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['not', 'NOT', 0.95], ['are', 'MATCHES', 0.45], ['symbols', 'CHARTOKEN', 0.3], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['symbols', 'CHARTOKEN', 0.285], ['not', 'NOT', 0.95], ['are', 'MATCHES', 0.4275], ['numbers', 'NUMBERTOKEN', 0.9025], ['all', 'ALL', 0.95]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['not', 'NOT', 0.95], ['are', 'MATCHES', 0.4275], ['symbols', 'CHARTOKEN', 0.285], ['all', 'ALL', 0.95]]
 
 339
 Delete the bottom #3 lines
@@ -2035,8 +2035,8 @@ actual additions -**##**- [['delete', 'REMOVE', 0.4275], ['lines', 'LINETOKEN', 
 340
 Remove lines having the character "$"
 REMOVE(SelectString(LINETOKEN(), CONTAINS(STRING($)), ALL()), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['having', 'CONTAINS', 0.225]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['having', 'CONTAINS', 0.225]]
 
 341
 Remove text after "." in each line
@@ -2083,14 +2083,14 @@ actual additions -**##**- [['and', 'SEQ', 0.95], ['remove', 'REMOVE', 0.95]]
 348
 Remove lines that include the string "doesn't work"
 REMOVE(SelectString(LINETOKEN(), CONTAINS(STRING(doesn't work)), ALL()), DOCUMENT())
-options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['string', 'CONTAINS', 0.45]]
-actual additions -**##**- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['string', 'CONTAINS', 0.45]]
+options for additions -##**##- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['string', 'CONTAINS', 0.4275]]
+actual additions -**##**- [['remove', 'REMOVE', 0.95], ['lines', 'LINETOKEN', 0.9025], ['string', 'CONTAINS', 0.4275]]
 
 349
 Ignore every word that contains digits from every #3rd line
 REMOVE(SelectString(WORDTOKEN(), CONTAINS(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), EVERY(INTEGER(3), INTEGER(1))))
-options for additions -##**##- [['ignore', 'REMOVE', 0.45], ['word', 'WORDTOKEN', 0.95], ['contains', 'CONTAINS', 0.95], ['word', 'NUMBERTOKEN', 0.3], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95]]
-actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['ignore', 'REMOVE', 0.45], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95], ['contains', 'CONTAINS', 0.95]]
+options for additions -##**##- [['ignore', 'REMOVE', 0.4275], ['word', 'WORDTOKEN', 0.95], ['contains', 'CONTAINS', 0.95], ['word', 'NUMBERTOKEN', 0.3], ['every', 'ALL', 0.95], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95]]
+actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['ignore', 'REMOVE', 0.4275], ['line', 'LINESCOPE', 0.95], ['every', 'EVERY', 0.95], ['contains', 'CONTAINS', 0.95]]
 
 350
 Replace every "++" with "+"
@@ -2101,8 +2101,8 @@ actual additions -**##**- [['replace', 'REPLACE', 0.95], ['with', 'BY', 0.95], [
 351
 Substitute  the #4th occurrence of "foo" with "bar" on each line
 REPLACE(SelectString(STRING(foo), ALWAYS(), INTEGER(4)), BY(STRING(bar)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['substitute', 'REPLACE', 0.9], ['with', 'BY', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
-actual additions -**##**- [['substitute', 'REPLACE', 0.9], ['line', 'LINESCOPE', 0.95], ['with', 'BY', 0.95], ['each', 'ALL', 0.95]]
+options for additions -##**##- [['substitute', 'REPLACE', 0.855], ['with', 'BY', 0.95], ['line', 'LINESCOPE', 0.95], ['each', 'ALL', 0.95]]
+actual additions -**##**- [['substitute', 'REPLACE', 0.855], ['line', 'LINESCOPE', 0.95], ['with', 'BY', 0.95], ['each', 'ALL', 0.95]]
 
 352
 Replace the line containing "Jose" with "JOSE HAS RETIRED"
@@ -2173,7 +2173,7 @@ actual additions -**##**- [['substitute', 'REPLACE', 0.855], ['not', 'NOT', 0.95
 363
 Replace the first occurrence of "dog" in a line having "mouse" with an occurrence of "cat"
 REPLACE(SelectString(STRING(dog), ALWAYS(), FIRSTONE()), BY(STRING(cat)), IterationScope(LINESCOPE(), CONTAINS(STRING(mouse)), ALL()))
-options for additions -##**##- [['replace', 'REPLACE', 0.95], ['first', 'FIRSTONE', 0.95], ['with', 'BY', 0.95], ['line', 'LINESCOPE', 0.95]]
+options for additions -##**##- [['replace', 'REPLACE', 0.95], ['first', 'FIRSTONE', 0.95], ['with', 'BY', 0.95], ['line', 'LINESCOPE', 0.95], ['replace', 'CONTAINS', 0.225]]
 actual additions -**##**- [['replace', 'REPLACE', 0.95], ['line', 'LINESCOPE', 0.95], ['first', 'FIRSTONE', 0.95], ['with', 'BY', 0.95]]
 
 364
@@ -2215,8 +2215,8 @@ actual additions -**##**- [['replace', 'REPLACE', 0.95], ['and', 'CONCATENATE', 
 370
 Change "day" to "night" in the input
 REPLACE(SelectString(STRING(day), ALWAYS(), ALL()), BY(STRING(night)), IterationScope(LINESCOPE(), ALWAYS(), ALL()))
-options for additions -##**##- [['change', 'REPLACE', 0.45], ['to', 'BY', 0.95], ['input', 'LINESCOPE', 0.95]]
-actual additions -**##**- [['change', 'REPLACE', 0.45], ['input', 'LINESCOPE', 0.95], ['to', 'BY', 0.95]]
+options for additions -##**##- [['change', 'REPLACE', 0.4275], ['to', 'BY', 0.95], ['input', 'LINESCOPE', 0.95]]
+actual additions -**##**- [['change', 'REPLACE', 0.4275], ['input', 'LINESCOPE', 0.95], ['to', 'BY', 0.95]]
 
 371
 Change the name "Jon" to "Jonathan"
@@ -2323,8 +2323,8 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['replace', 'REPLACE', 0
 388
 If "/start/here/" is at the beginning of the line, replace "/start/here/" with "/testdir/"
 REPLACE(SelectString(STRING(/start/here/), ALWAYS(), ALL()), BY(STRING(/testdir/)), IterationScope(LINESCOPE(), STARTSWITH(STRING(/start/here/)), ALL()))
-options for additions -##**##- [['replace', 'REPLACE', 0.95], ['with', 'BY', 0.95], ['is', 'LINESCOPE', 0.3], ['beginning', 'STARTSWITH', 0.9025]]
-actual additions -**##**- [['beginning', 'STARTSWITH', 0.9025], ['replace', 'REPLACE', 0.95], ['is', 'LINESCOPE', 0.3], ['with', 'BY', 0.95]]
+options for additions -##**##- [['replace', 'REPLACE', 0.95], ['with', 'BY', 0.95], ['is', 'LINESCOPE', 0.285], ['beginning', 'STARTSWITH', 0.9025]]
+actual additions -**##**- [['beginning', 'STARTSWITH', 0.9025], ['replace', 'REPLACE', 0.95], ['is', 'LINESCOPE', 0.285], ['with', 'BY', 0.95]]
 
 389
 Replace the word "10" with "ten"
@@ -2371,8 +2371,8 @@ actual additions -**##**- [['replace', 'REPLACE', 0.95], ['line', 'LINESCOPE', 0
 396
 Replace all characters immediately followed by "s" with "*"
 REPLACE(SelectString(CHARTOKEN(), BEFORE(STRING(s)), ALL()), BY(STRING(*)), DOCUMENT())
-options for additions -##**##- [['replace', 'REPLACE', 0.95], ['characters', 'CHARTOKEN', 0.95], ['followed', 'BEFORE', 0.405], ['all', 'ALL', 0.95], ['by', 'BY', 0.95]]
-actual additions -**##**- [['replace', 'REPLACE', 0.95], ['characters', 'CHARTOKEN', 0.95], ['by', 'BY', 0.95], ['followed', 'BEFORE', 0.405], ['all', 'ALL', 0.95]]
+options for additions -##**##- [['replace', 'REPLACE', 0.95], ['characters', 'CHARTOKEN', 0.95], ['followed', 'BEFORE', 0.38475], ['all', 'ALL', 0.95], ['by', 'BY', 0.95]]
+actual additions -**##**- [['replace', 'REPLACE', 0.95], ['characters', 'CHARTOKEN', 0.95], ['by', 'BY', 0.95], ['followed', 'BEFORE', 0.38475], ['all', 'ALL', 0.95]]
 
 397
 Replace words beginning with "<ahref" with "<sup>"
@@ -2419,8 +2419,8 @@ actual additions -**##**- [['whitespaces', 'WHITESPACETOKEN', 0.95], ['search', 
 404
 list the #3rd field of those lines of the file in which the letter "r" appears
 PRINT(SelectString(WORDTOKEN(), ALWAYS(), INTEGER(3)), IterationScope(LINESCOPE(), CONTAINS(STRING(r)), ALL()))
-options for additions -##**##- [['list', 'PRINT', 0.95], ['field', 'WORDTOKEN', 0.9025], ['lines', 'LINESCOPE', 0.95], ['appears', 'CONTAINS', 0.45]]
-actual additions -**##**- [['field', 'WORDTOKEN', 0.9025], ['list', 'PRINT', 0.95], ['lines', 'LINESCOPE', 0.95], ['appears', 'CONTAINS', 0.45]]
+options for additions -##**##- [['list', 'PRINT', 0.95], ['field', 'WORDTOKEN', 0.9025], ['lines', 'LINESCOPE', 0.95], ['appears', 'CONTAINS', 0.4275]]
+actual additions -**##**- [['field', 'WORDTOKEN', 0.9025], ['list', 'PRINT', 0.95], ['lines', 'LINESCOPE', 0.95], ['appears', 'CONTAINS', 0.4275]]
 
 405
 Print the last #2 lines of a file
@@ -2617,14 +2617,14 @@ actual additions -**##**- [['field', 'WORDTOKEN', 0.9025], ['and', 'SEQ', 0.95],
 437
 Output every symbol between "<" and ">"
 PRINT(SelectString(CHARTOKEN(), BETWEEN(STRING(<), TO(STRING(>))), ALL()), DOCUMENT())
-options for additions -##**##- [['output', 'PRINT', 0.3], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95], ['every', 'ALL', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['output', 'PRINT', 0.3], ['between', 'BETWEEN', 0.95], ['every', 'ALL', 0.95]]
+options for additions -##**##- [['output', 'PRINT', 0.285], ['symbol', 'CHARTOKEN', 0.285], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95], ['every', 'ALL', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['output', 'PRINT', 0.285], ['symbol', 'CHARTOKEN', 0.285], ['between', 'BETWEEN', 0.95], ['every', 'ALL', 0.95]]
 
 438
 Find the first occurrence of "@" and print the next character
 PRINT(SelectString(CHARTOKEN(), AFTER(STRING(@)), FIRSTONE()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['character', 'CHARTOKEN', 0.95], ['next', 'AFTER', 0.95], ['first', 'FIRSTONE', 0.95]]
-actual additions -**##**- [['print', 'PRINT', 0.95], ['first', 'FIRSTONE', 0.95], ['character', 'CHARTOKEN', 0.95], ['next', 'AFTER', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['character', 'CHARTOKEN', 0.9025], ['next', 'AFTER', 0.95], ['first', 'FIRSTONE', 0.95]]
+actual additions -**##**- [['print', 'PRINT', 0.95], ['first', 'FIRSTONE', 0.95], ['character', 'CHARTOKEN', 0.9025], ['next', 'AFTER', 0.95]]
 
 439
 Print everything after "<" and before a ","
@@ -2647,8 +2647,8 @@ actual additions -**##**- [['everything', 'TEXTTOKEN', 0.95], ['print', 'PRINT',
 442
 Print any word that starts with "player" and is followed somewhere by "team"
 PRINT(SelectString(WORDTOKEN(), AND(STARTSWITH(STRING(player)), BEFORE(STRING(team))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['word', 'WORDTOKEN', 0.95], ['and', 'AND', 0.95], ['starts', 'STARTSWITH', 0.855], ['starts', 'BEFORE', 0.95]]
-actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['print', 'PRINT', 0.95], ['starts', 'BEFORE', 0.95], ['and', 'AND', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['word', 'WORDTOKEN', 0.95], ['and', 'AND', 0.95], ['starts', 'STARTSWITH', 0.855], ['starts', 'BEFORE', 0.9025]]
+actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['print', 'PRINT', 0.95], ['starts', 'BEFORE', 0.9025], ['and', 'AND', 0.95]]
 
 443
 Extract the word following "from"
@@ -2659,8 +2659,8 @@ actual additions -**##**- [['word', 'WORDTOKEN', 0.95], ['extract', 'PRINT', 0.9
 444
 Print characters between "<" and ">"
 PRINT(SelectString(CHARTOKEN(), BETWEEN(STRING(<), TO(STRING(>))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.9025], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.9025], ['between', 'BETWEEN', 0.95]]
 
 445
 Print words which are not in between "/*" and "*/"
@@ -2725,20 +2725,20 @@ actual additions -**##**- [['text', 'TEXTTOKEN', 0.95], ['print', 'PRINT', 0.95]
 455
 Print lines which includes "[player]" and includes "[team]"
 PRINT(SelectString(LINETOKEN(), AND(CONTAINS(STRING([player])), CONTAINS(STRING([team]))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['lines', 'LINETOKEN', 0.9025], ['and', 'AND', 0.95], ['includes', 'CONTAINS', 0.4275], ['includes', 'CONTAINS', 0.4275]]
-actual additions -**##**- [['print', 'PRINT', 0.95], ['lines', 'LINETOKEN', 0.9025], ['includes', 'CONTAINS', 0.4275], ['and', 'AND', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['lines', 'LINETOKEN', 0.9025], ['and', 'AND', 0.95], ['includes', 'CONTAINS', 0.40612499999999996], ['includes', 'CONTAINS', 0.40612499999999996]]
+actual additions -**##**- [['print', 'PRINT', 0.95], ['lines', 'LINETOKEN', 0.9025], ['includes', 'CONTAINS', 0.40612499999999996], ['and', 'AND', 0.95]]
 
 456
 Print data between "<url>" and "</url>"
 PRINT(SelectString(TEXTTOKEN(), BETWEEN(STRING(<url>), TO(STRING(</url>))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['data', 'TEXTTOKEN', 0.3], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['data', 'TEXTTOKEN', 0.3], ['print', 'PRINT', 0.95], ['between', 'BETWEEN', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['data', 'TEXTTOKEN', 0.285], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['data', 'TEXTTOKEN', 0.285], ['print', 'PRINT', 0.95], ['between', 'BETWEEN', 0.95]]
 
 457
 Print characters in between ">" and "<"
 PRINT(SelectString(CHARTOKEN(), BETWEEN(STRING(>), TO(STRING(<))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.9025], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.9025], ['between', 'BETWEEN', 0.95]]
 
 458
 Print the word unless it ends in ".net"
@@ -2851,8 +2851,8 @@ actual additions -**##**- [['words', 'WORDTOKEN', 0.95], ['print', 'PRINT', 0.95
 476
 Print numbers that are immediately followed by the word "minutes"
 PRINT(SelectString(NUMBERTOKEN(), BEFORE(WORD(STRING(minutes))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['are', 'BEFORE', 0.45], ['word', 'WORD', 0.95]]
-actual additions -**##**- [['word', 'WORD', 0.95], ['print', 'PRINT', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['are', 'BEFORE', 0.45]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['are', 'BEFORE', 0.4275], ['word', 'WORD', 0.95]]
+actual additions -**##**- [['word', 'WORD', 0.95], ['print', 'PRINT', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['are', 'BEFORE', 0.4275]]
 
 477
 Only print words which end in ".jpg" and include "mine.com"
@@ -2899,8 +2899,8 @@ actual additions -**##**- [['words', 'WORDTOKEN', 0.95], ['print', 'PRINT', 0.95
 484
 Print characters between "http://" and ".com"
 PRINT(SelectString(CHARTOKEN(), BETWEEN(STRING(http://), TO(STRING(.com))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.95], ['between', 'BETWEEN', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.9025], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['print', 'PRINT', 0.95], ['characters', 'CHARTOKEN', 0.9025], ['between', 'BETWEEN', 0.95]]
 
 485
 Print the first #4 words in each line
@@ -2911,8 +2911,8 @@ actual additions -**##**- [['words', 'WORDTOKEN', 0.95], ['print', 'PRINT', 0.95
 486
 Print data between a "-" and an "*"
 PRINT(SelectString(TEXTTOKEN(), BETWEEN(STRING(-), TO(STRING(*))), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
-actual additions -**##**- [['and', 'TO', 0.95], ['print', 'PRINT', 0.95], ['between', 'BETWEEN', 0.95]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['data', 'TEXTTOKEN', 0.285], ['between', 'BETWEEN', 0.95], ['and', 'TO', 0.95]]
+actual additions -**##**- [['and', 'TO', 0.95], ['data', 'TEXTTOKEN', 0.285], ['print', 'PRINT', 0.95], ['between', 'BETWEEN', 0.95]]
 
 487
 Print the last number in each line
@@ -2935,8 +2935,8 @@ actual additions -**##**- [['field', 'WORDTOKEN', 0.9025], ['print', 'PRINT', 0.
 490
 Print words in the file consisting of numbers
 PRINT(SelectString(WORDTOKEN(), CONTAINS(NUMBERTOKEN()), ALL()), DOCUMENT())
-options for additions -##**##- [['print', 'PRINT', 0.95], ['words', 'WORDTOKEN', 0.95], ['consisting', 'CONTAINS', 0.3], ['numbers', 'NUMBERTOKEN', 0.9025]]
-actual additions -**##**- [['words', 'WORDTOKEN', 0.95], ['print', 'PRINT', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025], ['consisting', 'CONTAINS', 0.3]]
+options for additions -##**##- [['print', 'PRINT', 0.95], ['words', 'WORDTOKEN', 0.95], ['numbers', 'CONTAINS', 0.3], ['numbers', 'NUMBERTOKEN', 0.9025]]
+actual additions -**##**- [['words', 'WORDTOKEN', 0.95], ['print', 'PRINT', 0.95], ['numbers', 'NUMBERTOKEN', 0.9025]]
 
 491
 Print words which match "NAME"
