@@ -2,6 +2,7 @@ AFTER$from		3
 INSERT$prefix		1
 WHITESPACETOKEN$whitespaces		1
 END$end		16
+CONTAINS$character		1
 INSERT$insert		65
 STARTSWITH$beginning		17
 BEFORE$starts		1
@@ -125,6 +126,7 @@ NONBLANKLINETOKEN$nonblankline		2
 ALL$all		85
 LASTFEW$bottom		2
 CONTAINS$is		2
+LINESCOPE$in		3
 STARTSWITH$start		3
 FIRSTFEW$first		8
 CONTAINS$has		2
@@ -136,7 +138,6 @@ START$starting		8
 BY$with		52
 BY$by		6
 LINESCOPE$sentences		3
-CONTAINS$having		1
 LINESCOPE$part		2
 CONCATENATE$followed		3
 MATCHES$match		4

@@ -90,7 +90,7 @@ for m in seeding_maps:
 
 stemming = LancasterStemmer()
 stem_delta = 0.95
-simi_threshold = 0.19
+simi_threshold = 0.14
 learnt_epsilon = 0.9
 benchMsFO = open("benchmarkSample.txt", "r")
 num = 0

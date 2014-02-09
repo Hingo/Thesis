@@ -1,5 +1,6 @@
 LINESCOPE$string			1
 LINESCOPE$form			1
+CONTAINS$character			1
 CONTAINS$string			1
 LINESCOPE$is			1
 START$starts			1
@@ -7,6 +8,7 @@ BEFORE$are			1
 CONTAINS$is			2
 LINESCOPE$part			2
 BEFORE$is			1
+LINESCOPE$in			3
 BEFORE$starts			1
 END$is			1
 DIGITTOKEN$a			1

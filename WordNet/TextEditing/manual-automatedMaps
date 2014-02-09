@@ -2,6 +2,7 @@ TEXTTOKEN$part			-1
 AFTER$end			-1
 CONTAINS$consisting			-1
 INSERT$prepend			-1
+CONTAINS$having			-1
 END$ending			-1
 CONTAINS$consists			-1
 LINESCOPE$records			-1
