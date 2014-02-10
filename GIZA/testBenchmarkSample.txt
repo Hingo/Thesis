@@ -1,0 +1,92 @@
+Insert ":" after #1st word
+INSERT  :    AFTER WORDTOKEN      1    DOCUMENT   
+
+Insert a ":" immediately after a sequence of numbers
+INSERT  :    AFTER NUMBERTOKEN     ALL     DOCUMENT   
+
+Insert ":" before every #1st word
+INSERT  :    BEFORE WORDTOKEN      1    DOCUMENT   
+
+Put ":" before the #1st " " in every line
+INSERT  :    BEFORE        1     LINESCOPE    ALWAYS    ALL    
+
+Enter ":" before " "
+INSERT  :    BEFORE       ALL     DOCUMENT   
+
+Put ":" before the #1st " " in every line
+INSERT  :    BEFORE        1     LINESCOPE    ALWAYS    ALL    
+
+Enter ":" before " "
+INSERT  :    BEFORE       ALL     DOCUMENT   
+
+put ":" before a " "
+INSERT  :    BEFORE       ALL     DOCUMENT   
+
+put ":" after the #1st word
+INSERT  :    AFTER WORDTOKEN      1    DOCUMENT   
+
+Insert ":" after the integer in each line
+INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+
+Replace " " by ":" and " "
+REPLACE       ALWAYS    ALL     BY CONCATENATE  :          DOCUMENT   
+
+put ":" after every numeral in every line
+INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+
+after #1st word put ":"
+INSERT  :    AFTER WORDTOKEN      1    DOCUMENT   
+
+Insert a ":" after the #1st word in every line
+INSERT  :    AFTER WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+
+insert ":" before #1st " "
+INSERT  :    BEFORE        1    DOCUMENT   
+
+Insert a ":" after numbers in each line
+INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+
+insert a ":" after #1st numeric letter
+INSERT  :    AFTER NUMBERTOKEN      1    DOCUMENT   
+
+Add a ":" after the number
+INSERT  :    AFTER NUMBERTOKEN     ALL     DOCUMENT   
+
+Append a ":" after an integer
+INSERT  :    AFTER NUMBERTOKEN     ALL     DOCUMENT   
+
+Insert ":" after #1st word of the sentence
+INSERT  :    AFTER WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+
+Insert ":" after the word that starts with "Day"
+INSERT  :   END     WORDSCOPE    STARTSWITH  Day    ALL    
+
+Insert ":" in every line after the numbers
+INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+
+Insert "| " after the #1st occurrence of " "
+INSERT  |     AFTER        1    DOCUMENT   
+
+Insert a "|" and a " " before the #1st word in every line
+INSERT CONCATENATE  |          BEFORE WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+
+for each line  put a "|" before the #1st word of the line
+INSERT  |    BEFORE WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+
+add "|" before #1st word
+INSERT  |    BEFORE WORDTOKEN      1    DOCUMENT   
+
+add a "|" character before the #1st word
+INSERT  |    BEFORE WORDTOKEN      1    DOCUMENT   
+
+put "| " before #1st " "
+INSERT  |     BEFORE        1    DOCUMENT   
+
+put "|" before the #1st word
+INSERT  |    BEFORE WORDTOKEN      1    DOCUMENT   
+
+Add "| " to the beginning of the #1st word
+INSERT  |     BEFORE WORDTOKEN      1    DOCUMENT   
+
+insert "|" followed by a " " before the #1st word in each line
+INSERT CONCATENATE  |          BEFORE WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    

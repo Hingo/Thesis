@@ -1,0 +1,31 @@
+Insert ":" after #1st word
+Insert a ":" immediately after a sequence of numbers
+Insert ":" before every #1st word
+Put ":" before the #1st " " in every line
+Enter ":" before " "
+Put ":" before the #1st " " in every line
+Enter ":" before " "
+put ":" before a " "
+put ":" after the #1st word
+Insert ":" after the integer in each line
+Replace " " by ":" and " "
+put ":" after every numeral in every line
+after #1st word put ":"
+Insert a ":" after the #1st word in every line
+insert ":" before #1st " "
+Insert a ":" after numbers in each line
+insert a ":" after #1st numeric letter
+Add a ":" after the number
+Append a ":" after an integer
+Insert ":" after #1st word of the sentence
+Insert ":" after the word that starts with "Day"
+Insert ":" in every line after the numbers
+Insert "| " after the #1st occurrence of " "
+Insert a "|" and a " " before the #1st word in every line
+for each line  put a "|" before the #1st word of the line
+add "|" before #1st word
+add a "|" character before the #1st word
+put "| " before #1st " "
+put "|" before the #1st word
+Add "| " to the beginning of the #1st word
+insert "|" followed by a " " before the #1st word in each line
