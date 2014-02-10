@@ -91,8 +91,9 @@ for m in seeding_maps:
   seed_maps_Dict[str(m)] = 1
 
 stemming = LancasterStemmer()
-stem_similarity = 1.01
+stem_delta = 0.95
 simi_threshold = 0.19
+learnt_epsilon = 0.9
 benchMsFO = open("benchmarkSample.txt", "r")
 num = 0
 while(1):
@@ -148,7 +149,7 @@ while(1):
       val = [w1, w1, 0]
       for w2_prob in stem_words_prob:
 	if (str(stemming.stem(w1)) == w2_prob[0]):
-	  val = [w1, 'stemming', float(w2_prob[1])]
+	  val = [w1, 'stemming', float(w2_prob[1]) * stem_delta]
 	  break
       if not (val[2] == 0):
 	maxSimiArrPerWord.append(val)
@@ -159,7 +160,15 @@ while(1):
 	####print w2
 	tempval = compare(w1, w2[0])
 	if tempval[2] > 0:
-	  check_with_all.append((tempval[0], tempval[1], tempval[2] * float(w2[1])))
+	  check_with_all.append((tempval[0], tempval[1], tempval[2] * float(w2[1]) * learnt_epsilon))
+      
+      #if not check_with_all == []:
+	#for val_as_tuple in check_with_all:
+	  #if not (val_as_tuple[2] == 0):
+	    #val = [val_as_tuple[0], val_as_tuple[1], val_as_tuple[2]]
+	    #if float(val[2]) > simi_threshold:
+	      #maxSimiArrPerWord.append(val)
+	    
       if not check_with_all == []:
 	val_as_tuple = max(check_with_all, key = itemgetter(2))
 	val = [val_as_tuple[0], val_as_tuple[1], val_as_tuple[2]]
@@ -171,22 +180,38 @@ while(1):
       #t1File.write(str(wToAddToTerm[0]) + '\n')
     
     t1File.close()
+    
+    #print "maxSimiArrPerWord: " + str(maxSimiArrPerWord)
     if not (maxSimiArrPerWord == []):
+      #for wToAddToTerm in maxSimiArrPerWord:
+	#if wToAddToTerm[2] > simi_threshold:
+	  #maxSimiArrPerTerm.append([wToAddToTerm[0], t1, wToAddToTerm[2]])
       wToAddToTerm = max(maxSimiArrPerWord, key = itemgetter(2))
       #if str(t1) == 'CONTAINS':
 	#print str(wToAddToTerm) + ' - to be added if above simi_threshold from CONTAINS terminal &&&&&&&&&&'
       if wToAddToTerm[2] > simi_threshold:
 	maxSimiArrPerTerm.append([wToAddToTerm[0], t1, wToAddToTerm[2]])
-      ####print str(maxSimiArrPerWord) + ' ** ' + str(maxSimiArrPerTerm)
+      #####print str(maxSimiArrPerWord) + ' ** ' + str(maxSimiArrPerTerm)
   
-  #print 'options for additions -##**##- ' + str(maxSimiArrPerTerm)
+  print 'options for additions -##**##- ' + str(maxSimiArrPerTerm)
   #sameWords = [max(items) for key, items in groupby(maxSimiArrPerTerm, key = itemgetter(0))]
+  
+  #------------ Sorted by terminals first-------------------
+  #sorted_by_second_and_third = list(reversed(sorted(sorted(maxSimiArrPerTerm, key=lambda(e): e[2]), key=lambda(e): e[1])))
+  #first_dup_removed = [group.next() for key, group in groupby(sorted_by_second_and_third, key=lambda(e): e[0])]
+  
+  #sorted_by_first_and_third = list(reversed(sorted(sorted(first_dup_removed, key=lambda(e): e[2]), key=lambda(e): e[0])))
+  #sameWords = [group.next() for key, group in groupby(sorted_by_first_and_third, key=lambda(e): e[1])]
+  
+  #-------------Sorted by words first------------------------
   sorted_by_first_and_third = list(reversed(sorted(sorted(maxSimiArrPerTerm, key=lambda(e): e[2]), key=lambda(e): e[0])))
   first_dup_removed = [group.next() for key, group in groupby(sorted_by_first_and_third, key=lambda(e): e[0])]
   
   sorted_by_second_and_third = list(reversed(sorted(sorted(first_dup_removed, key=lambda(e): e[2]), key=lambda(e): e[1])))
   sameWords = [group.next() for key, group in groupby(sorted_by_second_and_third, key=lambda(e): e[1])]
-  print 'additions -**##**- ' + str(sameWords) + '\n'
+  
+  
+  print 'actual additions -**##**- ' + str(sameWords) + '\n'
   for addingHighProb in sameWords:
     termFile = open("./Terminals/" + str(addingHighProb[1]), "a+")
     map_format = str(addingHighProb[1]) + '$' + str(addingHighProb[0])

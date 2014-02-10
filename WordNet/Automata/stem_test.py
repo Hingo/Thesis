@@ -7,12 +7,12 @@ def uniqifying(seq):
 
 st = LancasterStemmer()
 
-L = ['not', 'unless', 'otherwise', 'words', 'columns', 'fields', 'whitespace', 'nondigits', 'nonblank', 'nonblanklines']
+L = ['substring', 'substrings', 'otherwise', 'words', 'columns', 'fields', 'whitespace', 'nondigits', 'nonblank', 'nonblanklines']
 stL = []
 for w in L:
   stL.append(str(st.stem(w)))
 
-stL = uniqifying(stL)
+#stL = uniqifying(stL)
 
 #print stL
 print stL
