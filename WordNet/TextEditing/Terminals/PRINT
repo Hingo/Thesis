@@ -1,5 +1,8 @@
-extract 1.0
-list 1.0
 print 1.0
+extract 1.0
 search 1.0
-output 0.3
+list 1.0
+find 1.0
+output 1.0
+only 1.0
+do 1.0

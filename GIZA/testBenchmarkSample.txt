@@ -1,92 +1,1475 @@
 Insert ":" after #1st word
-INSERT  :    AFTER WORDTOKEN      1    DOCUMENT   
+INSERT STRING :   Position AFTER WORDTOKEN     INTEGER 1    DOCUMENT   
 
 Insert a ":" immediately after a sequence of numbers
-INSERT  :    AFTER NUMBERTOKEN     ALL     DOCUMENT   
+INSERT STRING :   Position AFTER NUMBERTOKEN     ALL     DOCUMENT   
 
 Insert ":" before every #1st word
-INSERT  :    BEFORE WORDTOKEN      1    DOCUMENT   
+INSERT STRING :   Position BEFORE WORDTOKEN     INTEGER 1    DOCUMENT   
 
 Put ":" before the #1st " " in every line
-INSERT  :    BEFORE        1     LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position BEFORE STRING      INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
 
 Enter ":" before " "
-INSERT  :    BEFORE       ALL     DOCUMENT   
+INSERT STRING :   Position BEFORE STRING      ALL     DOCUMENT   
 
 Put ":" before the #1st " " in every line
-INSERT  :    BEFORE        1     LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position BEFORE STRING      INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
 
 Enter ":" before " "
-INSERT  :    BEFORE       ALL     DOCUMENT   
+INSERT STRING :   Position BEFORE STRING      ALL     DOCUMENT   
 
 put ":" before a " "
-INSERT  :    BEFORE       ALL     DOCUMENT   
+INSERT STRING :   Position BEFORE STRING      ALL     DOCUMENT   
 
 put ":" after the #1st word
-INSERT  :    AFTER WORDTOKEN      1    DOCUMENT   
+INSERT STRING :   Position AFTER WORDTOKEN     INTEGER 1    DOCUMENT   
 
 Insert ":" after the integer in each line
-INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position AFTER NUMBERTOKEN     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
 
 Replace " " by ":" and " "
-REPLACE       ALWAYS    ALL     BY CONCATENATE  :          DOCUMENT   
+REPLACE SelectString STRING     ALWAYS    ALL     BY CONCATENATE STRING :   STRING       DOCUMENT   
 
 put ":" after every numeral in every line
-INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position AFTER NUMBERTOKEN     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
 
 after #1st word put ":"
-INSERT  :    AFTER WORDTOKEN      1    DOCUMENT   
+INSERT STRING :   Position AFTER WORDTOKEN     INTEGER 1    DOCUMENT   
 
 Insert a ":" after the #1st word in every line
-INSERT  :    AFTER WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position AFTER WORDTOKEN     INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
 
 insert ":" before #1st " "
-INSERT  :    BEFORE        1    DOCUMENT   
+INSERT STRING :   Position BEFORE STRING      INTEGER 1    DOCUMENT   
 
 Insert a ":" after numbers in each line
-INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position AFTER NUMBERTOKEN     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
 
 insert a ":" after #1st numeric letter
-INSERT  :    AFTER NUMBERTOKEN      1    DOCUMENT   
+INSERT STRING :   Position AFTER NUMBERTOKEN     INTEGER 1    DOCUMENT   
 
 Add a ":" after the number
-INSERT  :    AFTER NUMBERTOKEN     ALL     DOCUMENT   
+INSERT STRING :   Position AFTER NUMBERTOKEN     ALL     DOCUMENT   
 
 Append a ":" after an integer
-INSERT  :    AFTER NUMBERTOKEN     ALL     DOCUMENT   
+INSERT STRING :   Position AFTER NUMBERTOKEN     ALL     DOCUMENT   
 
 Insert ":" after #1st word of the sentence
-INSERT  :    AFTER WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position AFTER WORDTOKEN     INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
 
 Insert ":" after the word that starts with "Day"
-INSERT  :   END     WORDSCOPE    STARTSWITH  Day    ALL    
+INSERT STRING :   END    IterationScope WORDSCOPE    STARTSWITH STRING Day    ALL    
 
 Insert ":" in every line after the numbers
-INSERT  :    AFTER NUMBERTOKEN     ALL      LINESCOPE    ALWAYS    ALL    
+INSERT STRING :   Position AFTER NUMBERTOKEN     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
 
 Insert "| " after the #1st occurrence of " "
-INSERT  |     AFTER        1    DOCUMENT   
+INSERT STRING |    Position AFTER STRING      INTEGER 1    DOCUMENT   
 
 Insert a "|" and a " " before the #1st word in every line
-INSERT CONCATENATE  |          BEFORE WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+INSERT CONCATENATE STRING |   STRING      Position BEFORE WORDTOKEN     INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
 
 for each line  put a "|" before the #1st word of the line
-INSERT  |    BEFORE WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+INSERT STRING |   Position BEFORE WORDTOKEN     INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
 
 add "|" before #1st word
-INSERT  |    BEFORE WORDTOKEN      1    DOCUMENT   
+INSERT STRING |   Position BEFORE WORDTOKEN     INTEGER 1    DOCUMENT   
 
 add a "|" character before the #1st word
-INSERT  |    BEFORE WORDTOKEN      1    DOCUMENT   
+INSERT STRING |   Position BEFORE WORDTOKEN     INTEGER 1    DOCUMENT   
 
 put "| " before #1st " "
-INSERT  |     BEFORE        1    DOCUMENT   
+INSERT STRING |    Position BEFORE STRING      INTEGER 1    DOCUMENT   
 
 put "|" before the #1st word
-INSERT  |    BEFORE WORDTOKEN      1    DOCUMENT   
+INSERT STRING |   Position BEFORE WORDTOKEN     INTEGER 1    DOCUMENT   
 
 Add "| " to the beginning of the #1st word
-INSERT  |     BEFORE WORDTOKEN      1    DOCUMENT   
+INSERT STRING |    Position BEFORE WORDTOKEN     INTEGER 1    DOCUMENT   
 
 insert "|" followed by a " " before the #1st word in each line
-INSERT CONCATENATE  |          BEFORE WORDTOKEN      1     LINESCOPE    ALWAYS    ALL    
+INSERT CONCATENATE STRING |   STRING      Position BEFORE WORDTOKEN     INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+insert "| " just before the #1st word
+INSERT STRING |    Position BEFORE WORDTOKEN     INTEGER 1    DOCUMENT   
+
+prepend each line with "NM-"
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" to the beginning of each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" to the beginning of every sentence
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add the string "NM-" at the beginning of every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" to the beginning of each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" to every new line
+INSERT STRING NM-   END    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" as prefix to every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+place "NM-" before every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+insert "NM-" before each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+At the starting of every line  add "NM-"
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" in the beginning of each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" at the starting of each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" in the beginning in every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" to the beginning of each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" before each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+insert "NM-" before every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Append "NM-" at the start of all lines
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" before #1st letter in every line
+INSERT STRING NM-   Position BEFORE CHARTOKEN     INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" at the starting of each statement
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" to the start of every string
+INSERT STRING NM-   START    DOCUMENT   
+
+add "NM-" in the beginning of each line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+insert text "NM-" in the starting of every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert "NM-" before every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" before all strings
+INSERT STRING NM-   START    DOCUMENT   
+
+Insert "NM-" in front of every line
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "NM-" in all the #4 lines before the occurrence of "Com"
+INSERT STRING NM-   Position BEFORE STRING Com    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+add "NM-" at the start of the lines
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Prefix "NM-" to the beginning
+INSERT STRING NM-   START    DOCUMENT   
+
+append "NM-" to the beginning
+INSERT STRING NM-   START    DOCUMENT   
+
+Append "NM-"
+INSERT STRING NM-   END    DOCUMENT   
+
+Append "NM-" to the beginning
+INSERT STRING NM-   START    DOCUMENT   
+
+Insert "NM-" at the beginning of all lines
+INSERT STRING NM-   START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add "$" at the beginning of those lines that do not already start with "$"
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+If a sentence does not start with "$" then insert "$" at its beginning.
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+If a line does not start with a "$" add a "$" at its beginning
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+except line #2nd and #6th  insert "$" in starting of every line
+INSERT STRING $   START    IterationScope LINESCOPE    ALWAYS    ALLBUT INTSET IntegerSet INTEGER 2   INTEGER 6      
+
+Insert "$" before every line that does not start with "$".
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Add "$" at the beginning of all the sentences in A which do not start with "$"
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Insert "$" in all lines at the beginning not starting with "$"
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Insert "$" before each line not starting with "$"
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Insert "$" in all lines at the beginning not starting with "$"
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Insert "$" before each line not starting with "$"
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Insert "$" before every line that does not starts with "$"
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Add "$" at the beginning of each statement if "$" is not present.
+INSERT STRING $   START    IterationScope LINESCOPE    NOT CONTAINS STRING $     ALL    
+
+add "$" in the beginning of all the lines wherever "$" is not present.
+INSERT STRING $   START    IterationScope LINESCOPE    NOT CONTAINS STRING $     ALL    
+
+insert "$" at the starting of every line except #2nd and #1st line
+INSERT STRING $   START    IterationScope LINESCOPE    ALWAYS    ALLBUT INTSET IntegerSet INTEGER 1   INTEGER 2      
+
+Insert "$" in every line not starting with "$"
+INSERT STRING $   END    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Insert "$" in every line whose starting is not a "$" already
+INSERT STRING $   END    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Put "$" in the start of each line if it has no "$" at the start
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+if statement does not starts with "$" add "$" in the beginning
+INSERT STRING $   START    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Prepend the line containing "P.O. BOX" with "*"
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. BOX    ALL    
+
+Add "*" at the beginning of every sentence containing the word "Box"
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS WORD STRING Box     ALL    
+
+add "*" in the start of line that contains "P.O."
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O.    ALL    
+
+Add a "*" at the beginning of the line in which the string "P.O. BOX" occurs
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. BOX    ALL    
+
+Put "*" at the beginning of #2nd  #6th  #8th  and #13th line
+INSERT STRING *   START    IterationScope LINESCOPE    ALWAYS    INTSET IntegerSet INTEGER 13   INTEGER 2   INTEGER 6   INTEGER 8     
+
+put a "*" before each line that has "P.O. BOX" embedded within it
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. BOX    ALL    
+
+Put "*" in front of lines with "P.O. Box" as a substring
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. Box    ALL    
+
+insert "*" before every line that starts with "P"
+INSERT STRING *   START    IterationScope LINESCOPE    STARTSWITH STRING P    ALL    
+
+insert "*" before the lines that starts with "1" or starts with "C"
+INSERT STRING *   START    IterationScope LINESCOPE    OR STARTSWITH STRING 1    STARTSWITH STRING C     ALL    
+
+Insert "*" at the beginning of each line containing "P.O. BOX"
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. BOX    ALL    
+
+Insert "*" at the start of every line which has "P.O.BOX" word
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS WORD STRING P.O.BOX     ALL    
+
+Insert "*" before every line that has the occurrence of "P.O.BOX"
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O.BOX    ALL    
+
+Add "*" in the beginning of the line which contains "P.O. BOX"
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. BOX    ALL    
+
+add "*" in beginning of all the lines wherever "P.O. BOX" is present
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. BOX    ALL    
+
+insert a "*" at the beginning in the sentence which has "P.O.BOX" in it
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O.BOX    ALL    
+
+insert "*" at the start of the sentence where the sentence consists of "P.O."
+INSERT STRING *   Position BEFORE LINETOKEN     ALL     IterationScope LINESCOPE    CONTAINS STRING P.O.    ALL    
+
+Insert "*" in front of every line containing "P.O. BOX" in it
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O. BOX    ALL    
+
+add "*" at the start of every line which has the word "P.O.BOX"
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS WORD STRING P.O.BOX     ALL    
+
+Put "*" at the start of those line which contain "P.O.BOX"
+INSERT STRING *   START    IterationScope LINESCOPE    CONTAINS STRING P.O.BOX    ALL    
+
+if sentence contain "P.O." as a substring add "*" before the sentence
+INSERT STRING *   Position BEFORE LINETOKEN     ALL     IterationScope LINESCOPE    CONTAINS STRING P.O.    ALL    
+
+add "-- from Bill" to each line that starts with "Exercise"
+INSERT STRING -- from Bill   END    IterationScope LINESCOPE    STARTSWITH STRING Exercise    ALL    
+
+Add " -- from Bill" to the end of every sentence ending with a digit.
+INSERT STRING  -- from Bill   END    IterationScope LINESCOPE    ENDSWITH DIGITTOKEN     ALL    
+
+In every line beginning with "Exercise"  append "-- from Bill" towards the end.
+INSERT STRING -- from Bill   END    IterationScope LINESCOPE    STARTSWITH STRING Exercise    ALL    
+
+Add the string " -- from Bill" at the end of every line which contains a "H".
+INSERT STRING  -- from Bill   END    IterationScope LINESCOPE    CONTAINS STRING H    ALL    
+
+if line begins with "Exercise H"  put "--from Bill" at the end of line
+INSERT STRING --from Bill   Position AFTER LINETOKEN     ALL     IterationScope LINESCOPE    STARTSWITH STRING Exercise H    ALL    
+
+Append "-- from Bill" in every line containing numerals
+INSERT STRING -- from Bill   END    IterationScope LINESCOPE    CONTAINS NUMBERTOKEN     ALL    
+
+Insert "--from Bill" at the end of each line which does not end with "."
+INSERT STRING --from Bill   END    IterationScope LINESCOPE    NOT ENDSWITH STRING .     ALL    
+
+add "--from Bill" in every #2 lines starting from the #1st
+INSERT STRING --from Bill   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   STARTFROM INTEGER 1     
+
+If sentence start from "Exercise" then at the end add "-- from Bill"
+INSERT STRING -- from Bill   END    IterationScope LINESCOPE    STARTSWITH STRING Exercise    ALL    
+
+Insert "-- from Bill" at the end of every line which starts with "Exercise"
+INSERT STRING -- from Bill   END    IterationScope LINESCOPE    STARTSWITH STRING Exercise    ALL    
+
+Append " -- from Bill" in every line starting with "Exercise"
+INSERT STRING  -- from Bill   END    IterationScope LINESCOPE    STARTSWITH STRING Exercise    ALL    
+
+Add "--from Bill" at the end of line which has "%%" character
+INSERT STRING --from Bill   END    IterationScope LINESCOPE    CONTAINS STRING %%    ALL    
+
+if Sentence starts with "Exercise"  add "--from Bill" after #14 characters
+INSERT STRING --from Bill   Position AFTER CHARTOKEN     INTEGER 14    IterationScope LINESCOPE    STARTSWITH STRING Exercise    ALL    
+
+Append "-- from Bill" in every #2 lines.
+INSERT STRING -- from Bill   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Add " -- from Bill" to the end of every statement starting with "Exercise %%"
+INSERT STRING  -- from Bill   END    IterationScope LINESCOPE    STARTSWITH STRING Exercise %%    ALL    
+
+Insert "..???" at the end of lines #2  #4  #6 and #8
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    INTSET IntegerSet INTEGER 2   INTEGER 4   INTEGER 6   INTEGER 8     
+
+Add the string "..???" at the end of every #2nd line.
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+In the every #2 lines  add "..???"
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+At the end of every #2nd line  add "..???"
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Insert "..???" in every #2 lines at last
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Add "..???" at the last of every #2nd statement
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Put "..???" in every #2 lines
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Insert "..???" at the end of every #2 lines
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+insert "..???" after ending of every #2 lines
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Insert ".." and "???" in every #2nd line
+INSERT CONCATENATE STRING ..   STRING ???    END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Insert "...???" at the end of every #2nd line starting from the #2nd line.
+INSERT STRING ...???   Position AFTER LINETOKEN     ALL     IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   STARTFROM INTEGER 2     
+
+Insert "..???" at the end of line in every #2nd line
+INSERT STRING ..???   Position AFTER LINETOKEN     ALL     IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+put "..???" at the end of every #2 coming lines
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Suffix every #2 line with "..???"
+INSERT STRING ..???   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Replace "St." with "Street"
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    DOCUMENT   
+
+Replace "St." wherever it occurs with "Street"
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    DOCUMENT   
+
+Replace all the occurrences of "St." with "Street"
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    DOCUMENT   
+
+For each line  if it ends with "St."  replace "St." by "Street"
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    IterationScope LINESCOPE    ENDSWITH STRING St.    ALL    
+
+replace "St." to "street" in #4th   #6th and #7th line
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING street    IterationScope LINESCOPE    ALWAYS    INTSET IntegerSet INTEGER 4   INTEGER 6   INTEGER 7     
+
+convert the string "St." to "Street" in every line
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Convert all "St." to "Street"
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    DOCUMENT   
+
+Replace "St." by "Street"
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    DOCUMENT   
+
+Convert "St." to "Street" at the end of #4th   #6th and #7th line
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY STRING Street    IterationScope LINESCOPE    ALWAYS    INTSET IntegerSet INTEGER 4   INTEGER 6   INTEGER 7     
+
+replace "St." with the word "Street"
+REPLACE SelectString STRING St.   ALWAYS    ALL     BY WORD STRING Street     DOCUMENT   
+
+replace "to" with "for"
+REPLACE SelectString STRING to   ALWAYS    ALL     BY STRING for    DOCUMENT   
+
+replace "to" with "for" in each sentence
+REPLACE SelectString STRING to   ALWAYS    ALL     BY STRING for    IterationScope LINESCOPE    ALWAYS    ALL    
+
+replace the text in between "L" and "R" by "details"
+REPLACE SelectString TEXTTOKEN    BETWEEN STRING L   TO STRING R     ALL     BY STRING details    DOCUMENT   
+
+Replace the text inside "L" and "R" with "details"
+REPLACE SelectString TEXTTOKEN    BETWEEN STRING L   TO STRING R     ALL     BY STRING details    DOCUMENT   
+
+Replace the text between "L" and "R" with the word "details"
+REPLACE SelectString TEXTTOKEN    BETWEEN STRING L   TO STRING R     ALL     BY WORD STRING details     DOCUMENT   
+
+Replace the contents in between "L" and "R" with "details"
+REPLACE SelectString TEXTTOKEN    BETWEEN STRING L   TO STRING R     ALL     BY STRING details    DOCUMENT   
+
+For every line  remove the number between "-" and "-"
+REMOVE SelectString NUMBERTOKEN    BETWEEN STRING -   TO STRING -     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Eliminate all the characters between "-" and "-"
+REMOVE SelectString CHARTOKEN    BETWEEN STRING -   TO STRING -     ALL     DOCUMENT   
+
+Remove #4th  #5th and #6th digit from all lines
+REMOVE SelectString DIGITTOKEN    ALWAYS    INTSET IntegerSet INTEGER 4   INTEGER 5   INTEGER 6      IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove #2nd number from each line
+REMOVE SelectString NUMBERTOKEN    ALWAYS    INTEGER 2    IterationScope LINESCOPE    ALWAYS    ALL    
+
+delete the #2nd number from each line.
+REMOVE SelectString NUMBERTOKEN    ALWAYS    INTEGER 2    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove the words that are between "-" and "-"
+REMOVE SelectString WORDTOKEN    BETWEEN STRING -   TO STRING -     ALL     DOCUMENT   
+
+remove "L" and remove "R"
+SEQ REMOVE SelectString STRING L   ALWAYS    ALL     DOCUMENT     REMOVE SelectString STRING R   ALWAYS    ALL     DOCUMENT    
+
+remove all "L" and remove all "R"
+SEQ REMOVE SelectString STRING L   ALWAYS    ALL     DOCUMENT     REMOVE SelectString STRING R   ALWAYS    ALL     DOCUMENT    
+
+for each line remove the "L" and for each line remove "R"
+SEQ REMOVE SelectString STRING L   ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL      REMOVE SelectString STRING R   ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL     
+
+remove "L" from each line and remove "R" from each line
+SEQ REMOVE SelectString STRING L   ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL      REMOVE SelectString STRING R   ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL     
+
+Eliminate the characters #1st  #5th  #6th and #10th from all the lines.
+REMOVE SelectString CHARTOKEN    ALWAYS    INTSET IntegerSet INTEGER 1   INTEGER 10   INTEGER 5   INTEGER 6      IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove Numbers
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+remove only the numeric characters. 
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove the #1st word of the line which starts with a number
+REMOVE SelectString WORDTOKEN    ALWAYS    INTEGER 1    IterationScope LINESCOPE    STARTSWITH NUMBERTOKEN     ALL    
+
+Remove the numbers from all lines except the #2nd one
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALLBUT INTEGER 2    
+
+remove digits in each line
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove numbers from each line except line #2
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALLBUT INTEGER 2    
+
+Remove the numbers from the text
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove all the numerals from every line.
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove numbers from all sentences in A
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all the numerals from every line.
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove numbers from all sentences in A
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Drop all numbers.
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove numeric values from all the lines
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+if any word have digits at the beginning of it then remove digits
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope WORDSCOPE    STARTSWITH NUMBERTOKEN     ALL    
+
+remove digits from sentence
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all the numbers from each line
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove digits from #1st #3rd and #4th line
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    INTSET IntegerSet INTEGER 1   INTEGER 3   INTEGER 4     
+
+Remove the numbers from each line
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all the digits
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+Delete all the numeric part of the text
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove the numbers from all the lines
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove the line containing "St" or containing "Lane" except the #1st line
+REMOVE SelectString LINETOKEN    ALWAYS    ALL     IterationScope LINESCOPE    OR CONTAINS STRING St    CONTAINS STRING Lane     ALLBUT INTEGER 1    
+
+Remove the sentence if it does not contain the string "Cent"
+REMOVE SelectString LINETOKEN    NOT CONTAINS STRING Cent     ALL     DOCUMENT   
+
+Remove line #3rd and #4th
+REMOVE SelectString LINETOKEN    ALWAYS    INTSET IntegerSet INTEGER 3   INTEGER 4      DOCUMENT   
+
+Remove the #3rd and #4th line
+REMOVE SelectString LINETOKEN    ALWAYS    INTSET IntegerSet INTEGER 3   INTEGER 4      DOCUMENT   
+
+Remove the sentences which does not contain "Cent" as its part
+REMOVE SelectString LINETOKEN    NOT CONTAINS STRING Cent     ALL     DOCUMENT   
+
+Eliminate the #3rd and #4th line
+REMOVE SelectString LINETOKEN    ALWAYS    INTSET IntegerSet INTEGER 3   INTEGER 4      DOCUMENT   
+
+Eliminate the line which does not contain "Cent" in any word of the sentence
+REMOVE SelectString LINETOKEN    NOT CONTAINS STRING Cent     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all lines which do not contain "Cent"
+REMOVE SelectString LINETOKEN    NOT CONTAINS STRING Cent     ALL     DOCUMENT   
+
+Remove the line if it does not contain "cent" as a substring
+REMOVE SelectString LINETOKEN    NOT CONTAINS STRING cent     ALL     DOCUMENT   
+
+Delete those lines that do not contain "Cent"
+REMOVE SelectString LINETOKEN    NOT CONTAINS STRING Cent     ALL     DOCUMENT   
+
+Remove all the characters after ";" in each sentence
+REMOVE SelectString CHARTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+In each line remove all the characters after ";"
+REMOVE SelectString CHARTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all text in a line starting from "//"
+REMOVE SelectString TEXTTOKEN    STARTSWITH STRING //    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+In each line  remove everything after the ";"
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove text beginning with "//"
+REMOVE SelectString TEXTTOKEN    STARTSWITH STRING //    ALL     DOCUMENT   
+
+remove everything after endpoints ";"
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     DOCUMENT   
+
+In every line  delete the text after "//"
+REMOVE SelectString TEXTTOKEN    AFTER STRING //    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove all the characters after ";" in all the lines
+REMOVE SelectString CHARTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Delete the text after symbol ";"
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     DOCUMENT   
+
+remove anything that follows after ";"
+REMOVE SelectString CHARTOKEN    AFTER STRING ;    ALL     DOCUMENT   
+
+Remove all the words after the "//"
+REMOVE SelectString WORDTOKEN    AFTER STRING //    ALL     DOCUMENT   
+
+Drop everything after ";" in each line
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+In each line  remove the part after "//"
+REMOVE SelectString TEXTTOKEN    AFTER STRING //    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+In each line  remove the part after ";"
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove everything after ";" in each line.
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove text after ";" from each line
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove everything after ";" from the sentence
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+in each line  remove everything after "//"
+REMOVE SelectString TEXTTOKEN    AFTER STRING //    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all text that is written after ";"
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     DOCUMENT   
+
+remove everything after ";" till the end of the row 
+REMOVE SelectString TEXTTOKEN    AFTER STRING ;    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print everything before ";"
+PRINT SelectString TEXTTOKEN    BEFORE STRING ;    ALL     DOCUMENT   
+
+Remove everything that comes after "//" in each line
+REMOVE SelectString TEXTTOKEN    AFTER STRING //    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove every character after "//"
+REMOVE SelectString CHARTOKEN    AFTER STRING //    ALL     DOCUMENT   
+
+Remove the #1st character
+REMOVE SelectString CHARTOKEN    ALWAYS    INTEGER 1    DOCUMENT   
+
+Remove #1st occurrence of "&" from the all of the above lines
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove the #1st "&" symbol from all the lines
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove the #1st character from every line
+REMOVE SelectString CHARTOKEN    ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Replace the #1st symbol "&" with "-" from every line
+REPLACE SelectString STRING &   ALWAYS    INTEGER 1    BY STRING -    IterationScope LINESCOPE    ALWAYS    ALL    
+
+if "&" occurs at the beginning of line remove "&"
+REMOVE SelectString STRING &   ALWAYS    ALL     IterationScope LINESCOPE    STARTSWITH STRING &    ALL    
+
+Remove #1st "&" from each line
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove #1st occurrence of "&" form every line left to right. 
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove #1st character form every row in every line.
+REMOVE SelectString CHARTOKEN    ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove #1st "&" character from each line
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Eliminate the #1st character from all the lines
+REMOVE SelectString CHARTOKEN    ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+delete #1st occurrence of "&" symbol
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    DOCUMENT   
+
+Remove "&" before every line
+REMOVE SelectString STRING &   BEFORE LINETOKEN     ALL     DOCUMENT   
+
+Remove every #1st occurrence of "&" from all the lines
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+remove the #1st occurrence of character "&" in the text
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    DOCUMENT   
+
+add "&"
+INSERT STRING &   END    DOCUMENT   
+
+Remove the #1st occurrence of "&" in each line
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove #1st "&" from every line
+REMOVE SelectString STRING &   ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+print everything between the occurrences of "--" and "--"
+PRINT SelectString TEXTTOKEN    BETWEEN STRING --   TO STRING --     ALL     DOCUMENT   
+
+Extract the word immediately following the #1st "--"
+PRINT SelectString WORDTOKEN    AFTER STRING --    INTEGER 1    DOCUMENT   
+
+extract all words that have "www" or have "com"
+PRINT SelectString WORDTOKEN    OR CONTAINS STRING www    CONTAINS STRING com     ALL     DOCUMENT   
+
+Remove everything before "--"
+REMOVE SelectString TEXTTOKEN    BEFORE STRING --    ALL     DOCUMENT   
+
+Extract everything immediately after "-- " 
+PRINT SelectString TEXTTOKEN    AFTER STRING --     ALL     DOCUMENT   
+
+Extract everything before next "--"
+PRINT SelectString TEXTTOKEN    BEFORE STRING --    ALL     DOCUMENT   
+
+Remove all empty lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+remove blank lines if any.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove any empty line
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove the lines containing no characters.
+REMOVE SelectString LINETOKEN    NOT CONTAINS CHARTOKEN      ALL     DOCUMENT   
+
+Remove Blank lines
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+remove the empty line
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+remove all the blank lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove empty lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove lines containing no characters.
+REMOVE SelectString LINETOKEN    NOT CONTAINS CHARTOKEN      ALL     DOCUMENT   
+
+remove all blank lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove the blank lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove all the blank lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove all the blank lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Delete empty lines.
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove the "-" and remove the digits between "-" and "-"
+SEQ REMOVE SelectString STRING -   ALWAYS    ALL     DOCUMENT     REMOVE SelectString NUMBERTOKEN    BETWEEN STRING -   TO STRING -     ALL     DOCUMENT    
+
+Remove all the "-" and remove the number between "-" and "-"
+SEQ REMOVE SelectString STRING -   ALWAYS    ALL     DOCUMENT     REMOVE SelectString NUMBERTOKEN    BETWEEN STRING -   TO STRING -     ALL     DOCUMENT    
+
+Eliminate all the "-" and remove the characters between "-" and "-"
+SEQ REMOVE SelectString STRING -   ALWAYS    ALL     DOCUMENT     REMOVE SelectString CHARTOKEN    BETWEEN STRING -   TO STRING -     ALL     DOCUMENT    
+
+Remove everything before "--". 
+REMOVE SelectString TEXTTOKEN    BEFORE STRING --    ALL     DOCUMENT   
+
+remove the "--"
+REMOVE SelectString STRING --   ALWAYS    ALL     DOCUMENT   
+
+Extract everything immediately after "-- " and till next "--"
+PRINT SelectString TEXTTOKEN    AND AFTER STRING --     BEFORE STRING --     ALL     DOCUMENT   
+
+Insert "     " at beginning of each line.
+INSERT STRING         START    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add a "<" and " " to each line.
+INSERT CONCATENATE STRING <   STRING      END    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Add a "\n" after every nonblank line.
+INSERT STRING \n   Position AFTER NONBLANKLINETOKEN     ALL     DOCUMENT   
+
+Add "$nbsp;$nbsp;" at the beginning of every line that does not start with "<".
+INSERT STRING $nbsp;$nbsp;   START    IterationScope LINESCOPE    NOT STARTSWITH STRING <     ALL    
+
+Add a ":" after the #8th character in each line.
+INSERT STRING :   Position AFTER CHARTOKEN     INTEGER 8    IterationScope LINESCOPE    ALWAYS    ALL    
+
+If some line does not end with a "."  add "."
+INSERT STRING .   END    IterationScope LINESCOPE    NOT ENDSWITH STRING .     ALL    
+
+Add the suffix "_IDM" to the word right after "idiom:"
+INSERT STRING _IDM   END    IterationScope WORDSCOPE    AFTER STRING idiom:    ALL    
+
+Add a "." at the end of any line which does not already have "."
+INSERT STRING .   END    IterationScope LINESCOPE    NOT CONTAINS STRING .     ALL    
+
+Add "/VB" at the end of the #1st word in each line.
+INSERT STRING /VB   Position AFTER WORDTOKEN     INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Next to the #1st character  add an "!"
+INSERT STRING !   Position AFTER CHARTOKEN     INTEGER 1    DOCUMENT   
+
+On every #2 lines  insert an "\t"
+INSERT STRING \t   END    IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 2   INTEGER 1    
+
+Add an additional "\n" between line and line
+INSERT STRING \n   Position BETWEEN LINETOKEN    TO LINETOKEN      ALL     DOCUMENT   
+
+Add " " characters between number and number in the line
+INSERT STRING     Position BETWEEN NUMBERTOKEN    TO NUMBERTOKEN      ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Put "-" between number and number
+INSERT STRING -   Position BETWEEN NUMBERTOKEN    TO NUMBERTOKEN      ALL     DOCUMENT   
+
+Append at the end of the line "THE END"
+INSERT STRING THE END   END    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Append "***" to the end of lines starting with "Fred"
+INSERT STRING ***   END    IterationScope LINESCOPE    STARTSWITH STRING Fred    ALL    
+
+Add a "$" to the lines unless it already starts with a "$"
+INSERT STRING $   END    IterationScope LINESCOPE    NOT STARTSWITH STRING $     ALL    
+
+Add " " to words
+INSERT STRING     END    IterationScope WORDSCOPE    ALWAYS    ALL    
+
+Add an "!" followed by a "?" at the end of every word
+INSERT CONCATENATE STRING !   STRING ?    END    IterationScope WORDSCOPE    ALWAYS    ALL    
+
+Add a ":" after the #80th character in each line
+INSERT STRING :   Position AFTER CHARTOKEN     INTEGER 80    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Insert a "\n" above every line that matches "ABC"
+INSERT STRING \n   START    IterationScope LINESCOPE    MATCHES STRING ABC    ALL    
+
+Insert above the #1st line the title "PERSONNEL FILE"
+INSERT STRING PERSONNEL FILE   Position BEFORE LINETOKEN     INTEGER 1    DOCUMENT   
+
+Insert a "\n" after every #3 lines
+INSERT STRING \n   Position AFTER LINETOKEN     EVERY INTEGER 3   INTEGER 1     DOCUMENT   
+
+Attach "rfc" before all words including an "@"
+INSERT STRING rfc   START    IterationScope WORDSCOPE    CONTAINS STRING @    ALL    
+
+Place " " between word and word in each line
+INSERT STRING     Position BETWEEN WORDTOKEN    TO WORDTOKEN      ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+After each instance of "href="  add "page="
+INSERT STRING page=   Position AFTER STRING href=    ALL     DOCUMENT   
+
+Insert "\n" between digit and digit
+INSERT STRING \n   Position BETWEEN DIGITTOKEN    TO DIGITTOKEN      ALL     DOCUMENT   
+
+Put a "\" before a current "\"
+INSERT STRING \   Position BEFORE STRING \    ALL     DOCUMENT   
+
+Insert "\" right before opening "<"
+INSERT STRING \   Position BEFORE STRING <    ALL     DOCUMENT   
+
+Place a " " between ";" and ";"
+INSERT STRING     Position BETWEEN STRING ;   TO STRING ;     ALL     DOCUMENT   
+
+Place "FINISH" at the end of line only if it does not already end with "FINISH"
+INSERT STRING FINISH   END    IterationScope LINESCOPE    NOT ENDSWITH STRING FINISH     ALL    
+
+Insert "BEGIN" at the beginning of text
+INSERT STRING BEGIN   START    DOCUMENT   
+
+Add "END" at the end of the file
+INSERT STRING END   END    DOCUMENT   
+
+remove all instances of "|"
+REMOVE SelectString STRING |   ALWAYS    ALL     DOCUMENT   
+
+Delete all blank lines
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Delete the last #2 lines of the input
+REMOVE SelectString LINETOKEN    ALWAYS    LASTFEW INTEGER 2     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all the lines between an occurrence of "start" and an occurrence of "stop"
+REMOVE SelectString LINETOKEN    BETWEEN STRING start   TO STRING stop     ALL     DOCUMENT   
+
+Remove every #3 occurrence of the word "Apple"
+REMOVE SelectString STRING Apple   ALWAYS    EVERY INTEGER 3   INTEGER 1     DOCUMENT   
+
+Delete all consecutive blank lines from the input 
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Delete the #1st number on all lines that start with a "%%"
+REMOVE SelectString NUMBERTOKEN    ALWAYS    INTEGER 1    IterationScope LINESCOPE    STARTSWITH STRING %%    ALL    
+
+Remove the string "<br>" from every line whose immediately following line is "INPUT"
+REMOVE SelectString STRING <br>   ALWAYS    ALL     IterationScope LINESCOPE    AFTER LINE STRING INPUT     ALL    
+
+Delete the first #3 lines
+REMOVE SelectString LINETOKEN    ALWAYS    FIRSTFEW INTEGER 3     DOCUMENT   
+
+Delete all empty lines
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Delete every #4th line
+REMOVE SelectString LINETOKEN    ALWAYS    EVERY INTEGER 4   INTEGER 1     DOCUMENT   
+
+Remove "!" everywhere except in the lines between "start" and "stop"
+REMOVE SelectString STRING !   ALWAYS    ALL     IterationScope LINESCOPE    NOT BETWEEN STRING start   TO STRING stop      ALL    
+
+Delete every line that has a " " or has "and" in it
+REMOVE SelectString LINETOKEN    OR CONTAINS STRING      CONTAINS STRING and     ALL     DOCUMENT   
+
+Delete the last line of the input
+REMOVE SelectString LINETOKEN    ALWAYS    LASTONE     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove all the #2nd fields ending in "500"
+REMOVE SelectString WORDTOKEN    ENDSWITH STRING 500    INTEGER 2    DOCUMENT   
+
+Delete lines containing "Lane"
+REMOVE SelectString LINETOKEN    CONTAINS STRING Lane    ALL     DOCUMENT   
+
+Delete the #1st number on line #3
+REMOVE SelectString NUMBERTOKEN    ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    INTEGER 3   
+
+Delete the #2nd field on each line
+REMOVE SelectString WORDTOKEN    ALWAYS    INTEGER 2    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Delete "<" from each line
+REMOVE SelectString STRING <   ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Delete lines that match regular expression pattern "ABC"
+REMOVE SelectString LINETOKEN    MATCHES STRING ABC    ALL     DOCUMENT   
+
+Remove the last word
+REMOVE SelectString WORDTOKEN    ALWAYS    LASTONE     DOCUMENT   
+
+Delete all consecutive blank lines from the input except the first #2
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALLBUT FIRSTFEW INTEGER 2      IterationScope LINESCOPE    ALWAYS    ALL    
+
+Delete all blank lines from the input
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove a line containing "del"
+REMOVE SelectString LINETOKEN    CONTAINS STRING del    ALL     DOCUMENT   
+
+Remove a line ending with "&D"
+REMOVE SelectString LINETOKEN    ENDSWITH STRING &D    ALL     DOCUMENT   
+
+Remove the #2nd occurrence of a line ending in "c" from the file
+REMOVE SelectString LINETOKEN    ENDSWITH STRING c    INTEGER 2    DOCUMENT   
+
+Delete the #1st and #3rd columns of the input
+REMOVE SelectString WORDTOKEN    ALWAYS    INTSET IntegerSet INTEGER 1   INTEGER 3      IterationScope LINESCOPE    ALWAYS    ALL    
+
+delete the first #3 words
+REMOVE SelectString WORDTOKEN    ALWAYS    FIRSTFEW INTEGER 3     DOCUMENT   
+
+Delete all digits in the #2nd word
+REMOVE SelectString NUMBERTOKEN    ALWAYS    ALL     IterationScope WORDSCOPE    ALWAYS    INTEGER 2   
+
+Delete " " between the word and "\r" of each sentence
+REMOVE SelectString STRING     BETWEEN WORDTOKEN    TO STRING \r     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+delete everything inside "<" and ">"
+REMOVE SelectString TEXTTOKEN    BETWEEN STRING <   TO STRING >     ALL     DOCUMENT   
+
+Remove all blank lines between line and line
+REMOVE SelectString BLANKLINETOKEN    BETWEEN LINETOKEN    TO LINETOKEN      ALL     DOCUMENT   
+
+Remove the terminal "/" on every line but the last #1
+REMOVE SelectString STRING /   ALWAYS    ALL     IterationScope LINESCOPE    ALWAYS    ALLBUT LASTONE     
+
+Remove the #2nd instance of the line "The mulberry bush"
+REMOVE SelectString LINE STRING The mulberry bush    ALWAYS    INTEGER 2    DOCUMENT   
+
+Remove the "n" before an "e" or after an "o"
+REMOVE SelectString STRING n   OR BEFORE STRING e    AFTER STRING o     ALL     DOCUMENT   
+
+remove all "." and remove all " "
+SEQ REMOVE SelectString STRING .   ALWAYS    ALL     DOCUMENT     REMOVE SelectString STRING     ALWAYS    ALL     DOCUMENT    
+
+Eliminate the #1st number on each line
+REMOVE SelectString NUMBERTOKEN    ALWAYS    INTEGER 1    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Delete all but the #1st occurrence of "Cook"
+REMOVE SelectString STRING Cook   ALWAYS    ALLBUT INTEGER 1     DOCUMENT   
+
+Delete the word "the" wherever it comes after "all"
+REMOVE SelectString WORD STRING the    AFTER STRING all    ALL     DOCUMENT   
+
+Remove all characters between "a" and "d" in the same word
+REMOVE SelectString CHARTOKEN    BETWEEN STRING a   TO STRING d     ALL     IterationScope WORDSCOPE    ALWAYS    ALL    
+
+delete every line that contains "&" or contains word "and"
+REMOVE SelectString LINETOKEN    OR CONTAINS STRING &    CONTAINS WORD STRING and      ALL     DOCUMENT   
+
+Delete "Kookaburra" anywhere if it is followed by a " "
+REMOVE SelectString STRING Kookaburra   BEFORE STRING      ALL     DOCUMENT   
+
+Delete all empty lines
+REMOVE SelectString BLANKLINETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Delete the last #10 lines of a file
+REMOVE SelectString LINETOKEN    ALWAYS    LASTFEW INTEGER 10     DOCUMENT   
+
+Delete every #8th line
+REMOVE SelectString LINETOKEN    ALWAYS    EVERY INTEGER 8   INTEGER 1     DOCUMENT   
+
+Remove text between "[img]" and "[/img]"
+REMOVE SelectString TEXTTOKEN    BETWEEN STRING [img]   TO STRING [/img]     ALL     DOCUMENT   
+
+Delete the character "a" unless it comes before an "r"
+REMOVE SelectString STRING a   NOT BEFORE STRING r     ALL     DOCUMENT   
+
+Reject words which have numbercharacters in them
+REMOVE SelectString WORDTOKEN    CONTAINS DIGITTOKEN     ALL     DOCUMENT   
+
+Remove all symbols which are not numbers
+REMOVE SelectString CHARTOKEN    NOT MATCHES NUMBERTOKEN      ALL     DOCUMENT   
+
+Delete the bottom #3 lines
+REMOVE SelectString LINETOKEN    ALWAYS    LASTFEW INTEGER 3     DOCUMENT   
+
+Remove lines having the character "$"
+REMOVE SelectString LINETOKEN    CONTAINS STRING $    ALL     DOCUMENT   
+
+Remove text after "." in each line
+REMOVE SelectString TEXTTOKEN    AFTER STRING .    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Remove the word "sparkle" from the file
+REMOVE SelectString WORD STRING sparkle    ALWAYS    ALL     DOCUMENT   
+
+Remove lines that begin with "ie6"
+REMOVE SelectString LINETOKEN    STARTSWITH STRING ie6    ALL     DOCUMENT   
+
+Remove all spaces
+REMOVE SelectString WHITESPACETOKEN    ALWAYS    ALL     DOCUMENT   
+
+Remove blanklines before the nonblankline of text
+REMOVE SelectString BLANKLINETOKEN    BEFORE NONBLANKLINETOKEN     ALL     DOCUMENT   
+
+Remove "---" in the file.
+REMOVE SelectString STRING ---   ALWAYS    ALL     DOCUMENT   
+
+Remove "<i>" and remove "</i>"
+SEQ REMOVE SelectString STRING <i>   ALWAYS    ALL     DOCUMENT     REMOVE SelectString STRING </i>   ALWAYS    ALL     DOCUMENT    
+
+Remove lines that include the string "doesn't work"
+REMOVE SelectString LINETOKEN    CONTAINS STRING doesn't work    ALL     DOCUMENT   
+
+Ignore every word that contains digits from every #3rd line
+REMOVE SelectString WORDTOKEN    CONTAINS NUMBERTOKEN     ALL     IterationScope LINESCOPE    ALWAYS    EVERY INTEGER 3   INTEGER 1    
+
+Replace every "++" with "+"
+REPLACE SelectString STRING ++   ALWAYS    ALL     BY STRING +    DOCUMENT   
+
+Substitute  the #4th occurrence of "foo" with "bar" on each line
+REPLACE SelectString STRING foo   ALWAYS    INTEGER 4    BY STRING bar    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Replace the line containing "Jose" with "JOSE HAS RETIRED"
+REPLACE SelectString LINETOKEN    CONTAINS STRING Jose    ALL     BY STRING JOSE HAS RETIRED    DOCUMENT   
+
+Substitute "A" with "a" in the first #3 line
+REPLACE SelectString STRING A   ALWAYS    ALL     BY STRING a    IterationScope LINESCOPE    ALWAYS    FIRSTFEW INTEGER 3    
+
+replace "a" with "b" in all lines
+REPLACE SelectString STRING a   ALWAYS    ALL     BY STRING b    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Substitute "DOG" with "dog" in the last #2 lines
+REPLACE SelectString STRING DOG   ALWAYS    ALL     BY STRING dog    IterationScope LINESCOPE    ALWAYS    LASTFEW INTEGER 2    
+
+replace all " " with "|"
+REPLACE SelectString STRING     ALWAYS    ALL     BY STRING |    DOCUMENT   
+
+Replace every #2nd occurrence of "mutex->list" with "mutex->queue"
+REPLACE SelectString STRING mutex->list   ALWAYS    EVERY INTEGER 2   INTEGER 1     BY STRING mutex->queue    DOCUMENT   
+
+Substitute "Cat" with "Dog" in all lines except the first #2 lines
+REPLACE SelectString STRING Cat   ALWAYS    ALL     BY STRING Dog    IterationScope LINESCOPE    ALWAYS    ALLBUT FIRSTFEW INTEGER 2     
+
+replace all whitespace gaps to a " "
+REPLACE SelectString WHITESPACETOKEN    ALWAYS    ALL     BY STRING      DOCUMENT   
+
+Replace every #3rd occurrence of the line "--------"  with a "\n"
+REPLACE SelectString LINE STRING --------    ALWAYS    EVERY INTEGER 3   INTEGER 1     BY STRING \n    DOCUMENT   
+
+Substitute only the last occurrence of "foo" with "bar"
+REPLACE SelectString STRING foo   ALWAYS    LASTONE     BY STRING bar    DOCUMENT   
+
+Substitute "foo" with "bar" only on lines that do not contain "baz"
+REPLACE SelectString STRING foo   ALWAYS    ALL     BY STRING bar    IterationScope LINESCOPE    NOT CONTAINS STRING baz     ALL    
+
+Replace the first occurrence of "dog" in a line having "mouse" with an occurrence of "cat"
+REPLACE SelectString STRING dog   ALWAYS    FIRSTONE     BY STRING cat    IterationScope LINESCOPE    CONTAINS STRING mouse    ALL    
+
+Replace each occurrence of the number "92" with an "%%"
+REPLACE SelectString STRING 92   ALWAYS    ALL     BY STRING %%    DOCUMENT   
+
+Replace the "/" with a " "
+REPLACE SelectString STRING /   ALWAYS    ALL     BY STRING      DOCUMENT   
+
+Replace "sq" with "dq" 
+REPLACE SelectString STRING sq   ALWAYS    ALL     BY STRING dq    DOCUMENT   
+
+Replace all substrings "1250" by "120" unless the word starts with "run"
+REPLACE SelectString STRING 1250   ALWAYS    ALL     BY STRING 120    IterationScope WORDSCOPE    STARTSWITH STRING run    ALL    
+
+Replace "<" with "-LRB-"
+REPLACE SelectString STRING <   ALWAYS    ALL     BY STRING -LRB-    DOCUMENT   
+
+Replace "!" with a " " and "\n"
+REPLACE SelectString STRING !   ALWAYS    ALL     BY CONCATENATE STRING     STRING \n     DOCUMENT   
+
+Change "day" to "night" in the input
+REPLACE SelectString STRING day   ALWAYS    ALL     BY STRING night    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Change the name "Jon" to "Jonathan"
+REPLACE SelectString STRING Jon   ALWAYS    ALL     BY STRING Jonathan    DOCUMENT   
+
+Change every word on a line but the #3rd to "Deleted"
+REPLACE SelectString WORDTOKEN    ALWAYS    ALLBUT INTEGER 3     BY STRING Deleted    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Convert every " " into a "\n"
+REPLACE SelectString STRING     ALWAYS    ALL     BY STRING \n    DOCUMENT   
+
+Change all instances of "Mullberry Bush" to "mullberry bush."
+REPLACE SelectString STRING Mullberry Bush   ALWAYS    ALL     BY STRING mullberry bush.    DOCUMENT   
+
+Substitute "Mary" with "John" in lines #2nd  #3rd  #4th and #5th
+REPLACE SelectString STRING Mary   ALWAYS    ALL     BY STRING John    IterationScope LINESCOPE    ALWAYS    INTSET IntegerSet INTEGER 2   INTEGER 3   INTEGER 4   INTEGER 5     
+
+In every line  replace the word next to "abc" by "Replaced"
+REPLACE SelectString WORDTOKEN    AFTER STRING abc    ALL     BY STRING Replaced    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Replace any sequence of one or more whitespace except those anywhere inside "<" and ">" with a " "
+REPLACE SelectString WHITESPACETOKEN    NOT BETWEEN STRING <   TO STRING >      ALL     BY STRING      DOCUMENT   
+
+Replace "word" with "board" everywhere in the input
+REPLACE SelectString STRING word   ALWAYS    ALL     BY STRING board    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Substitute "ABC" with "BCA"
+REPLACE SelectString STRING ABC   ALWAYS    ALL     BY STRING BCA    DOCUMENT   
+
+Replace every occurrence of ".." with "."
+REPLACE SelectString STRING ..   ALWAYS    ALL     BY STRING .    DOCUMENT   
+
+Replace "&" with "&&" unless it is inside "'" and "'"
+REPLACE SelectString STRING &   NOT BETWEEN STRING '   TO STRING '      ALL     BY STRING &&    DOCUMENT   
+
+Replace "<br>" with "<p></p>"
+REPLACE SelectString STRING <br>   ALWAYS    ALL     BY STRING <p></p>    DOCUMENT   
+
+Change all occurrences of "fontcolor" to "color"
+REPLACE SelectString STRING fontcolor   ALWAYS    ALL     BY STRING color    DOCUMENT   
+
+Replace "eregi" with "preg_match"
+REPLACE SelectString STRING eregi   ALWAYS    ALL     BY STRING preg_match    DOCUMENT   
+
+Replace "enrol" with "enroll"
+REPLACE SelectString STRING enrol   ALWAYS    ALL     BY STRING enroll    DOCUMENT   
+
+Replace the #2nd word in each line with "TWO"
+REPLACE SelectString WORDTOKEN    ALWAYS    INTEGER 2    BY STRING TWO    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Replace any word ending with ".com" with "WEBSITE"
+REPLACE SelectString WORDTOKEN    ENDSWITH STRING .com    ALL     BY STRING WEBSITE    DOCUMENT   
+
+If "/start/here/" is at the beginning of the line  replace "/start/here/" with "/testdir/"
+REPLACE SelectString STRING /start/here/   ALWAYS    ALL     BY STRING /testdir/    IterationScope LINESCOPE    STARTSWITH STRING /start/here/    ALL    
+
+Replace the word "10" with "ten"
+REPLACE SelectString WORD STRING 10    ALWAYS    ALL     BY STRING ten    DOCUMENT   
+
+Replace "<td>" with "break"
+REPLACE SelectString STRING <td>   ALWAYS    ALL     BY STRING break    DOCUMENT   
+
+Replace "'" with " "
+REPLACE SelectString STRING '   ALWAYS    ALL     BY STRING      DOCUMENT   
+
+Replace all numbers with "*"
+REPLACE SelectString NUMBERTOKEN    ALWAYS    ALL     BY STRING *    DOCUMENT   
+
+Replace "f" with "//"
+REPLACE SelectString STRING f   ALWAYS    ALL     BY STRING //    DOCUMENT   
+
+Replace the word "pt" with "thousands"
+REPLACE SelectString WORD STRING pt    ALWAYS    ALL     BY STRING thousands    DOCUMENT   
+
+Replace the first "." in every line with a ":"
+REPLACE SelectString STRING .   ALWAYS    FIRSTONE     BY STRING :    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Replace all characters immediately followed by "s" with "*"
+REPLACE SelectString CHARTOKEN    BEFORE STRING s    ALL     BY STRING *    DOCUMENT   
+
+Replace words beginning with "<ahref" with "<sup>"
+REPLACE SelectString WORDTOKEN    STARTSWITH STRING <ahref    ALL     BY STRING <sup>    DOCUMENT   
+
+Replace text between "<b>" and "</b>" with "1"
+REPLACE SelectString TEXTTOKEN    BETWEEN STRING <b>   TO STRING </b>     ALL     BY STRING 1    DOCUMENT   
+
+Change all words ending in ".jpg" to "REMOVED"
+REPLACE SelectString WORDTOKEN    ENDSWITH STRING .jpg    ALL     BY STRING REMOVED    DOCUMENT   
+
+Replace what is between "dq" and "dq" with "*"
+REPLACE SelectString TEXTTOKEN    BETWEEN STRING dq   TO STRING dq     ALL     BY STRING *    DOCUMENT   
+
+Print the lines after the word "SUBJECT:"
+PRINT SelectString LINETOKEN    AFTER WORD STRING SUBJECT:     ALL     DOCUMENT   
+
+Print the last field of the last line
+PRINT SelectString WORDTOKEN    ALWAYS    LASTONE     IterationScope LINESCOPE    ALWAYS    LASTONE    
+
+Search for lines that contain "0" or contains whitespaces
+PRINT SelectString LINETOKEN    OR CONTAINS STRING 0    CONTAINS WHITESPACETOKEN      ALL     DOCUMENT   
+
+list the #3rd field of those lines of the file in which the letter "r" appears
+PRINT SelectString WORDTOKEN    ALWAYS    INTEGER 3    IterationScope LINESCOPE    CONTAINS STRING r    ALL    
+
+Print the last #2 lines of a file
+PRINT SelectString LINETOKEN    ALWAYS    LASTFEW INTEGER 2     DOCUMENT   
+
+Find everything between "<" and ">" and print it
+PRINT SelectString TEXTTOKEN    BETWEEN STRING <   TO STRING >     ALL     DOCUMENT   
+
+Print the last field of each line
+PRINT SelectString WORDTOKEN    ALWAYS    LASTONE     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print all words containing the "a" anywhere in the word
+PRINT SelectString WORDTOKEN    CONTAINS STRING a    ALL     DOCUMENT   
+
+Print a line if it contains "AAA" and contains "BBB" in any order
+PRINT SelectString LINETOKEN    AND CONTAINS STRING AAA    CONTAINS STRING BBB     ALL     DOCUMENT   
+
+print just the #4th field of the record ending in "\"
+PRINT SelectString WORDTOKEN    ALWAYS    INTEGER 4    IterationScope LINESCOPE    ENDSWITH STRING \    ALL    
+
+Print everything between an occurrence of  "???" and "/???"
+PRINT SelectString TEXTTOKEN    BETWEEN STRING ???   TO STRING /???     ALL     DOCUMENT   
+
+Print line numbered #52
+PRINT SelectString LINETOKEN    ALWAYS    INTEGER 52    DOCUMENT   
+
+Print lines containing "Lincoln" or containing "lincoln"
+PRINT SelectString LINETOKEN    OR CONTAINS STRING Lincoln    CONTAINS STRING lincoln     ALL     DOCUMENT   
+
+Print out any line that mentions "mark" and mentions "mary"
+PRINT SelectString LINETOKEN    AND CONTAINS STRING mark    CONTAINS STRING mary     ALL     DOCUMENT   
+
+List words ending in "x" or ending in "y"
+PRINT SelectString WORDTOKEN    OR ENDSWITH STRING x    ENDSWITH STRING y     ALL     DOCUMENT   
+
+search the lines containing the word "WORD"
+PRINT SelectString LINETOKEN    CONTAINS WORD STRING WORD     ALL     DOCUMENT   
+
+List fields ending in "10" or ending in "11"
+PRINT SelectString WORDTOKEN    OR ENDSWITH STRING 10    ENDSWITH STRING 11     ALL     DOCUMENT   
+
+Print the last line of a file
+PRINT SelectString LINETOKEN    ALWAYS    LASTONE     DOCUMENT   
+
+Print all words beginning with "D"
+PRINT SelectString WORDTOKEN    STARTSWITH STRING D    ALL     DOCUMENT   
+
+Print the #2nd word after pattern "ABC" on every line
+PRINT SelectString WORDTOKEN    AFTER STRING ABC    INTEGER 2    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print all lines ending in "700"
+PRINT SelectString LINETOKEN    ENDSWITH STRING 700    ALL     DOCUMENT   
+
+Print all lines containing the string "San"
+PRINT SelectString LINETOKEN    CONTAINS STRING San    ALL     DOCUMENT   
+
+Print all lines in the file containing the string "error"
+PRINT SelectString LINETOKEN    CONTAINS STRING error    ALL     DOCUMENT   
+
+Print out any line that mentions "mark"
+PRINT SelectString LINETOKEN    CONTAINS STRING mark    ALL     DOCUMENT   
+
+print every #2 from #1 lines
+PRINT SelectString LINETOKEN    ALWAYS    EVERY INTEGER 2   STARTFROM INTEGER 1      DOCUMENT   
+
+Print all lines that do not contain "834"
+PRINT SelectString LINETOKEN    NOT CONTAINS STRING 834     ALL     DOCUMENT   
+
+Print the last #10 lines of a file
+PRINT SelectString LINETOKEN    ALWAYS    LASTFEW INTEGER 10     DOCUMENT   
+
+Print all lines that matches "107:"
+PRINT SelectString LINETOKEN    MATCHES STRING 107:    ALL     DOCUMENT   
+
+print every line which contains the word "java"
+PRINT SelectString LINETOKEN    CONTAINS WORD STRING java     ALL     DOCUMENT   
+
+Print all words beginning with "C" or beginning with "E"
+PRINT SelectString WORDTOKEN    OR STARTSWITH STRING C    STARTSWITH STRING E     ALL     DOCUMENT   
+
+Print all records after "107" on every line
+PRINT SelectString LINETOKEN    AFTER STRING 107    ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print all lines starting with an "a" or starting with "A"
+PRINT SelectString LINETOKEN    OR STARTSWITH STRING a    STARTSWITH STRING A     ALL     DOCUMENT   
+
+Print only the first #5 characters
+PRINT SelectString CHARTOKEN    ALWAYS    FIRSTFEW INTEGER 5     DOCUMENT   
+
+Extract all numbers
+PRINT SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+Print all the words enclosed in "<" and ">"
+PRINT SelectString WORDTOKEN    BETWEEN STRING <   TO STRING >     ALL     DOCUMENT   
+
+Print the #3rd field of the file and remove the " "
+SEQ PRINT SelectString WORDTOKEN    ALWAYS    INTEGER 3    DOCUMENT     REMOVE SelectString STRING     ALWAYS    ALL     DOCUMENT    
+
+Output every symbol between "<" and ">"
+PRINT SelectString CHARTOKEN    BETWEEN STRING <   TO STRING >     ALL     DOCUMENT   
+
+Find the first occurrence of "@" and print the next character
+PRINT SelectString CHARTOKEN    AFTER STRING @    FIRSTONE     DOCUMENT   
+
+Print everything after "<" and before a " "
+PRINT SelectString TEXTTOKEN    AND AFTER STRING <    BEFORE STRING       ALL     DOCUMENT   
+
+Print every word which starts with a ":"
+PRINT SelectString WORDTOKEN    STARTSWITH STRING :    ALL     DOCUMENT   
+
+Print everything before "=" wherever it is
+PRINT SelectString TEXTTOKEN    BEFORE STRING =    ALL     DOCUMENT   
+
+Print any word that starts with "player" and is followed somewhere by "team"
+PRINT SelectString WORDTOKEN    AND STARTSWITH STRING player    BEFORE STRING team     ALL     DOCUMENT   
+
+Extract the word following "from"
+PRINT SelectString WORDTOKEN    AFTER STRING from    ALL     DOCUMENT   
+
+Print characters between "<" and ">"
+PRINT SelectString CHARTOKEN    BETWEEN STRING <   TO STRING >     ALL     DOCUMENT   
+
+Print words which are not in between "/*" and "*/"
+PRINT SelectString WORDTOKEN    NOT BETWEEN STRING /*   TO STRING */      ALL     DOCUMENT   
+
+Print a line if it contains "<img"
+PRINT SelectString LINETOKEN    CONTAINS STRING <img    ALL     DOCUMENT   
+
+Print words which follow "=" or follow "='"
+PRINT SelectString WORDTOKEN    OR AFTER STRING =    AFTER STRING ='     ALL     DOCUMENT   
+
+Print all numbers in the file
+PRINT SelectString NUMBERTOKEN    ALWAYS    ALL     DOCUMENT   
+
+List all words that begin with "<link"
+PRINT SelectString WORDTOKEN    STARTSWITH STRING <link    ALL     DOCUMENT   
+
+Print words which appear directly before "="
+PRINT SelectString WORDTOKEN    BEFORE STRING =    ALL     DOCUMENT   
+
+Print words in between "%" and "%" characters
+PRINT SelectString WORDTOKEN    BETWEEN STRING %   TO STRING %     ALL     DOCUMENT   
+
+Print line containing "soccer" and is preceded by "play"
+PRINT SelectString LINETOKEN    AND CONTAINS STRING soccer    AFTER STRING play     ALL     DOCUMENT   
+
+Print text between "case" and "story"
+PRINT SelectString TEXTTOKEN    BETWEEN STRING case   TO STRING story     ALL     DOCUMENT   
+
+Print text following "<a href="
+PRINT SelectString TEXTTOKEN    AFTER STRING <a href=    ALL     DOCUMENT   
+
+Print lines which includes "[player]" and includes "[team]"
+PRINT SelectString LINETOKEN    AND CONTAINS STRING [player]    CONTAINS STRING [team]     ALL     DOCUMENT   
+
+Print data between "<url>" and "</url>"
+PRINT SelectString TEXTTOKEN    BETWEEN STRING <url>   TO STRING </url>     ALL     DOCUMENT   
+
+Print characters in between ">" and "<"
+PRINT SelectString CHARTOKEN    BETWEEN STRING >   TO STRING <     ALL     DOCUMENT   
+
+Print the word unless it ends in ".net"
+PRINT SelectString WORDTOKEN    NOT ENDSWITH STRING .net     ALL     DOCUMENT   
+
+Print all words unless they begin with "user"
+PRINT SelectString WORDTOKEN    NOT STARTSWITH STRING user     ALL     DOCUMENT   
+
+Print lines that do not begin with "/admin"
+PRINT SelectString LINETOKEN    NOT STARTSWITH STRING /admin     ALL     DOCUMENT   
+
+Print words in between "[[[" and "]]]"
+PRINT SelectString WORDTOKEN    BETWEEN STRING [[[   TO STRING ]]]     ALL     DOCUMENT   
+
+Print the #2nd word in each line
+PRINT SelectString WORDTOKEN    ALWAYS    INTEGER 2    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print words containing "/admin" and containing "/news"
+PRINT SelectString WORDTOKEN    AND CONTAINS STRING /admin    CONTAINS STRING /news     ALL     DOCUMENT   
+
+Print a line if it contains "*"
+PRINT SelectString LINETOKEN    CONTAINS STRING *    ALL     DOCUMENT   
+
+Print text between "[oz]" and "[/oz]"
+PRINT SelectString TEXTTOKEN    BETWEEN STRING [oz]   TO STRING [/oz]     ALL     DOCUMENT   
+
+Print words beginning with "http://"
+PRINT SelectString WORDTOKEN    STARTSWITH STRING http://    ALL     DOCUMENT   
+
+Print each line starting with the first "/" 
+PRINT SelectString LINETOKEN    STARTSWITH STRING /    ALL     DOCUMENT   
+
+Print a word if it ends with ".com"
+PRINT SelectString WORDTOKEN    ENDSWITH STRING .com    ALL     DOCUMENT   
+
+Only print what follows "Main Text"
+PRINT SelectString TEXTTOKEN    AFTER STRING Main Text    ALL     DOCUMENT   
+
+Print words between "'" and "'"
+PRINT SelectString WORDTOKEN    BETWEEN STRING '   TO STRING '     ALL     DOCUMENT   
+
+Print numbers between "<" and ">"
+PRINT SelectString NUMBERTOKEN    BETWEEN STRING <   TO STRING >     ALL     DOCUMENT   
+
+Print text after "ID: " in each line
+PRINT SelectString TEXTTOKEN    AFTER STRING ID:     ALL     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print every instance of a word immediately following "RFA"
+PRINT SelectString WORDTOKEN    AFTER STRING RFA    ALL     DOCUMENT   
+
+Do not print words that end in ".aspx"
+PRINT SelectString WORDTOKEN    NOT ENDSWITH STRING .aspx     ALL     DOCUMENT   
+
+Print words immediately preceded by "public"
+PRINT SelectString WORDTOKEN    AFTER STRING public    ALL     DOCUMENT   
+
+Print numbers that are immediately followed by the word "minutes"
+PRINT SelectString NUMBERTOKEN    BEFORE WORD STRING minutes     ALL     DOCUMENT   
+
+Only print words which end in ".jpg" and include "mine.com"
+PRINT SelectString WORDTOKEN    AND ENDSWITH STRING .jpg    CONTAINS STRING mine.com     ALL     DOCUMENT   
+
+Print words that do not contain "k"
+PRINT SelectString WORDTOKEN    NOT CONTAINS STRING k     ALL     DOCUMENT   
+
+Print words beginning with "r"
+PRINT SelectString WORDTOKEN    STARTSWITH STRING r    ALL     DOCUMENT   
+
+Print only lines that match "that's why"
+PRINT SelectString LINETOKEN    MATCHES STRING that's why    ALL     DOCUMENT   
+
+Print all words containing the letter "a"
+PRINT SelectString WORDTOKEN    CONTAINS STRING a    ALL     DOCUMENT   
+
+Only print words which include "@"
+PRINT SelectString WORDTOKEN    CONTAINS STRING @    ALL     DOCUMENT   
+
+Print words which include "article"
+PRINT SelectString WORDTOKEN    CONTAINS STRING article    ALL     DOCUMENT   
+
+Print characters between "http://" and ".com"
+PRINT SelectString CHARTOKEN    BETWEEN STRING http://   TO STRING .com     ALL     DOCUMENT   
+
+Print the first #4 words in each line
+PRINT SelectString WORDTOKEN    ALWAYS    FIRSTFEW INTEGER 4     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print data between a "-" and an "*"
+PRINT SelectString TEXTTOKEN    BETWEEN STRING -   TO STRING *     ALL     DOCUMENT   
+
+Print the last number in each line
+PRINT SelectString NUMBERTOKEN    ALWAYS    LASTONE     IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print lines that begin with "$result"
+PRINT SelectString LINETOKEN    STARTSWITH STRING $result    ALL     DOCUMENT   
+
+Print the #5th field in each line
+PRINT SelectString WORDTOKEN    ALWAYS    INTEGER 5    IterationScope LINESCOPE    ALWAYS    ALL    
+
+Print words in the file consisting of numbers
+PRINT SelectString WORDTOKEN    CONTAINS NUMBERTOKEN     ALL     DOCUMENT   
+
+Print words which match "NAME"
+PRINT SelectString WORDTOKEN    MATCHES STRING NAME    ALL     DOCUMENT   
+
+Print what is on each line between "&q" and the next "&"
+PRINT SelectString TEXTTOKEN    BETWEEN STRING &q   TO STRING &     ALL     IterationScope LINESCOPE    ALWAYS    ALL    

@@ -76,9 +76,12 @@ def compare(w1, w2):		## returns the
     return (w1, w2, -1)
   return toCheckNone
 
+
+actual_terminal_list = ['AFTER', 'ALL', 'ALLBUT', 'AND', 'BEFORE', 'BETWEEN', 'BLANKLINETOKEN', 'BY', 'CHARTOKEN', 'CONCATENATE', 'CONTAINS', 'DIGITTOKEN', 'END', 'ENDSWITH', 'EVERY', 'FIRSTFEW', 'FIRSTONE', 'INSERT', 'INTSET', 'LASTFEW', 'LASTONE', 'LINE', 'LINESCOPE', 'LINETOKEN', 'MATCHES', 'NONBLANKLINETOKEN', 'NOT', 'NUMBERTOKEN', 'OR', 'PRINT', 'REMOVE', 'REPLACE', 'SEQ', 'START', 'STARTFROM', 'STARTSWITH', 'TEXTTOKEN', 'TO', 'WHITESPACETOKEN', 'WORD', 'WORDSCOPE', 'WORDTOKEN']
+
 seed_maps_Dict = {}
 seeding_maps = []
-fo = open("./seed_mappings", "r")
+fo = open("./giza_0.5_seed_mappings", "r")
 seedMapLine = fo.readline()
 while(seedMapLine):
   seedMapLine = seedMapLine.rstrip()
@@ -117,6 +120,8 @@ while(1):
   #to_be_added = []
   for t1 in terminals_in_program:
     ####print str(t1) + ' ---- Terminals'				## the terminals are output here
+    if not str(t1) in actual_terminal_list:
+      continue
     t1File = open("./Terminals/" + str(t1), "a+")
     dict_words_probs = []
     l1 = t1File.readline()

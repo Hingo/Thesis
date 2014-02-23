@@ -1,6 +1,6 @@
-reject 1.0
 remove 1.0
-eliminate 0.9
-delete 0.45
-drop 0.45
-ignore 0.45
+eliminate 1.0
+delete 1.0
+drop 1.0
+reject 1.0
+ignore 1.0

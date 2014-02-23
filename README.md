@@ -5,6 +5,7 @@ Linux Part
 
 
 1. Stemming_delta should be greater than learnt_epsilon.
+2. Remove one word stems.
 
 Failed attempts:
 
