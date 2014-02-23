@@ -1,0 +1,6 @@
+<AND>
+<ELEMENT literal = "and" type = "_"></ELEMENT>
+<ELEMENT literal = "And" type = "_"></ELEMENT>
+<ELEMENT literal = "immediately" type = "_"></ELEMENT>
+<ELEMENT literal = "Immediately" type = "_"></ELEMENT>
+</AND>

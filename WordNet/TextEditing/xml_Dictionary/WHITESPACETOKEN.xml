@@ -1,0 +1,10 @@
+<WHITESPACETOKEN>
+<ELEMENT literal = "spaces" type = "_"></ELEMENT>
+<ELEMENT literal = "Spaces" type = "_"></ELEMENT>
+<ELEMENT literal = "whitespace" type = "_"></ELEMENT>
+<ELEMENT literal = "Whitespace" type = "_"></ELEMENT>
+<ELEMENT literal = "sequence" type = "_"></ELEMENT>
+<ELEMENT literal = "Sequence" type = "_"></ELEMENT>
+<ELEMENT literal = "whitespaces" type = "_"></ELEMENT>
+<ELEMENT literal = "Whitespaces" type = "_"></ELEMENT>
+</WHITESPACETOKEN>

@@ -1,0 +1,16 @@
+<NUMBERTOKEN>
+<ELEMENT literal = "digits" type = "_"></ELEMENT>
+<ELEMENT literal = "Digits" type = "_"></ELEMENT>
+<ELEMENT literal = "numbers" type = "_"></ELEMENT>
+<ELEMENT literal = "Numbers" type = "_"></ELEMENT>
+<ELEMENT literal = "integer" type = "_"></ELEMENT>
+<ELEMENT literal = "Integer" type = "_"></ELEMENT>
+<ELEMENT literal = "numeral" type = "_"></ELEMENT>
+<ELEMENT literal = "Numeral" type = "_"></ELEMENT>
+<ELEMENT literal = "numeric" type = "_"></ELEMENT>
+<ELEMENT literal = "Numeric" type = "_"></ELEMENT>
+<ELEMENT literal = "numerals" type = "_"></ELEMENT>
+<ELEMENT literal = "Numerals" type = "_"></ELEMENT>
+<ELEMENT literal = "number" type = "_"></ELEMENT>
+<ELEMENT literal = "Number" type = "_"></ELEMENT>
+</NUMBERTOKEN>

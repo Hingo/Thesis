@@ -1,0 +1,14 @@
+<REMOVE>
+<ELEMENT literal = "reject" type = "_"></ELEMENT>
+<ELEMENT literal = "Reject" type = "_"></ELEMENT>
+<ELEMENT literal = "remove" type = "_"></ELEMENT>
+<ELEMENT literal = "Remove" type = "_"></ELEMENT>
+<ELEMENT literal = "eliminate" type = "_"></ELEMENT>
+<ELEMENT literal = "Eliminate" type = "_"></ELEMENT>
+<ELEMENT literal = "drop" type = "_"></ELEMENT>
+<ELEMENT literal = "Drop" type = "_"></ELEMENT>
+<ELEMENT literal = "delete" type = "_"></ELEMENT>
+<ELEMENT literal = "Delete" type = "_"></ELEMENT>
+<ELEMENT literal = "ignore" type = "_"></ELEMENT>
+<ELEMENT literal = "Ignore" type = "_"></ELEMENT>
+</REMOVE>

@@ -1,0 +1,14 @@
+<TEXTTOKEN>
+<ELEMENT literal = "text" type = "_"></ELEMENT>
+<ELEMENT literal = "Text" type = "_"></ELEMENT>
+<ELEMENT literal = "part" type = "_"></ELEMENT>
+<ELEMENT literal = "Part" type = "_"></ELEMENT>
+<ELEMENT literal = "data" type = "_"></ELEMENT>
+<ELEMENT literal = "Data" type = "_"></ELEMENT>
+<ELEMENT literal = "contents" type = "_"></ELEMENT>
+<ELEMENT literal = "Contents" type = "_"></ELEMENT>
+<ELEMENT literal = "what" type = "_"></ELEMENT>
+<ELEMENT literal = "What" type = "_"></ELEMENT>
+<ELEMENT literal = "everything" type = "_"></ELEMENT>
+<ELEMENT literal = "Everything" type = "_"></ELEMENT>
+</TEXTTOKEN>

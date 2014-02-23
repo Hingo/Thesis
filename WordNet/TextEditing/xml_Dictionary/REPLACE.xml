@@ -1,0 +1,12 @@
+<REPLACE>
+<ELEMENT literal = "for" type = "_"></ELEMENT>
+<ELEMENT literal = "For" type = "_"></ELEMENT>
+<ELEMENT literal = "convert" type = "_"></ELEMENT>
+<ELEMENT literal = "Convert" type = "_"></ELEMENT>
+<ELEMENT literal = "substitute" type = "_"></ELEMENT>
+<ELEMENT literal = "Substitute" type = "_"></ELEMENT>
+<ELEMENT literal = "replace" type = "_"></ELEMENT>
+<ELEMENT literal = "Replace" type = "_"></ELEMENT>
+<ELEMENT literal = "change" type = "_"></ELEMENT>
+<ELEMENT literal = "Change" type = "_"></ELEMENT>
+</REPLACE>

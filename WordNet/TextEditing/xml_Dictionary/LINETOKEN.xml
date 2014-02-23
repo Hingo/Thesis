@@ -1,0 +1,22 @@
+<LINETOKEN>
+<ELEMENT literal = "where" type = "_"></ELEMENT>
+<ELEMENT literal = "Where" type = "_"></ELEMENT>
+<ELEMENT literal = "if" type = "_"></ELEMENT>
+<ELEMENT literal = "If" type = "_"></ELEMENT>
+<ELEMENT literal = "additional" type = "_"></ELEMENT>
+<ELEMENT literal = "Additional" type = "_"></ELEMENT>
+<ELEMENT literal = "input" type = "_"></ELEMENT>
+<ELEMENT literal = "Input" type = "_"></ELEMENT>
+<ELEMENT literal = "out" type = "_"></ELEMENT>
+<ELEMENT literal = "Out" type = "_"></ELEMENT>
+<ELEMENT literal = "line" type = "_"></ELEMENT>
+<ELEMENT literal = "Line" type = "_"></ELEMENT>
+<ELEMENT literal = "sentences" type = "_"></ELEMENT>
+<ELEMENT literal = "Sentences" type = "_"></ELEMENT>
+<ELEMENT literal = "sentence" type = "_"></ELEMENT>
+<ELEMENT literal = "Sentence" type = "_"></ELEMENT>
+<ELEMENT literal = "lines" type = "_"></ELEMENT>
+<ELEMENT literal = "Lines" type = "_"></ELEMENT>
+<ELEMENT literal = "records" type = "_"></ELEMENT>
+<ELEMENT literal = "Records" type = "_"></ELEMENT>
+</LINETOKEN>

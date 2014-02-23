@@ -1,0 +1,32 @@
+<INSERT>
+<ELEMENT literal = "prefix" type = "_"></ELEMENT>
+<ELEMENT literal = "Prefix" type = "_"></ELEMENT>
+<ELEMENT literal = "insert" type = "_"></ELEMENT>
+<ELEMENT literal = "Insert" type = "_"></ELEMENT>
+<ELEMENT literal = "add" type = "_"></ELEMENT>
+<ELEMENT literal = "Add" type = "_"></ELEMENT>
+<ELEMENT literal = "enter" type = "_"></ELEMENT>
+<ELEMENT literal = "Enter" type = "_"></ELEMENT>
+<ELEMENT literal = "prepend" type = "_"></ELEMENT>
+<ELEMENT literal = "Prepend" type = "_"></ELEMENT>
+<ELEMENT literal = "place" type = "_"></ELEMENT>
+<ELEMENT literal = "Place" type = "_"></ELEMENT>
+<ELEMENT literal = "put" type = "_"></ELEMENT>
+<ELEMENT literal = "Put" type = "_"></ELEMENT>
+<ELEMENT literal = "if" type = "_"></ELEMENT>
+<ELEMENT literal = "If" type = "_"></ELEMENT>
+<ELEMENT literal = "in" type = "_"></ELEMENT>
+<ELEMENT literal = "In" type = "_"></ELEMENT>
+<ELEMENT literal = "at" type = "_"></ELEMENT>
+<ELEMENT literal = "At" type = "_"></ELEMENT>
+<ELEMENT literal = "append" type = "_"></ELEMENT>
+<ELEMENT literal = "Append" type = "_"></ELEMENT>
+<ELEMENT literal = "after" type = "_"></ELEMENT>
+<ELEMENT literal = "After" type = "_"></ELEMENT>
+<ELEMENT literal = "suffix" type = "_"></ELEMENT>
+<ELEMENT literal = "Suffix" type = "_"></ELEMENT>
+<ELEMENT literal = "on" type = "_"></ELEMENT>
+<ELEMENT literal = "On" type = "_"></ELEMENT>
+<ELEMENT literal = "attach" type = "_"></ELEMENT>
+<ELEMENT literal = "Attach" type = "_"></ELEMENT>
+</INSERT>

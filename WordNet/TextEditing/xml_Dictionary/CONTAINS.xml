@@ -1,0 +1,36 @@
+<CONTAINS>
+<ELEMENT literal = "includes" type = "_"></ELEMENT>
+<ELEMENT literal = "Includes" type = "_"></ELEMENT>
+<ELEMENT literal = "which" type = "_"></ELEMENT>
+<ELEMENT literal = "Which" type = "_"></ELEMENT>
+<ELEMENT literal = "having" type = "_"></ELEMENT>
+<ELEMENT literal = "Having" type = "_"></ELEMENT>
+<ELEMENT literal = "occurs" type = "_"></ELEMENT>
+<ELEMENT literal = "Occurs" type = "_"></ELEMENT>
+<ELEMENT literal = "substring" type = "_"></ELEMENT>
+<ELEMENT literal = "Substring" type = "_"></ELEMENT>
+<ELEMENT literal = "contains" type = "_"></ELEMENT>
+<ELEMENT literal = "Contains" type = "_"></ELEMENT>
+<ELEMENT literal = "present" type = "_"></ELEMENT>
+<ELEMENT literal = "Present" type = "_"></ELEMENT>
+<ELEMENT literal = "consisting" type = "_"></ELEMENT>
+<ELEMENT literal = "Consisting" type = "_"></ELEMENT>
+<ELEMENT literal = "containing" type = "_"></ELEMENT>
+<ELEMENT literal = "Containing" type = "_"></ELEMENT>
+<ELEMENT literal = "have" type = "_"></ELEMENT>
+<ELEMENT literal = "Have" type = "_"></ELEMENT>
+<ELEMENT literal = "contain" type = "_"></ELEMENT>
+<ELEMENT literal = "Contain" type = "_"></ELEMENT>
+<ELEMENT literal = "has" type = "_"></ELEMENT>
+<ELEMENT literal = "Has" type = "_"></ELEMENT>
+<ELEMENT literal = "including" type = "_"></ELEMENT>
+<ELEMENT literal = "Including" type = "_"></ELEMENT>
+<ELEMENT literal = "appears" type = "_"></ELEMENT>
+<ELEMENT literal = "Appears" type = "_"></ELEMENT>
+<ELEMENT literal = "mentions" type = "_"></ELEMENT>
+<ELEMENT literal = "Mentions" type = "_"></ELEMENT>
+<ELEMENT literal = "consists" type = "_"></ELEMENT>
+<ELEMENT literal = "Consists" type = "_"></ELEMENT>
+<ELEMENT literal = "include" type = "_"></ELEMENT>
+<ELEMENT literal = "Include" type = "_"></ELEMENT>
+</CONTAINS>

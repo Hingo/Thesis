@@ -1,0 +1,18 @@
+<START>
+<ELEMENT literal = "line" type = "_"></ELEMENT>
+<ELEMENT literal = "Line" type = "_"></ELEMENT>
+<ELEMENT literal = "above" type = "_"></ELEMENT>
+<ELEMENT literal = "Above" type = "_"></ELEMENT>
+<ELEMENT literal = "beginning" type = "_"></ELEMENT>
+<ELEMENT literal = "Beginning" type = "_"></ELEMENT>
+<ELEMENT literal = "before" type = "_"></ELEMENT>
+<ELEMENT literal = "Before" type = "_"></ELEMENT>
+<ELEMENT literal = "front" type = "_"></ELEMENT>
+<ELEMENT literal = "Front" type = "_"></ELEMENT>
+<ELEMENT literal = "prefix" type = "_"></ELEMENT>
+<ELEMENT literal = "Prefix" type = "_"></ELEMENT>
+<ELEMENT literal = "start" type = "_"></ELEMENT>
+<ELEMENT literal = "Start" type = "_"></ELEMENT>
+<ELEMENT literal = "starting" type = "_"></ELEMENT>
+<ELEMENT literal = "Starting" type = "_"></ELEMENT>
+</START>

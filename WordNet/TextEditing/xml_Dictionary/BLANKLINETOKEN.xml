@@ -1,0 +1,10 @@
+<BLANKLINETOKEN>
+<ELEMENT literal = "consecutive" type = "_"></ELEMENT>
+<ELEMENT literal = "Consecutive" type = "_"></ELEMENT>
+<ELEMENT literal = "empty" type = "_"></ELEMENT>
+<ELEMENT literal = "Empty" type = "_"></ELEMENT>
+<ELEMENT literal = "blanklines" type = "_"></ELEMENT>
+<ELEMENT literal = "Blanklines" type = "_"></ELEMENT>
+<ELEMENT literal = "blank" type = "_"></ELEMENT>
+<ELEMENT literal = "Blank" type = "_"></ELEMENT>
+</BLANKLINETOKEN>
