@@ -1,0 +1,6 @@
+<EQ_NON_STOP>
+<ELEMENT literal = "nonstop" type = "_"></ELEMENT>
+<ELEMENT literal = "Nonstop" type = "_"></ELEMENT>
+<ELEMENT literal = "direct" type = "_"></ELEMENT>
+<ELEMENT literal = "Direct" type = "_"></ELEMENT>
+</EQ_NON_STOP>

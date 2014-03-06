@@ -1,0 +1,16 @@
+<EQ_STOPS>
+<ELEMENT literal = "stop" type = "_"></ELEMENT>
+<ELEMENT literal = "Stop" type = "_"></ELEMENT>
+<ELEMENT literal = "stopover" type = "_"></ELEMENT>
+<ELEMENT literal = "Stopover" type = "_"></ELEMENT>
+<ELEMENT literal = "stopping" type = "_"></ELEMENT>
+<ELEMENT literal = "Stopping" type = "_"></ELEMENT>
+<ELEMENT literal = "stops" type = "_"></ELEMENT>
+<ELEMENT literal = "Stops" type = "_"></ELEMENT>
+<ELEMENT literal = "goes" type = "_"></ELEMENT>
+<ELEMENT literal = "Goes" type = "_"></ELEMENT>
+<ELEMENT literal = "via" type = "_"></ELEMENT>
+<ELEMENT literal = "Via" type = "_"></ELEMENT>
+<ELEMENT literal = "layover" type = "_"></ELEMENT>
+<ELEMENT literal = "Layover" type = "_"></ELEMENT>
+</EQ_STOPS>

@@ -1,0 +1,6 @@
+<EQ_AIRPORT>
+<ELEMENT literal = "airport" type = "_"></ELEMENT>
+<ELEMENT literal = "Airport" type = "_"></ELEMENT>
+<ELEMENT literal = "downtown" type = "_"></ELEMENT>
+<ELEMENT literal = "Downtown" type = "_"></ELEMENT>
+</EQ_AIRPORT>

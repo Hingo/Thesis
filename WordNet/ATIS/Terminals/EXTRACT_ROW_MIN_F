@@ -1,1 +1,6 @@
-cheapest 1.0
+rate 1.0
+is 0.45
+fare 0.3
+am 0.45
+need 0.3
+make 0.3

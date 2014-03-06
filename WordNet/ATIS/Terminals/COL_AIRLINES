@@ -1,2 +1,8 @@
-airline 1.0
-airlines 1.0
+connect 1.0
+cities 1.0
+fly 0.3
+baltimore 0.45
+pittsburgh 0.45
+flies 0.3
+connections 0.95
+is 0.45

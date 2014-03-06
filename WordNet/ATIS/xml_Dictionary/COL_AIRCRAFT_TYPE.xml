@@ -1,0 +1,12 @@
+<COL_AIRCRAFT_TYPE>
+<ELEMENT literal = "type" type = "_"></ELEMENT>
+<ELEMENT literal = "Type" type = "_"></ELEMENT>
+<ELEMENT literal = "types" type = "_"></ELEMENT>
+<ELEMENT literal = "Types" type = "_"></ELEMENT>
+<ELEMENT literal = "kind" type = "_"></ELEMENT>
+<ELEMENT literal = "Kind" type = "_"></ELEMENT>
+<ELEMENT literal = "equipment" type = "_"></ELEMENT>
+<ELEMENT literal = "Equipment" type = "_"></ELEMENT>
+<ELEMENT literal = "aircraft" type = "_"></ELEMENT>
+<ELEMENT literal = "Aircraft" type = "_"></ELEMENT>
+</COL_AIRCRAFT_TYPE>

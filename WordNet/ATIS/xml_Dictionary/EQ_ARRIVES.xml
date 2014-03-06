@@ -1,0 +1,24 @@
+<EQ_ARRIVES>
+<ELEMENT literal = "to" type = "_"></ELEMENT>
+<ELEMENT literal = "To" type = "_"></ELEMENT>
+<ELEMENT literal = "from" type = "_"></ELEMENT>
+<ELEMENT literal = "From" type = "_"></ELEMENT>
+<ELEMENT literal = "francisco" type = "_"></ELEMENT>
+<ELEMENT literal = "Francisco" type = "_"></ELEMENT>
+<ELEMENT literal = "arriving" type = "_"></ELEMENT>
+<ELEMENT literal = "Arriving" type = "_"></ELEMENT>
+<ELEMENT literal = "arrive" type = "_"></ELEMENT>
+<ELEMENT literal = "Arrive" type = "_"></ELEMENT>
+<ELEMENT literal = "get" type = "_"></ELEMENT>
+<ELEMENT literal = "Get" type = "_"></ELEMENT>
+<ELEMENT literal = "colorado" type = "_"></ELEMENT>
+<ELEMENT literal = "Colorado" type = "_"></ELEMENT>
+<ELEMENT literal = "arrives" type = "_"></ELEMENT>
+<ELEMENT literal = "Arrives" type = "_"></ELEMENT>
+<ELEMENT literal = "plan" type = "_"></ELEMENT>
+<ELEMENT literal = "Plan" type = "_"></ELEMENT>
+<ELEMENT literal = "destination" type = "_"></ELEMENT>
+<ELEMENT literal = "Destination" type = "_"></ELEMENT>
+<ELEMENT literal = "for" type = "_"></ELEMENT>
+<ELEMENT literal = "For" type = "_"></ELEMENT>
+</EQ_ARRIVES>

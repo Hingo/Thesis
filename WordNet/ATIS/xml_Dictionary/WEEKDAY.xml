@@ -1,0 +1,12 @@
+<WEEKDAY>
+<ELEMENT literal = "Thursday" type = "_"></ELEMENT>
+<ELEMENT literal = "thursday" type = "_"></ELEMENT>
+<ELEMENT literal = "Tuesday" type = "_"></ELEMENT>
+<ELEMENT literal = "tuesday" type = "_"></ELEMENT>
+<ELEMENT literal = "Monday" type = "_"></ELEMENT>
+<ELEMENT literal = "monday" type = "_"></ELEMENT>
+<ELEMENT literal = "Friday" type = "_"></ELEMENT>
+<ELEMENT literal = "friday" type = "_"></ELEMENT>
+<ELEMENT literal = "Wednesday" type = "_"></ELEMENT>
+<ELEMENT literal = "wednesday" type = "_"></ELEMENT>
+</WEEKDAY>

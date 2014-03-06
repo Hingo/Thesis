@@ -1,0 +1,8 @@
+<MATCH_TIME_AROUND>
+<ELEMENT literal = "around" type = "_"></ELEMENT>
+<ELEMENT literal = "Around" type = "_"></ELEMENT>
+<ELEMENT literal = "about" type = "_"></ELEMENT>
+<ELEMENT literal = "About" type = "_"></ELEMENT>
+<ELEMENT literal = "approximately" type = "_"></ELEMENT>
+<ELEMENT literal = "Approximately" type = "_"></ELEMENT>
+</MATCH_TIME_AROUND>

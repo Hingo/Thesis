@@ -1,0 +1,16 @@
+<COL_DEPARTURE_TIME>
+<ELEMENT literal = "times" type = "_"></ELEMENT>
+<ELEMENT literal = "Times" type = "_"></ELEMENT>
+<ELEMENT literal = "last" type = "_"></ELEMENT>
+<ELEMENT literal = "Last" type = "_"></ELEMENT>
+<ELEMENT literal = "time" type = "_"></ELEMENT>
+<ELEMENT literal = "Time" type = "_"></ELEMENT>
+<ELEMENT literal = "earliest" type = "_"></ELEMENT>
+<ELEMENT literal = "Earliest" type = "_"></ELEMENT>
+<ELEMENT literal = "first" type = "_"></ELEMENT>
+<ELEMENT literal = "First" type = "_"></ELEMENT>
+<ELEMENT literal = "departures" type = "_"></ELEMENT>
+<ELEMENT literal = "Departures" type = "_"></ELEMENT>
+<ELEMENT literal = "latest" type = "_"></ELEMENT>
+<ELEMENT literal = "Latest" type = "_"></ELEMENT>
+</COL_DEPARTURE_TIME>

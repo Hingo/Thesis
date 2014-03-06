@@ -1,0 +1,16 @@
+<AIRLINES>
+<ELEMENT literal = "twa" type = "_"></ELEMENT>
+<ELEMENT literal = "Twa" type = "_"></ELEMENT>
+<ELEMENT literal = "eastern" type = "_"></ELEMENT>
+<ELEMENT literal = "Eastern" type = "_"></ELEMENT>
+<ELEMENT literal = "us" type = "_"></ELEMENT>
+<ELEMENT literal = "Us" type = "_"></ELEMENT>
+<ELEMENT literal = "continental" type = "_"></ELEMENT>
+<ELEMENT literal = "Continental" type = "_"></ELEMENT>
+<ELEMENT literal = "delta" type = "_"></ELEMENT>
+<ELEMENT literal = "Delta" type = "_"></ELEMENT>
+<ELEMENT literal = "united" type = "_"></ELEMENT>
+<ELEMENT literal = "United" type = "_"></ELEMENT>
+<ELEMENT literal = "american" type = "_"></ELEMENT>
+<ELEMENT literal = "American" type = "_"></ELEMENT>
+</AIRLINES>

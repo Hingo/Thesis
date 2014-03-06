@@ -1,0 +1,47 @@
+24,25c24,25
+< 
+<   #s = 'PROJECT(AtomicColSet(COL_FARE()), EXTRACT_ROW_MIN_F(COL_FARE(), AtomicRowPredSet(AtomicRowPred(EQ_DEPARTS(CITY(atlanta), ANY(), ANY(), ANY(), ANY()), EQ_ARRIVES(CITY(dallas), ANY(), ANY(), ANY(), ANY())))))'
+---
+>   
+>   #s = 'INSERT(STRING(:), Position(AFTER(NUMBERTOKEN()), ALL()), IterationScope(LINESCOPE(), ALWAYS(), ALL()))'
+27c27
+< 
+---
+>   
+33,36c33
+<     if (c.isupper()) or (c == '_'):
+<       flag = True
+<       shortArray.append(c)
+<     else:
+---
+>     if not c.isupper():
+44a42,44
+>     else:
+>       flag = True
+>       shortArray.append(c)
+46d45
+<   truncSubs = subs
+51,56c50,54
+<       truncSubs.remove(ss)
+<     if ss == 'ANY':
+<       truncSubs.remove(ss)
+<     if ss.startswith('_'):
+<       truncSubs.remove(ss)
+<   return truncSubs
+---
+>       #print ss + ' '
+>       if not ((ss == 'G') or (ss == 'L')):
+> 	#print ss
+> 	subs.remove(ss)
+>   return subs
+81c79,80
+< actual_terminal_list = ['AIRCRAFT', 'AIRLINES', 'BETWEEN_CITIES', 'BREAKFAST', 'CITY', 'CLASS', 'COL_AIRCRAFT_TYPE', 'COL_AIRLINES', 'COL_ARRIVAL_TIME', 'COL_DEPARTURE_TIME', 'COL_FARE', 'COL_STOPS', 'COL_TRANSPORT', 'DAYNUM', 'EQ_AIRCRAFT_TYPE', 'EQ_AIRLINES', 'EQ_AIRPORT', 'EQ_ARRIVES', 'EQ_CLASS', 'EQ_DEPARTS', 'EQ_FOOD', 'EQ_NON_STOP', 'EQ_STOPS', 'EXTRACT_ROW_MAX', 'EXTRACT_ROW_MAX_T', 'EXTRACT_ROW_MIN', 'EXTRACT_ROW_MIN_F', 'EXTRACT_ROW_MIN_T', 'MATCH_TIME_AROUND', 'MATCH_TIME_GT', 'MATCH_TIME_LT', 'MEAL', 'MONTH', 'NONE', 'PROJECT', 'ROUND_TRIP', 'TIME', 'WEEKDAY']
+---
+> 
+> actual_terminal_list = ['AFTER', 'ALL', 'ALLBUT', 'AND', 'BEFORE', 'BETWEEN', 'BLANKLINETOKEN', 'BY', 'CHARTOKEN', 'CONCATENATE', 'CONTAINS', 'DIGITTOKEN', 'END', 'ENDSWITH', 'EVERY', 'FIRSTFEW', 'FIRSTONE', 'INSERT', 'INTSET', 'LASTFEW', 'LASTONE', 'LINE', 'LINESCOPE', 'LINETOKEN', 'MATCHES', 'NONBLANKLINETOKEN', 'NOT', 'NUMBERTOKEN', 'OR', 'PRINT', 'REMOVE', 'REPLACE', 'SEQ', 'START', 'STARTFROM', 'STARTSWITH', 'TEXTTOKEN', 'TO', 'WHITESPACETOKEN', 'WORD', 'WORDSCOPE', 'WORDTOKEN']
+175c174
+<     
+---
+> 	    
+188d186
+<         

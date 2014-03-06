@@ -1,0 +1,8 @@
+<COL_TRANSPORT>
+<ELEMENT literal = "ground" type = "_"></ELEMENT>
+<ELEMENT literal = "Ground" type = "_"></ELEMENT>
+<ELEMENT literal = "transportation" type = "_"></ELEMENT>
+<ELEMENT literal = "Transportation" type = "_"></ELEMENT>
+<ELEMENT literal = "out" type = "_"></ELEMENT>
+<ELEMENT literal = "Out" type = "_"></ELEMENT>
+</COL_TRANSPORT>

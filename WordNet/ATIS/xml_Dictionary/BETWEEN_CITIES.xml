@@ -1,0 +1,4 @@
+<BETWEEN_CITIES>
+<ELEMENT literal = "between" type = "_"></ELEMENT>
+<ELEMENT literal = "Between" type = "_"></ELEMENT>
+</BETWEEN_CITIES>

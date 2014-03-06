@@ -1,0 +1,6 @@
+<EQ_AIRCRAFT_TYPE>
+<ELEMENT literal = "number" type = "_"></ELEMENT>
+<ELEMENT literal = "Number" type = "_"></ELEMENT>
+<ELEMENT literal = "aircraft" type = "_"></ELEMENT>
+<ELEMENT literal = "Aircraft" type = "_"></ELEMENT>
+</EQ_AIRCRAFT_TYPE>

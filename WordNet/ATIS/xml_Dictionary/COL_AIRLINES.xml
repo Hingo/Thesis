@@ -1,0 +1,16 @@
+<COL_AIRLINES>
+<ELEMENT literal = "any" type = "_"></ELEMENT>
+<ELEMENT literal = "Any" type = "_"></ELEMENT>
+<ELEMENT literal = "has" type = "_"></ELEMENT>
+<ELEMENT literal = "Has" type = "_"></ELEMENT>
+<ELEMENT literal = "which" type = "_"></ELEMENT>
+<ELEMENT literal = "Which" type = "_"></ELEMENT>
+<ELEMENT literal = "connect" type = "_"></ELEMENT>
+<ELEMENT literal = "Connect" type = "_"></ELEMENT>
+<ELEMENT literal = "cities" type = "_"></ELEMENT>
+<ELEMENT literal = "Cities" type = "_"></ELEMENT>
+<ELEMENT literal = "airline" type = "_"></ELEMENT>
+<ELEMENT literal = "Airline" type = "_"></ELEMENT>
+<ELEMENT literal = "airlines" type = "_"></ELEMENT>
+<ELEMENT literal = "Airlines" type = "_"></ELEMENT>
+</COL_AIRLINES>

@@ -1,0 +1,4 @@
+<MATCH_TIME_LT>
+<ELEMENT literal = "before" type = "_"></ELEMENT>
+<ELEMENT literal = "Before" type = "_"></ELEMENT>
+</MATCH_TIME_LT>

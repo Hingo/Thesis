@@ -1,0 +1,10 @@
+<EQ_AIRLINES>
+<ELEMENT literal = "airlines" type = "_"></ELEMENT>
+<ELEMENT literal = "Airlines" type = "_"></ELEMENT>
+<ELEMENT literal = "airline" type = "_"></ELEMENT>
+<ELEMENT literal = "Airline" type = "_"></ELEMENT>
+<ELEMENT literal = "using" type = "_"></ELEMENT>
+<ELEMENT literal = "Using" type = "_"></ELEMENT>
+<ELEMENT literal = "air" type = "_"></ELEMENT>
+<ELEMENT literal = "Air" type = "_"></ELEMENT>
+</EQ_AIRLINES>

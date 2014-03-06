@@ -1,0 +1,32 @@
+TE_terminals = ['AFTER', 'ALL', 'ALLBUT', 'AND', 'BEFORE', 'BETWEEN', 'BLANKLINETOKEN', 'BY', 'CHARTOKEN', 'CONCATENATE', 'CONTAINS', 'DIGITTOKEN', 'END', 'ENDSWITH', 'EVERY', 'FIRSTFEW', 'FIRSTONE', 'INSERT', 'INTSET', 'LASTFEW', 'LASTONE', 'LINE', 'LINESCOPE', 'LINETOKEN', 'MATCHES', 'NONBLANKLINETOKEN', 'NOT', 'NUMBERTOKEN', 'OR', 'PRINT', 'REMOVE', 'REPLACE', 'SEQ', 'START', 'STARTFROM', 'STARTSWITH', 'TEXTTOKEN', 'TO', 'WHITESPACETOKEN', 'WORD', 'WORDSCOPE', 'WORDTOKEN']
+
+TE_articles = ['a', 'the', 'an', 'that']
+
+proper_nouns = ['mulberry']
+
+maps = []
+actual_match_whole = open("actual.match.final", "r")
+threshold = 0.10
+giza_map_file = open("giza_mappings_" + str(threshold), "w")
+
+line = actual_match_whole.readline()
+while(line):
+  line = line.rstrip()
+  english_word, dsl_terminal, alignment = line.split()
+  if(float(alignment) >= threshold):
+    if str(dsl_terminal) in TE_terminals:
+      if ("\"" in english_word) or ("#" in english_word) or (english_word in TE_articles) or (english_word in proper_nouns):
+	line = actual_match_whole.readline()
+	continue
+      maps.append(str(dsl_terminal) + "$" + str(english_word))
+  line = actual_match_whole.readline()
+
+seen = set()
+seen_add = seen.add
+unique_maps = [x for x in maps if x not in seen and not seen_add(x)]
+
+for one_map in unique_maps:
+  giza_map_file.write(str(one_map) + "\n")
+  
+actual_match_whole.close()
+giza_map_file.close()

@@ -1,0 +1,18 @@
+<COL_FARE>
+<ELEMENT literal = "cheapest" type = "_"></ELEMENT>
+<ELEMENT literal = "Cheapest" type = "_"></ELEMENT>
+<ELEMENT literal = "fare" type = "_"></ELEMENT>
+<ELEMENT literal = "Fare" type = "_"></ELEMENT>
+<ELEMENT literal = "expensive" type = "_"></ELEMENT>
+<ELEMENT literal = "Expensive" type = "_"></ELEMENT>
+<ELEMENT literal = "cost" type = "_"></ELEMENT>
+<ELEMENT literal = "Cost" type = "_"></ELEMENT>
+<ELEMENT literal = "fares" type = "_"></ELEMENT>
+<ELEMENT literal = "Fares" type = "_"></ELEMENT>
+<ELEMENT literal = "airfare" type = "_"></ELEMENT>
+<ELEMENT literal = "Airfare" type = "_"></ELEMENT>
+<ELEMENT literal = "rates" type = "_"></ELEMENT>
+<ELEMENT literal = "Rates" type = "_"></ELEMENT>
+<ELEMENT literal = "least" type = "_"></ELEMENT>
+<ELEMENT literal = "Least" type = "_"></ELEMENT>
+</COL_FARE>

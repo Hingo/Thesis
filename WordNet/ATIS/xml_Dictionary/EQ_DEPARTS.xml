@@ -1,0 +1,22 @@
+<EQ_DEPARTS>
+<ELEMENT literal = "from" type = "_"></ELEMENT>
+<ELEMENT literal = "From" type = "_"></ELEMENT>
+<ELEMENT literal = "leaving" type = "_"></ELEMENT>
+<ELEMENT literal = "Leaving" type = "_"></ELEMENT>
+<ELEMENT literal = "plane" type = "_"></ELEMENT>
+<ELEMENT literal = "Plane" type = "_"></ELEMENT>
+<ELEMENT literal = "leave" type = "_"></ELEMENT>
+<ELEMENT literal = "Leave" type = "_"></ELEMENT>
+<ELEMENT literal = "leaves" type = "_"></ELEMENT>
+<ELEMENT literal = "Leaves" type = "_"></ELEMENT>
+<ELEMENT literal = "originate" type = "_"></ELEMENT>
+<ELEMENT literal = "Originate" type = "_"></ELEMENT>
+<ELEMENT literal = "put" type = "_"></ELEMENT>
+<ELEMENT literal = "Put" type = "_"></ELEMENT>
+<ELEMENT literal = "depart" type = "_"></ELEMENT>
+<ELEMENT literal = "Depart" type = "_"></ELEMENT>
+<ELEMENT literal = "departing" type = "_"></ELEMENT>
+<ELEMENT literal = "Departing" type = "_"></ELEMENT>
+<ELEMENT literal = "go" type = "_"></ELEMENT>
+<ELEMENT literal = "Go" type = "_"></ELEMENT>
+</EQ_DEPARTS>

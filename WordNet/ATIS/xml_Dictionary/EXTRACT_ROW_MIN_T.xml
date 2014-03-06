@@ -1,0 +1,6 @@
+<EXTRACT_ROW_MIN_T>
+<ELEMENT literal = "earliest" type = "_"></ELEMENT>
+<ELEMENT literal = "Earliest" type = "_"></ELEMENT>
+<ELEMENT literal = "first" type = "_"></ELEMENT>
+<ELEMENT literal = "First" type = "_"></ELEMENT>
+</EXTRACT_ROW_MIN_T>
